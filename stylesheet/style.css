@@ -1,15 +1,16 @@
 @font-face {
   font-family: 'DepartureMono Nerd Font Propo';
   src: url('/fonts/DepartureMonoNerdFontPropo-Regular.otf') format('opentype');
-  font-weight: normal ;
+  font-weight: normal;
   font-style: normal;
 }
-.nav-list{
+
+.nav-list {
   display: flex;
   align-items: center;
   padding: 20px;
   background-color: #222222ba;
-  color: white;
+  color: #fbe3cebb;
   list-style: none;
   border-radius: 10px;
   transition: background-color 0.3s ease;
@@ -24,17 +25,19 @@
   right: 0;
   z-index: 1000;
 }
+
 .nav-list li {
   margin: 0 15px;
 }
+
 .nav-list li a {
-  color: white;
+  color: rgb(212, 212, 212);
   text-decoration: none;
   font-size: 15px;
   transition: color 0.3s ease;
-
   padding: 12px 4px;
 }
+
 .nav-list li a:hover {
   text-decoration-thickness: 2px;
   color: hsl(330, 67%, 47%);
@@ -43,12 +46,14 @@
   border-radius: 5px;
   padding: 12px 4px;
   transform: scale(1.05);
-  transition:background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
+
 .nav-list li a.active {
   font-weight: bold;
   transform: scale(0.95);
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -64,11 +69,14 @@ body {
   line-height: 1.6;
   font-size: 16px;
   min-height: 100vh;
-  height: 200vh; /* Para hacer scroll y probar */
+  height: 200vh;
+  /* Para hacer scroll y probar */
 }
+
 h1 {
   margin-bottom: -3%;
 }
+
 h2 {
   text-align: center;
   margin-top: 50px;
@@ -78,6 +86,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 5px;
 }
+
 h3 {
   text-align: center;
   margin-top: 30px;
@@ -87,14 +96,17 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+
 h4 {
   text-align: center;
-  margin-top: -35px;
+  margin-top: -45px;
   margin-bottom: -50px;
-  color: #858484;
+  color: #6c6c6c;
   font-family: "Jacquard 24", system-ui;
   font-size: 1.8em;
+  text-shadow: #ffffff2a 0px 0px 20px;
 }
+
 h5 {
   text-align: center;
   margin-top: 10px;
@@ -104,6 +116,7 @@ h5 {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 footer {
   margin-top: 50px;
   font-size: 0.6em;
@@ -112,7 +125,8 @@ footer {
   letter-spacing: 2px;
   max-width: 100%;
 }
-.footer-hr{
+
+.footer-hr {
   border: none;
   height: 1px;
   background-color: #c0bfbf3b;
@@ -122,17 +136,19 @@ footer {
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
-#footer{
+
+#footer {
   letter-spacing: 2px;
   max-width: 280px;
 }
 
-#footer-paragraph{
+#footer-paragraph {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#footer-paragraph a{
+
+#footer-paragraph a {
   color: #f1f1f1a9;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -142,46 +158,73 @@ footer {
   font-weight: bold;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
+
 .scramble {
-  color: hsl(0, 7%, 79%);
+  color: hsl(30, 34%, 84%);
   font-family: "Jacquard 24", system-ui;
   font-size: 4em;
 }
-#scramble{
+
+#scramble {
   text-shadow: 1px 1px 20px rgba(213, 213, 213, 0.253);
 }
+
 .scramble span {
   display: inline-block;
   text-align: center;
 }
+
 .flicker {
   animation: flicker 0.2s infinite alternate;
 }
 
 @keyframes flicker {
-  0%   { opacity: 1; }
-  50%  { opacity: 0.2; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
+
 .fadeout {
   transition: opacity 0.5s ease;
   opacity: 0.2;
 }
-#inicio{
+
+#inicio {
   font-size: 1.8em;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.192);
   padding: 40px;
 }
-#titles{
+
+.email {
+  color: #f1f1f1d3;
+  letter-spacing: 2px;
   font-family: 'DepartureMono Nerd Font Propo', monospace;
+  font-weight: bold;
+  font-size: 0.5em;
+  margin-top: -20px;
+  margin-left: 20px;
+  letter-spacing: 3px;
+}
+
+#titles {
   text-transform: uppercase;
-  letter-spacing: 5px;
-  margin-top: 26px;
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  letter-spacing: 3px;
   margin-left: 20px;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.164);
-  font-size: 0.6em;
+  font-size: 0.5em;
+  color: rgb(147, 147, 147);
 }
-#about{
+
+#about {
 
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   font-size: 1.2em;
@@ -189,57 +232,65 @@ footer {
   padding: 40px;
   text-align: center;
 }
-.espacio{
 
+.espacio {
+  color: rgba(240, 248, 255, 0.66);
   font-family: 'DepartureMono Nerd Font Propo', monospace;
 }
-#services{
+
+#services {
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   font-size: 1.2em;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.305);
   padding: 40px;
   text-align: center;
 }
-.info-container{
+
+.info-container {
   display: flex;
-  justify-content:end;
-  align-items:end;
+  justify-content: end;
+  align-items: end;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 360px;
+  max-width: 520px;
   letter-spacing: 1px;
-  font-size: 12px;
-  position:static;
+  font-size: 15px;
+  position: static;
   margin-right: 60px;
+  color: #fbe3cebb;
 }
-.info-container :hover{
+
+.info-container :hover {
   background-color: rgba(219, 219, 219, 0.2);
   border-radius: 5px;
   transform: scale(1.05);
-  transition:background-color 0.3s ease;
-  transition:transform 0.3s ease;
+  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease;
 }
-#link-container{
+
+#link-container {
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   align-items: center;
 }
-.portrait{
+
+.portrait {
   display: flex;
-  justify-content:end;
-  align-items:end;
+  justify-content: end;
+  align-items: end;
   flex-direction: column;
   margin: auto;
   max-width: 220px;
   border-radius: 5px;
   box-sizing: border-box;
   letter-spacing: 1px;
-  position:static;
+  position: static;
   margin-right: 180px;
   margin-top: -27%;
   margin-bottom: 16px;
 
 }
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -303,7 +354,8 @@ footer {
 .dropdown.active .arrow {
   transform: rotate(180deg);
 }
-#generic{
+
+#generic {
   font-size: 0.9em;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.304);
   text-align: center;
@@ -317,31 +369,33 @@ footer {
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   letter-spacing: 1px;
 }
-#generic-ll{
+
+#generic-ll {
   font-size: 0.9em;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.304);
-  text-align:left;
+  text-align: left;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  box-sizing: border-box;
-  color: #cdcdcdeb;
+  box-sizing: border-box;color: #fbe3cebb;
   letter-spacing: 1px;
 }
-#generic-small{
+
+#generic-small {
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   letter-spacing: 1px;
-  font-size: 0.7em;
+  font-size: 0.9em;
   text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.304);
   text-align: center;
-  width: 40%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  color: #b5b5b5ea;
+  color: #d9d6cbea;
 }
+
 .fade-in-on-scroll {
   opacity: 0;
   transform: translateY(20px);
@@ -354,13 +408,15 @@ footer {
 }
 
 /* From Uiverse.io by kamehame-ha */
-  .cards {
+.cards {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* importante para tarjetas de diferente altura */
+  align-items: flex-start;
+  /* importante para tarjetas de diferente altura */
   flex-direction: row;
   gap: 15px;
-  flex-wrap: wrap; /* opcional si hay muchas tarjetas */
+  flex-wrap: wrap;
+  /* opcional si hay muchas tarjetas */
 }
 
 .cards .card-link {
@@ -380,9 +436,10 @@ footer {
   flex-direction: column;
   text-align: center;
   padding: 16px;
-  min-height: 320px; /* en lugar de height fija */
+  min-height: 320px;
+  /* en lugar de height fija */
   border-radius: 10px;
-  color: rgb(240, 240, 240);
+  color: #fbe3cee8;
   backdrop-filter: blur(10px);
   cursor: pointer;
   transition: 400ms;
@@ -403,23 +460,16 @@ footer {
   transform: scale(1.1, 1.1);
 }
 
-.cards:hover > .card-link:not(:hover) .card {
+.cards:hover>.card-link:not(:hover) .card {
   transform: scale(0.9, 0.9);
 }
-.hr-lob{
+
+.hr-lob {
   width: 60%;
   scale: 0.5;
 }
-.email{
-  color: #f1f1f1a9;
-  letter-spacing: 2px;
-  font-family: 'DepartureMono Nerd Font Propo', monospace;
-  font-weight: bold;
-  font-size: 0.5em;
-  margin-top: -20px;
-  margin-left: 20px;
-}
-.title-aptitude{
+
+.title-aptitude {
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -430,45 +480,58 @@ footer {
   text-decoration-color: hsla(0, 0%, 53%, 0.609);
   text-decoration-thickness: 1px;
   text-decoration-style: solid;
+  color: #f7d8bccc;
 }
-#title-aptitude-frameworks{
+
+#title-aptitude-frameworks {
   color: rgb(127, 255, 153);
 }
-#title-aptitude-blue{
+
+#title-aptitude-blue {
   color: rgb(47, 63, 238);
 }
-#title-aptitude-docker{
+
+#title-aptitude-docker {
   color: rgb(62, 171, 255);
 }
-#title-aptitude-java{
+
+#title-aptitude-java {
   color: rgb(213, 132, 40);
 
 }
-#title-aptitude-orange{
+
+#title-aptitude-orange {
   color: rgb(255, 100, 44);
 
 }
-#title-aptitude-yellow{
+
+#title-aptitude-yellow {
   color: rgb(223, 217, 54);
 }
-#title-aptitude-green{
+
+#title-aptitude-green {
   color: rgb(15, 177, 64);
 }
-#title-aptitude-purple{
+
+#title-aptitude-purple {
   color: rgb(255, 56, 156);
 }
-#title-aptitude-title{
+
+#title-aptitude-title {
   color: hsl(330, 67%, 47%);
 }
-#title-aptitude-title-div{
+
+#title-aptitude-title-div {
   color: hsl(0, 0%, 83%);
   text-align: center;
 }
-.icon-example{
+
+.icon-example {
   width: 24px;
   padding: -6px;
 }
-.background-kleur{
+
+.background-kleur {
   background-color: #e1e1e1ee;
   border-radius: 8px;
   padding-bottom: 1px;
@@ -476,17 +539,20 @@ footer {
   padding-left: 3px;
   padding-right: 3px;
 }
+
 /* PARA TELEFONOS :D */
 
 @media (max-width: 768px) {
   .nav-list {
-    flex-direction:row;
+    flex-direction: row;
     padding: 12px;
     margin: 2px;
   }
+
   .nav-list li {
     margin: 0 5px;
   }
+
   .nav-list li a {
     font-size: 12px;
   }
@@ -495,6 +561,7 @@ footer {
     align-items: end;
     text-align: center;
     margin: 0 auto;
+    font-size: 12px;
   }
 
   .portrait {
@@ -503,7 +570,6 @@ footer {
     align-items: flex-start;
     flex-direction: column;
     margin: 0 auto;
-
     margin-top: -16%;
     margin-bottom: 4%;
   }
@@ -513,72 +579,95 @@ footer {
     gap: 10px;
     align-items: center;
   }
-  #generic{
+
+  #generic {
     width: 100%;
     font-size: 0.7em;
     margin: 0 auto;
   }
-  #generic-small{
+
+  #generic-small {
     font-size: 0.6em;
     width: 100%;
   }
-  #generic-ll{
+
+  #generic-ll {
     width: 100%;
     font-size: 0.7em;
     margin: 0 auto;
     text-align: baseline;
   }
+
   .fade-in-on-scroll {
     align-items: center;
     text-align: center;
     margin: 0 auto;
   }
-  h2{
+
+  h2 {
     font-size: 1.3em;
     margin-bottom: 40px;
   }
-  h4{
+
+  h4 {
     font-size: 1.1em;
     margin-top: -50px;
     margin-bottom: -20px;
   }
-  #titles{
+
+  #titles {
     font-size: 0.4em;
-    margin-top:-20px;
+    margin-top: -20px;
   }
-  #scramble{
+
+  #scramble {
     font-size: 2.1em;
     margin-top: -70px;
   }
-  .email{
+
+  .email {
     font-size: 0.4em;
-    margin-top: -10px;
+    margin-top: -15px;
   }
-  .background-kleur{
+
+  .background-kleur {
     align-items: center;
     text-align: center;
     margin: 0 auto;
-}
-.icon-example{
+  }
+
+  .icon-example {
     width: 12px;
     width: 18px;
     padding: -6px;
   }
+
   .cards {
     flex-direction: column;
     align-items: center;
   }
+
   .cards .card-link {
     width: 100%;
   }
-  .title-aptitude{
+
+  .title-aptitude {
     font-size: 1em;
     margin-left: 0px;
     margin-top: 10px;
   }
-  #generic-ll{
+
+  #generic-ll {
     font-size: 0.7em;
     margin: 0 auto;
     align-items: center;
+  }
+
+  .cards .card:hover {
+    transform: scale(1.0, 1.0);
+  }
+
+  .cards:hover>.card-link:not(:hover) .card {
+    transform: scale(1.0, 1.0);
   }
 }

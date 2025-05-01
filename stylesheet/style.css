@@ -1,0 +1,540 @@
+@font-face {
+  font-family: 'DepartureMono Nerd Font Propo';
+  src: url('/fonts/DepartureMonoNerdFontPropo-Regular.otf') format('opentype');
+  font-weight: normal ;
+  font-style: normal;
+}
+.nav-list{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #222222ba;
+  color: white;
+  list-style: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-size: 8px;
+  position: fixed;
+  margin: 12px;
+  top: 10px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.nav-list li {
+  margin: 0 15px;
+}
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+
+  padding: 12px 4px;
+}
+.nav-list li a:hover {
+  text-decoration-thickness: 2px;
+  color: hsl(330, 67%, 47%);
+  text-decoration-style: solid;
+  background-color: rgba(219, 219, 219, 0.2);
+  border-radius: 5px;
+  padding: 12px 4px;
+  transform: scale(1.05);
+  transition:background-color 0.3s ease;
+}
+.nav-list li a.active {
+  font-weight: bold;
+  transform: scale(0.95);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  color: #f0f0f0;
+  background-image: url(/img/bg3.jpg);
+  background-color: #000000eb;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  line-height: 1.6;
+  font-size: 16px;
+  min-height: 100vh;
+  height: 200vh; /* Para hacer scroll y probar */
+}
+h1 {
+  margin-bottom: -3%;
+}
+h2 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.7em;
+  color: hsl(0, 0%, 83%);
+  text-shadow: #a0a0a058 1px 1px 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+h3 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.5em;
+  color: #333;
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+h4 {
+  text-align: center;
+  margin-top: -35px;
+  margin-bottom: -50px;
+  color: #858484;
+  font-family: "Jacquard 24", system-ui;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+}
+h5 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1em;
+  color: #333;
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+footer {
+  margin-top: 50px;
+  font-size: 0.6em;
+  color: #f1f1f1a9;
+  padding: 20px;
+  letter-spacing: 2px;
+  max-width: 100%;
+}
+.footer-hr{
+  border: none;
+  height: 1px;
+  background-color: #c0bfbf3b;
+  margin: 20px 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+#footer{
+  letter-spacing: 2px;
+  max-width: 280px;
+}
+
+#footer-paragraph{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#footer-paragraph a{
+  color: #f1f1f1a9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  letter-spacing: 2px;
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.scramble {
+  color: hsl(0, 7%, 79%);
+  font-family: "Jacquard 24", system-ui;
+  font-size: 4em;
+}
+#scramble{
+  text-shadow: 1px 1px 20px rgba(213, 213, 213, 0.253);
+}
+.scramble span {
+  display: inline-block;
+  text-align: center;
+}
+.flicker {
+  animation: flicker 0.2s infinite alternate;
+}
+
+@keyframes flicker {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+.fadeout {
+  transition: opacity 0.5s ease;
+  opacity: 0.2;
+}
+#inicio{
+  font-size: 1.8em;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.192);
+  padding: 40px;
+}
+#titles{
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 26px;
+  margin-left: 20px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.164);
+  font-size: 0.6em;
+}
+#about{
+
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.307);
+  padding: 40px;
+  text-align: center;
+}
+.espacio{
+
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+}
+#services{
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.305);
+  padding: 40px;
+  text-align: center;
+}
+.info-container{
+  display: flex;
+  justify-content:end;
+  align-items:end;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 360px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  position:static;
+  margin-right: 60px;
+}
+.info-container :hover{
+  background-color: rgba(219, 219, 219, 0.2);
+  border-radius: 5px;
+  transform: scale(1.05);
+  transition:background-color 0.3s ease;
+  transition:transform 0.3s ease;
+}
+#link-container{
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+}
+.portrait{
+  display: flex;
+  justify-content:end;
+  align-items:end;
+  flex-direction: column;
+  margin: auto;
+  max-width: 220px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  position:static;
+  margin-right: 180px;
+  margin-top: -27%;
+  margin-bottom: 16px;
+
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: -10px;
+  background-color: rgba(42, 42, 42, 0.577);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 10px 0;
+  min-width: 180px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  list-style: none;
+
+  position: absolute;
+  top: 150%;
+  left: 0%;
+  transform: translateX(-50%);
+}
+
+.dropdown.active .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 12px 20px;
+  color: #ffffffd1;
+  text-decoration: none;
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  background-color: hsl(330, 68%, 41%);
+  color: #222;
+  border-radius: 8px;
+}
+
+/* Estilos para la flechita ▼ */
+.arrow {
+  display: inline-block;
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+}
+
+/* Cuando el menú está activo, rotamos la flecha 180 grados */
+.dropdown.active .arrow {
+  transform: rotate(180deg);
+}
+#generic{
+  font-size: 0.9em;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.304);
+  padding: 40px;
+  text-align: center;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  color: #cdcdcdeb;
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  letter-spacing: 1px;
+}
+#generic-ll{
+  font-size: 0.9em;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.304);
+  padding: 40px;
+  text-align:left;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  color: #cdcdcdeb;
+  letter-spacing: 1px;
+}
+#generic-small{
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  letter-spacing: 1px;
+  font-size: 0.7em;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.304);
+  padding: 40px;
+  text-align: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  color: #b5b5b5ea;
+}
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* From Uiverse.io by kamehame-ha */.cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* importante para tarjetas de diferente altura */
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap; /* opcional si hay muchas tarjetas */
+}
+
+.cards .card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 250px;
+}
+
+.cards .red {
+  background-color: hsla(330, 67%, 47%, 0.393);
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 16px;
+  min-height: 320px; /* en lugar de height fija */
+  border-radius: 10px;
+  color: rgb(240, 240, 240);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+}
+
+.cards .card p.second-text {
+  font-size: 0.6em;
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card-link:not(:hover) .card {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+
+.hr-lob{
+  width: 60%;
+  scale: 0.5;
+}
+.email{
+  color: #f1f1f1a9;
+  letter-spacing: 2px;
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  font-weight: bold;
+  font-size: 0.5em;
+  margin-top: -20px;
+  margin-left: 20px;
+}
+.title-aptitude{
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 20px;
+  text-shadow: 1px 1px 6px rgba(143, 143, 143, 0.541);
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: hsla(0, 0%, 53%, 0.609);
+  text-decoration-thickness: 1px;
+  text-decoration-style: solid;
+}
+#title-aptitude-frameworks{
+  color: rgb(127, 255, 153);
+}
+#title-aptitude-blue{
+  color: rgb(47, 63, 238);
+}
+#title-aptitude-docker{
+  color: rgb(62, 171, 255);
+}
+#title-aptitude-java{
+  color: rgb(213, 132, 40);
+
+}
+#title-aptitude-orange{
+  color: rgb(255, 100, 44);
+
+}
+#title-aptitude-yellow{
+  color: rgb(223, 217, 54);
+}
+#title-aptitude-green{
+  color: rgb(15, 177, 64);
+}
+#title-aptitude-purple{
+  color: rgb(255, 56, 156);
+}
+#title-aptitude-title{
+  color: hsl(330, 67%, 47%);
+}
+#title-aptitude-title-div{
+  color: hsl(0, 0%, 83%);
+  text-align: center;
+}
+.icon-example{
+  width: 24px;
+  padding: -6px;
+}
+.background-kleur{
+  background-color: #e1e1e1ee;
+  border-radius: 8px;
+  padding-bottom: 1px;
+  padding-top: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+/* PARA TELEFONOS :D */
+
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction:row;
+    font-size: 8px;
+    padding: 10px;
+    margin: 2px;
+  }
+
+  .info-container {
+    align-items: center;
+    margin: 0 auto;
+    text-align: center
+
+  }
+
+  .portrait {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 auto;
+
+    margin-top: -16%;
+  }
+
+  #footer-paragraph {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  #generic{
+    width: 93%;
+    font-size: 0.7em;
+    margin: 0 auto;
+  }
+  #generic-small{
+
+    width: 93%;
+    font-size: 0.6em;
+    margin: 0 auto;
+  }
+  h2{
+    font-size: 1.3em;
+    margin-bottom: 40px;
+  }
+  #titles{
+    font-size: 0.6em;
+    margin-top:-20px;
+  }
+  .scramble{
+    font-size: 0.8;
+    margin-top: -200px;
+  }
+}

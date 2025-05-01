@@ -493,7 +493,7 @@ footer {
   }
 
   .info-container {
-    align-items: center;
+    align-items: end;
     text-align: center;
     margin: 0 auto;
   }
@@ -560,6 +560,11 @@ footer {
     text-align: center;
     margin: 0 auto;
 }
+.icon-example{
+    width: 12px;
+    width: 18px;
+    padding: -6px;
+  }
   .cards {
     flex-direction: column;
     align-items: center;

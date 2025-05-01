@@ -104,7 +104,7 @@ h4 {
   color: #6c6c6c;
   font-family: "Jacquard 24", system-ui;
   font-size: 1.8em;
-  text-shadow: #ffffff2a 0px 0px 20px;
+  text-shadow: #ffffff2a 0px 0px 10px;
 }
 
 h5 {
@@ -221,7 +221,7 @@ footer {
   margin-left: 20px;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.164);
   font-size: 0.5em;
-  color: rgb(147, 147, 147);
+  color: rgb(189, 187, 187);
 }
 
 #about {
@@ -234,7 +234,7 @@ footer {
 }
 
 .espacio {
-  color: rgba(240, 248, 255, 0.66);
+  color: rgba(240, 248, 255, 0.834);
   font-family: 'DepartureMono Nerd Font Propo', monospace;
 }
 

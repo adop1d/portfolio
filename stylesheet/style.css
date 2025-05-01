@@ -439,7 +439,7 @@ footer {
   min-height: 320px;
   /* en lugar de height fija */
   border-radius: 10px;
-  color: #fbe3cee8;
+  color: #fcecdff3;
   backdrop-filter: blur(10px);
   cursor: pointer;
   transition: 400ms;

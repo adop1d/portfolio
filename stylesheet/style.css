@@ -55,7 +55,7 @@ body {
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   color: #f0f0f0;
   background-image: url(/img/bg3.jpg);
-  background-color: #000000eb;
+  background-color: #000000ef;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -93,8 +93,7 @@ h4 {
   margin-bottom: -50px;
   color: #858484;
   font-family: "Jacquard 24", system-ui;
-  letter-spacing: 2px;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 h5 {
   text-align: center;
@@ -307,7 +306,6 @@ footer {
 #generic{
   font-size: 0.9em;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.304);
-  padding: 40px;
   text-align: center;
   width: 85%;
   margin-left: auto;
@@ -322,7 +320,6 @@ footer {
 #generic-ll{
   font-size: 0.9em;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.304);
-  padding: 40px;
   text-align:left;
   width: 85%;
   margin-left: auto;
@@ -338,7 +335,6 @@ footer {
   letter-spacing: 1px;
   font-size: 0.7em;
   text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.304);
-  padding: 40px;
   text-align: center;
   width: 40%;
   margin-left: auto;
@@ -357,7 +353,8 @@ footer {
   transform: translateY(0);
 }
 
-/* From Uiverse.io by kamehame-ha */.cards {
+/* From Uiverse.io by kamehame-ha */
+  .cards {
   display: flex;
   justify-content: center;
   align-items: flex-start; /* importante para tarjetas de diferente altura */
@@ -410,8 +407,6 @@ footer {
   filter: blur(10px);
   transform: scale(0.9, 0.9);
 }
-
-
 .hr-lob{
   width: 60%;
   scale: 0.5;
@@ -487,16 +482,20 @@ footer {
 @media (max-width: 768px) {
   .nav-list {
     flex-direction:row;
-    font-size: 8px;
-    padding: 10px;
+    padding: 12px;
     margin: 2px;
+  }
+  .nav-list li {
+    margin: 0 5px;
+  }
+  .nav-list li a {
+    font-size: 12px;
   }
 
   .info-container {
     align-items: center;
+    text-align: center;
     margin: 0 auto;
-    text-align: center
-
   }
 
   .portrait {
@@ -507,6 +506,7 @@ footer {
     margin: 0 auto;
 
     margin-top: -16%;
+    margin-bottom: 4%;
   }
 
   #footer-paragraph {
@@ -515,26 +515,70 @@ footer {
     align-items: center;
   }
   #generic{
-    width: 93%;
+    width: 100%;
     font-size: 0.7em;
     margin: 0 auto;
   }
   #generic-small{
-
-    width: 93%;
     font-size: 0.6em;
+    width: 100%;
+  }
+  #generic-ll{
+    width: 100%;
+    font-size: 0.7em;
+    margin: 0 auto;
+    text-align: baseline;
+  }
+  .fade-in-on-scroll {
+    align-items: center;
+    text-align: center;
     margin: 0 auto;
   }
   h2{
     font-size: 1.3em;
     margin-bottom: 40px;
   }
+  h4{
+    font-size: 1.1em;
+    margin-top: -50px;
+    margin-bottom: -20px;
+  }
   #titles{
-    font-size: 0.6em;
+    font-size: 0.4em;
     margin-top:-20px;
   }
-  .scramble{
-    font-size: 0.8;
-    margin-top: -200px;
+  #scramble{
+    font-size: 2.1em;
+    margin-top: -70px;
+  }
+  .email{
+    font-size: 0.4em;
+    margin-top: -10px;
+  }
+  .background-kleur{
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards .card-link {
+    width: 100%;
+  }
+  .cards:hover > .card-link:not(:hover) .card {
+    filter: blur(0px);
+    transform: scale(0.9, 0.9);
+  }
+  .title-aptitude{
+    font-size: 1em;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  #generic-ll{
+    font-size: 0.7em;
+    margin: 0 auto;
+    align-items: center;
   }
 }

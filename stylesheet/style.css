@@ -404,7 +404,6 @@ footer {
 }
 
 .cards:hover > .card-link:not(:hover) .card {
-  filter: blur(10px);
   transform: scale(0.9, 0.9);
 }
 .hr-lob{
@@ -571,10 +570,6 @@ footer {
   }
   .cards .card-link {
     width: 100%;
-  }
-  .cards:hover > .card-link:not(:hover) .card {
-    filter: blur(0px);
-    transform: scale(0.9, 0.9);
   }
   .title-aptitude{
     font-size: 1em;

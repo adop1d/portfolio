@@ -427,10 +427,11 @@ footer {
   text-decoration: none;
   text-align: left;
   color: inherit;
-  padding: 6px;
-  border-radius: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 12px;
   border: #6c6c6c 1px solid;
-  background-color: #222222ba;
+  background-color: #85367359;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
   backdrop-filter: blur(10px);
@@ -439,6 +440,14 @@ footer {
   transition: background-color 0.3s ease;
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   font-size: 1.3em;
+}
+.linkk:hover {
+  background-color: hsla(330, 99%, 71%, 0.857);
+  color: #222;
+  border-radius: 8px;
+  transform: scale(1.05);
+  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease;
 }
 .cards .card-link {
   text-decoration: none;

@@ -237,6 +237,14 @@ footer {
   padding: 40px;
   text-align: center;
 }
+#proyects {
+
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.307);
+  padding: 40px;
+  text-align: center;
+}
 
 .espacio {
   color: rgba(240, 248, 255, 0.834);

@@ -457,6 +457,13 @@ footer {
   transition: background-color 0.3s ease;
   transition: transform 0.3s ease;
 }
+#gratefull{
+  font-size: 0.7em;
+  text-align: center;
+  color: #f1f1f1a9;
+
+  margin-top: 40px;
+}
 .cards .card-link {
   text-decoration: none;
   color: inherit;

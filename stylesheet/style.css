@@ -10,10 +10,10 @@
 
 
 .nav-list {
+  background-color: rgba(42, 42, 42, 0.232);
   display: flex;
   align-items: center;
   padding: 20px;
-  background-color: #222222ba;
   color: #fbe3cebb;
   list-style: none;
   border-radius: 10px;
@@ -38,19 +38,18 @@
   color: rgb(212, 212, 212);
   text-decoration: none;
   font-size: 15px;
-  transition: color 0.3s ease;
   padding: 12px 4px;
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+
 }
 
 .nav-list li a:hover {
   text-decoration-thickness: 2px;
-  color: hsl(330, 67%, 47%);
+  color: hsl(330, 96%, 63%);
   text-decoration-style: solid;
-  background-color: rgba(219, 219, 219, 0.2);
   border-radius: 5px;
   padding: 12px 4px;
-  transform: scale(1.05);
-  transition: background-color 0.3s ease;
 }
 
 .nav-list li a.active {
@@ -427,7 +426,7 @@ footer {
   align-items: flex-start;
   /* importante para tarjetas de diferente altura */
   flex-direction: row;
-  gap: 15px;
+  gap: 10px;
   flex-wrap: wrap;
   /* opcional si hay muchas tarjetas */
 }
@@ -502,7 +501,7 @@ footer {
 }
 
 .cards .card:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.0, 1.0);
 }
 
 .cards:hover>.card-link:not(:hover) .card {
@@ -512,6 +511,23 @@ footer {
 .hr-lob {
   width: 60%;
   scale: 0.5;
+}
+.description {
+  font-size: 0.7em;
+  padding: 20px 2px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.077);
+  background-color: rgba(46, 46, 46, 0.291);
+  color: #f1f1f1a5;
+  margin-top: 25px;
+  text-align: center;
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  backdrop-filter: blur(10px);
+}
+.description:hover {
+  color: #f0f0f0e9;
+  border-radius: 8px;
+  transition: color 0.5s ease;
 }
 
 .title-aptitude {

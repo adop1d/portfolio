@@ -512,20 +512,21 @@ footer {
   width: 60%;
   scale: 0.5;
 }
-.description {
+#description {
   font-size: 0.7em;
   padding: 20px 2px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.077);
   background-color: rgba(46, 46, 46, 0.291);
   color: #f1f1f1a5;
-  margin-top: 25px;
+  margin-top: 5px;
   text-align: center;
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   backdrop-filter: blur(10px);
 }
-.description:hover {
+#description:hover {
   color: #f0f0f0e9;
+  background-color: rgba(46, 46, 46, 0.491);
   border-radius: 8px;
   transform: scale(1.02);
   transition: transform 1.0s ease;
@@ -534,7 +535,6 @@ footer {
   transition: text-shadow 0.5s ease;
   text-shadow: 1px 1px 6px rgba(143, 143, 143, 0.541);
   transition: color 0.5s ease;
-  background-color: rgba(46, 46, 46, 0.491);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
   transition: 400ms;
@@ -742,7 +742,16 @@ footer {
   .cards:hover>.card-link:not(:hover) .card {
     transform: scale(1.0, 1.0);
   }
-  .description:hover {
+  #description {
+    font-size: 0.6em;
+    padding: 10px 2px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+
+  color: #f0f0f0e9;
+  background-color: rgba(46, 46, 46, 0.491);
+  }
+  #description:hover {
     transform: scale(1.0);
   }
 }

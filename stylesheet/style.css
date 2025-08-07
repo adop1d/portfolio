@@ -47,6 +47,7 @@
 .nav-list li a:hover {
   text-decoration-thickness: 2px;
   color: hsl(330, 96%, 63%);
+  background-color: #c1c1c118;
   text-decoration-style: solid;
   border-radius: 5px;
   padding: 12px 4px;
@@ -750,4 +751,12 @@ footer {
     font-size: 0.9em;
     margin-top: 20px;
   }
+  .nav-list li a:hover {
+  text-decoration-thickness: 2px;
+  color: hsla(0, 0%, 97%, 0.768);
+  background-color: rgba(42, 42, 42, 0);
+  text-decoration-style: solid;
+  border-radius: 5px;
+  padding: 12px 4px;
+}
 }

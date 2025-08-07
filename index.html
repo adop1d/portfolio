@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
 
 <head>
   <meta charset="UTF-8">
@@ -355,8 +355,7 @@
               span.textContent = chars[Math.floor(Math.random() * chars.length)];
             }
           });
-        }, 50);
-        revealNext(0);
+        }, 50); setTimeout(() => revealNext(0), 810);
       }
       function revealNext(index) {
         if (index >= spans.length) {
@@ -371,7 +370,7 @@
         span.dataset.locked = true;
         span.textContent = targetText[index];
         span.classList.remove('flicker');
-        setTimeout(() => revealNext(index + 1), 100);
+        setTimeout(() => revealNext(index + 1), 53);
       }
       // OBSERVADOR DE VISIBILIDAD
       const observer = new IntersectionObserver((entries) => {

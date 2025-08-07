@@ -272,14 +272,6 @@ footer {
   color: #fff1e4f2;
 }
 
-.info-container :hover {
-  background-color: rgba(219, 219, 219, 0.2);
-  border-radius: 5px;
-  transform: scale(1.05);
-  transition: background-color 0.3s ease;
-  transition: transform 0.3s ease;
-}
-
 #link-container {
   display: flex;
   justify-content: flex-end;
@@ -753,5 +745,9 @@ footer {
   }
   #description:hover {
     transform: scale(1.0);
+  }
+  #gratefull {
+    font-size: 0.9em;
+    margin-top: 20px;
   }
 }

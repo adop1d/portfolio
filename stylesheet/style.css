@@ -711,7 +711,7 @@ footer {
   }
 
   .cards .card-link {
-    width: 60%;
+    width: 80%;
   }
 
   .title-aptitude {
@@ -758,7 +758,7 @@ footer {
   padding: 12px 4px;
 }
   .nav-list li a {
-    font-size: 12px;
+    font-size: 9;
   }
 
   .dropdown-menu li a {
@@ -768,5 +768,4 @@ footer {
 
   padding: 10px 15px;
   }
-  
 }

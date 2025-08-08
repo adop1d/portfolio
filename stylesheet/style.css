@@ -37,25 +37,18 @@
 .nav-list li a {
   color: rgb(212, 212, 212);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
   padding: 12px 4px;
-  transition: background-color 0.5s ease;
   transition: color 0.5s ease;
-
 }
 
 .nav-list li a:hover {
   text-decoration-thickness: 2px;
   color: hsl(330, 96%, 63%);
-  background-color: #c1c1c118;
+  background-color: #c1c1c141;
   text-decoration-style: solid;
   border-radius: 5px;
   padding: 12px 4px;
-}
-
-.nav-list li a.active {
-  font-weight: bold;
-  transform: scale(0.95);
 }
 
 body {
@@ -307,7 +300,6 @@ footer {
   display: none;
   position: absolute;
   top: 40px;
-  right: -10px;
   background-color: rgba(42, 42, 42, 0.577);
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -344,8 +336,9 @@ footer {
 
 .dropdown-menu li a:hover {
   background-color: hsl(330, 68%, 41%);
+
+  padding: 12px 20px;
   color: #222;
-  border-radius: 8px;
 }
 
 /* Estilos para la flechita ▼ */
@@ -602,6 +595,11 @@ footer {
   padding-left: 3px;
   padding-right: 3px;
 }
+.credly-badge {
+  margin: 0 auto;
+  display: block;
+  background-color: #b7b7b7e3;
+}
 /* PARA TELEFONOS :D */
 
 @media (max-width: 768px) {
@@ -759,4 +757,16 @@ footer {
   border-radius: 5px;
   padding: 12px 4px;
 }
+  .nav-list li a {
+    font-size: 12px;
+  }
+
+  .dropdown-menu li a {
+    padding: 10px 15px;
+  }
+  .dropdown-menu li a:hover {
+
+  padding: 10px 15px;
+  }
+  
 }

@@ -4,6 +4,59 @@
   font-weight: normal;
   font-style: normal;
 }
+@keyframes sliders {
+  from{
+    transform: translateX(0%);
+  }
+  to{
+    transform: translateX(-101%);
+  }
+  
+}
+.logos{
+  width: 120%;
+  margin-top: 16px ;
+  margin-left: -10%;
+  overflow: hidden;
+  padding: 16px 0;
+  white-space: nowrap;
+  position: relative;
+  background-color: #91919116;
+}
+.logos:before,
+.logos:after{
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+.logos:before{
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #000000);
+}
+.logos:after{
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #000000);
+}
+.logos:hover{
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease;
+}
+.logos-slide{
+  display: inline-block;
+  animation: sliders 40s infinite linear;
+
+}
+.logos-slide img{
+  height: 36px;
+  margin-right: 60px;
+  filter:saturate (100%);
+  opacity: 0.7;
+}
+
+
 html{
   scroll-behavior: smooth;
 }
@@ -226,10 +279,11 @@ footer {
 }
 
 #about {
-
+  backdrop-filter: blur(10px);
+  background-color: rgba(15, 15, 15, 0.658);
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   font-size: 1.2em;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.307);
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.136);
   padding: 40px;
   text-align: center;
 }
@@ -248,6 +302,8 @@ footer {
 }
 
 #services {
+  backdrop-filter: blur(10px);
+  background-color: rgba(15, 15, 15, 0.658);
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   font-size: 1.2em;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.305);

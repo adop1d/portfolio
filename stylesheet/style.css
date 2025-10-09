@@ -18,10 +18,10 @@
   margin-top: 16px ;
   margin-left: -10%;
   overflow: hidden;
-  padding: 16px 0;
+  padding: 12px 0;
   white-space: nowrap;
   position: relative;
-  background-color: #91919116;
+  background-color: #91919134;
 }
 .logos:before,
 .logos:after{
@@ -50,7 +50,7 @@
 
 }
 .logos-slide img{
-  height: 36px;
+  height: 28px;
   margin-right: 60px;
   filter:saturate (100%);
   opacity: 0.7;
@@ -280,7 +280,7 @@ footer {
 
 #about {
   backdrop-filter: blur(10px);
-  background-color: rgba(15, 15, 15, 0.658);
+  background-color: rgba(18, 18, 18, 0.610);
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   font-size: 1.2em;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.136);
@@ -303,7 +303,7 @@ footer {
 
 #services {
   backdrop-filter: blur(10px);
-  background-color: rgba(15, 15, 15, 0.658);
+  background-color: rgba(18, 18, 18, 0.610);
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   font-size: 1.2em;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.305);

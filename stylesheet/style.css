@@ -4,6 +4,90 @@
   font-weight: normal;
   font-style: normal;
 }
+nav {
+  z-index: 1000;
+	position: fixed;
+	width:min-content;
+	inset-inline: 0;
+	margin: auto;
+  margin-top: 10px;
+	padding: 0 16px;
+	border-radius: 6px;
+	background: rgba(120, 120, 120, 0.5);
+	border: 2px solid rgba(120, 120, 120, 0.2);
+	box-shadow: 
+		0 8px 32px rgba(0, 0, 0, 0.1),
+		0 4px 16px rgba(0, 0, 0, 0.05);
+
+	&:before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		backdrop-filter: url(#wave-distort);
+	}
+}
+
+nav > ul {   
+	position: relative;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	height: 16px;
+	isolation: isolate;
+	padding: 0 6px;
+}
+nav > ul::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 6px;
+	width: 12px;
+	height: 12px;
+	background: white;
+	border-radius: 50%;
+	transition: none;
+	opacity: 0;
+	z-index: -1;
+	box-shadow: 
+		0 4px 16px rgba(255, 255, 255, 0.4),
+		0 2px 8px rgba(255, 255, 255, 0.3),
+		inset 0 1px 0 rgba(255, 255, 255, 0.8),
+		inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.6);
+}
+nav > ul li,
+nav > ul li a {
+	position: relative;
+	width: 100%;
+	height: 100%;
+  margin: 0 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #dcdcdc;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.80rem;
+}
+nav > ul li a {
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+nav > ul li a:hover {
+	transform: translateY(-2px);
+  color: hsl(330, 100%, 42%);
+}
+nav > ul li a:focus {
+	outline: none;
+}
+nav > ul.show-indicator::after {
+	opacity: 1;
+}
+nav > ul li a:active {
+	transform: translateY(-2px);
+}
+
 @keyframes sliders {
   from{
     transform: translateX(0%);
@@ -33,11 +117,11 @@
 }
 .logos:before{
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(16, 16, 16));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(21, 21, 21));
 }
 .logos:after{
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(16, 16, 16));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(21, 21, 21));
 }
 .logos-slide{
   display: inline-block;
@@ -58,7 +142,7 @@ html{
   font-size: 0.7em;
 }
 
-
+/*
 .nav-list {
   background-color: rgba(42, 42, 42, 0.232);
   display: flex;
@@ -99,7 +183,7 @@ html{
   text-decoration-style: solid;
   border-radius: 5px;
   padding: 12px 4px;
-}
+}*/
 
 body {
   margin: 0;
@@ -273,8 +357,7 @@ footer {
 }
 
 #about {
-  backdrop-filter: blur(10px);
-  background-color: rgba(18, 18, 18, 0.620);
+  background-color: rgba(21, 21, 21, 0.9);
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   font-size: 1.2em;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.136);
@@ -296,8 +379,8 @@ footer {
 }
 
 #services {
-  backdrop-filter: blur(10px);
-  background-color: rgba(18, 18, 18, 0.620);
+  background-color: rgba(21, 21, 21, 0.9);
+  box-shadow: #222;
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   font-size: 1.2em;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.305);
@@ -347,49 +430,68 @@ footer {
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
+  z-index: 1001;
 }
 
 .dropdown-menu {
+
+  z-index: 1001; /* Set high z-index as discussed previously */
   display: none;
   position: absolute;
   top: 40px;
-  background-color: rgba(42, 42, 42, 0.577);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  
+  /* --- MATCHING NAV STYLES --- */
+  /* Same background as nav: White with 50% opacity */
+	background: rgba(120, 120, 120, 0.5);
+	border: 2px solid rgba(120, 120, 120, 0.2);
+  /* Same outer shadow as nav */
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    0 4px 16px rgba(0, 0, 0, 0.05);
+  /* Keep the blur for the glass effect.
+     (Note: You can remove the backdrop-filter: url(#wave-distort) from nav::before
+      and apply a simple `backdrop-filter: blur(10px);` to the `nav` and `nav::before` 
+      if you want the exact same visual effect.) */
+  backdrop-filter: url(#wave-distort);
+  /* ---------------------------- */
+  
   box-sizing: border-box;
   border-radius: 6px;
   padding: 10px 0;
   min-width: 180px;
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
-  z-index: 1000;
   list-style: none;
 
   position: absolute;
   top: 150%;
-  left: 0%;
+  left: 15%; /* Changed from 0% to 50% to work with translateX(-50%) */
   transform: translateX(-50%);
+
+  transform: translateY(6%);
 }
 
 .dropdown.active .dropdown-menu {
+
+  z-index: 1001;
   display: block;
   opacity: 1;
-  transform: translateY(0);
+
 }
 
 .dropdown-menu li a {
+  z-index: 1001;
   display: block;
   padding: 12px 20px;
-  color: #ffffffd1;
+  color: #dcdcdc; /* Match color of main nav links */
   text-decoration: none;
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   font-size: 14px;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .dropdown-menu li a:hover {
-  background-color: hsl(330, 68%, 41%);
 
+  z-index: 1001;
   padding: 12px 20px;
   color: #222;
 }
@@ -403,6 +505,8 @@ footer {
 
 /* Cuando el menú está activo, rotamos la flecha 180 grados */
 .dropdown.active .arrow {
+
+  z-index: 1001;
   transform: rotate(180deg);
 }
 
@@ -465,7 +569,7 @@ footer {
   align-items: flex-start;
   /* importante para tarjetas de diferente altura */
   flex-direction: row;
-  gap: 10px;
+  gap: 5px;
   flex-wrap: wrap;
   /* opcional si hay muchas tarjetas */
 }
@@ -510,7 +614,7 @@ footer {
 }
 
 .cards .red {
-  background-color: hsla(330, 67%, 47%, 0.393);
+  background-color: hsla(330, 62%, 29%, 0.542);
 }
 
 .cards .card {
@@ -521,11 +625,17 @@ footer {
   padding: 16px;
   min-height: 320px;
   /* en lugar de height fija */
-  border-radius: 10px;
-  color: #fcecdff3;
-  backdrop-filter: blur(10px);
+	border-radius: 6px;
+	background: rgba(120, 120, 120, 0.5);
+	border: 2px solid rgba(120, 120, 120, 0.2);
+	box-shadow: 
+		0 8px 32px rgba(0, 0, 0, 0.1),
+		0 4px 16px rgba(0, 0, 0, 0.05);
   cursor: pointer;
   transition: 400ms;
+
+  backdrop-filter: url(#wave-distort);
+  color: #cccccc;
 }
 
 .cards .card p.tip {
@@ -541,11 +651,28 @@ footer {
 
 .cards .card:hover {
   transform: scale(1.0, 1.0);
+  color: #f0f0f0e9;
+  background-color: hsla(330, 97%, 31%, 0.5);
+  border-color: hsla(330, 97%, 31%, 0.2);
 }
 
 .cards:hover>.card-link:not(:hover) .card {
   transform: scale(0.9, 0.9);
 }
+
+.glass{
+  width:20rem;height:20rem;border-radius:50%;
+  background:rgba(255,255,255,.08);border:2px solid transparent;
+  box-shadow:0 0 0 2px rgba(255,255,255,.6),0 16px 32px rgba(0,0,0,.12);
+  backdrop-filter:url(#frosted);-webkit-backdrop-filter:url(#frosted);
+  display:grid;place-items:center;cursor:pointer;outline:0;
+}
+
+.glass::before,
+.glass::after{
+  content:"";position:absolute;width:40%;height:10px;background:#fff;border-radius:10px;
+}
+.glass::after{transform:rotate(90deg)}
 
 .hr-lob {
   width: 60%;
@@ -554,27 +681,25 @@ footer {
 #description {
   font-size: 0.7em;
   padding: 20px 2px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.077);
-  background-color: rgba(46, 46, 46, 0.291);
+  border: 2px solid rgba(46, 46, 46, 0.5);
+  background-color: rgba(46, 46, 46, 0.2);
+  border-radius: 6px;
   color: #f1f1f1a5;
   margin-top: 5px;
   text-align: center;
   font-family: 'DepartureMono Nerd Font Propo', monospace;
-  backdrop-filter: blur(10px);
+  backdrop-filter: url(#wave-distort);
 }
 #description:hover {
   color: #f0f0f0e9;
   background-color: rgba(46, 46, 46, 0.491);
-  border-radius: 8px;
+  border: 2px solid rgba(46, 46, 46, 0.7);
   transform: scale(1.02);
   transition: transform 1.0s ease;
   transition: background-color 0.5s ease;
-  transition: box-shadow 0.5s ease;
-  transition: text-shadow 0.5s ease;
-  text-shadow: 1px 1px 6px rgba(143, 143, 143, 0.541);
+  transition: border 0.5s ease;
   transition: color 0.5s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 
   transition: 400ms;
 }
@@ -666,18 +791,22 @@ footer {
 /* PARA TELEFONOS :D */
 
 @media (max-width: 768px) {
+  nav{
+
+    width: 90%;
+  }
   .nav-list {
     flex-direction: row;
-    padding: 12px;
-    margin: 2px;
+    padding: 6px;
+    margin: auto;
   }
 
   .nav-list li {
-    margin: 0 5px;
+    margin: 0 1px;
   }
 
   .nav-list li a {
-    font-size: 10px;
+    font-size: 0.68em;
   }
 
   .info-container {
@@ -769,13 +898,11 @@ footer {
   }
 
   .cards {
-    flex-direction: column;
+    flex-direction:row;
     align-items:center;
+    margin: auto;
   }
 
-  .cards .card-link {
-    width: 80%;
-  }
 
   .title-aptitude {
     font-size: 1em;
@@ -788,16 +915,36 @@ footer {
     margin: 0 auto;
     align-items: center;
   }
-
-  .cards .card:hover {
-    transform: scale(1.0, 1.0);
+  .cards .card{
+    min-height: 100px;
+    min-width: 40px;
+    font-size: 0.75em;
+    padding: 0%;
   }
+  #proyects {
+    padding: 20px;
+  }
+  #about {
+    padding: 20px;
+  }
+  #services {
+    padding: 20px;
+  }
+  
+  .cards .card:hover {
+	border: solid rgba(120, 120, 120, 0.2);
+	background: rgba(120, 120, 120, 0.5);
+    transform: none;
 
+  }
   .cards:hover>.card-link:not(:hover) .card {
-    transform: scale(1.0, 1.0);
+    transform: none;
+  }
+  .cards .card-link {
+    width: 172px;
   }
   #description {
-    font-size: 0.6em;
+    font-size: 0.5em;
     padding: 10px 2px;
     margin-top: 3px;
     margin-bottom: 20px;
@@ -813,12 +960,8 @@ footer {
     margin-top: 20px;
   }
   .nav-list li a:hover {
-  text-decoration-thickness: 2px;
-  color: hsla(0, 0%, 97%, 0.768);
-  background-color: rgba(42, 42, 42, 0);
-  text-decoration-style: solid;
-  border-radius: 5px;
-  padding: 12px 4px;
+    transform: translateY(0px);
+    color: #cccccc;
 }
   .nav-list li a {
     font-size: 9;
@@ -844,10 +987,10 @@ footer {
 }
 .logos:before{
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(16, 16, 16));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(21, 21, 21));
 }
 .logos:after{
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(16, 16, 16));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(21, 21, 21));
 }
 }

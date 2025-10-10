@@ -24,7 +24,7 @@
         <li><a href="#proyects">Proyectos</a></li>
         <li><a href="#services">Habilidades</a></li>
         <li class="dropdown" id="contact-link">
-          <a href="#">Social<span class="arrow">▼</span></a>
+          <a href="#">Contacto<span class="arrow">▼</span></a>
           <ul class="dropdown-menu">
             <li>
               <a href="https://github.com/adop1d" target="_blank">
@@ -45,6 +45,36 @@
         </li>
       </ul>
     </nav>
+    <svg style="display: none">
+	<defs>
+		<filter id="wave-distort" x="0%" y="0%" width="100%" height="100%">
+			<feTurbulence
+										type="fractalNoise"
+										baseFrequency="0.0038 0.0038"
+										numOctaves="1"
+										seed="2"
+										result="roughNoise"
+										/>
+			<feGaussianBlur in="roughNoise" stdDeviation="8.5" result="softNoise" />
+			<feComposite
+									operator="arithmetic"
+									k1="0"
+									k2="1"
+									k3="2"
+									k4="0"
+									in="softNoise"
+									result="mergedMap"
+									/>
+			<feDisplacementMap
+												in="SourceGraphic"
+												in2="mergedMap"
+												scale="-42"
+												xChannelSelector="G"
+												yChannelSelector="G"
+												/>
+		</filter>
+	</defs>
+</svg>
     <br id="home"><br><br><br><br>
   </header>
   <main>
@@ -106,7 +136,7 @@
             <span class="background-kleur"><img src="ico/python-icon-sm.png" alt="" class="icon-example"></span>
             <p class="tut">Python Essentials</p>
             <div class="credly-badge">
-            <div data-iframe-width="158" data-iframe-height="233"
+            <div data-iframe-width="128" data-iframe-height="230"
               data-share-badge-id="e6d7ca8e-623e-4207-8add-73e18554ec48" data-share-badge-host="https://www.credly.com">
             </div>
             <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
@@ -114,11 +144,7 @@
           </div>
           <p id="description" class="fade-in-on-scroll">Siempre tuve curiosidad, considerado un lenguaje muy distinto a Java, creo que opinaré lo mismo que los demás respecto a eso.</p>
         </a>
-
       </div>
-
-
-
 
       <div id="generic-small">
         <p class="fade-in-on-scroll" id="gratefull">
@@ -171,7 +197,36 @@
           <p id="description" class="fade-in-on-scroll">A este le puse mucho empeño, por no
             tener varias PCs no pude hacer bien el proceso de testing y bueno, lo dejo a futuro, pero orgulloso estoy,
             mi primer proyecto "complejo" mientras aprendía.</p>
-        </a><br>
+        </a>    <svg style="display: none">
+	<defs>
+		<filter id="wave-distort" x="0%" y="0%" width="100%" height="100%">
+			<feTurbulence
+										type="fractalNoise"
+										baseFrequency="0.0038 0.0038"
+										numOctaves="1"
+										seed="2"
+										result="roughNoise"
+										/>
+			<feGaussianBlur in="roughNoise" stdDeviation="8.5" result="softNoise" />
+			<feComposite
+									operator="arithmetic"
+									k1="0"
+									k2="1"
+									k3="2"
+									k4="0"
+									in="softNoise"
+									result="mergedMap"
+									/>
+			<feDisplacementMap
+												in="SourceGraphic"
+												in2="mergedMap"
+												scale="-42"
+												xChannelSelector="G"
+												yChannelSelector="G"
+												/>
+		</filter>
+	</defs>
+</svg><br>
 
         <a href="https://github.com/adop1d/text-editor" target="_blank" class="card-link">
           <div class="card red">
@@ -281,7 +336,7 @@
           <!-- <img src="ico/Wordpress.png" alt=""> -->
           <!-- <img src="ico/PHP.png" alt=""> -->
         </div>
-      </div>
+      </div><br>
       <div id="generic-ll" class="fade-in-on-scroll">
         <p>
         <p class="title-aptitude" id="title-aptitude-java">
@@ -535,6 +590,77 @@
           observer.observe(el);
         });
       });
+      document.addEventListener('DOMContentLoaded', () => {
+	const nav = document.querySelector('nav > ul');
+	const items = document.querySelectorAll('nav > ul li a');
+	let anim = null;
+	let currentActiveItem = null;
+
+	const animate = (from, to) => {
+		if (anim) clearInterval(anim);
+
+		const start = Date.now();
+		anim = setInterval(() => {
+			const p = Math.min((Date.now() - start) / 500, 1);
+			const e = 1 - Math.pow(1 - p, 3);
+
+			const x = from + (to - from) * e;
+			const y = -40 * (4 * e * (1 - e));
+			const r = 200 * Math.sin(p * Math.PI);
+
+			nav.style.setProperty('--translate-x', `${x}px`);
+			nav.style.setProperty('--translate-y', `${y}px`);
+			nav.style.setProperty('--rotate-x', `${r}deg`);
+
+			if (p >= 1) {
+				clearInterval(anim);
+				anim = null;
+				nav.style.setProperty('--translate-y', '0px');
+				nav.style.setProperty('--rotate-x', '0deg');
+			}
+		}, 16);
+	};
+
+	const getCurrentPosition = () => parseFloat(nav.style.getPropertyValue('--translate-x')) || 0;
+
+	const getItemCenter = (item) => {
+		return item.getBoundingClientRect().left + item.offsetWidth / 2 - nav.getBoundingClientRect().left - 5;
+	};
+
+
+	const setActiveItem = (item) => {
+		if (currentActiveItem) {
+			currentActiveItem.classList.remove('active');
+		}
+
+		currentActiveItem = item;
+		item.classList.add('active');
+		moveToItem(item);
+	};
+
+	const handleMouseLeave = () => {
+		if (currentActiveItem) {
+			moveToItem(currentActiveItem);
+		} else {
+			nav.classList.remove('show-indicator');
+			if (anim) clearInterval(anim);
+		}
+	};
+
+	items.forEach(item => {
+		item.addEventListener('mouseenter', () => moveToItem(item));
+		item.addEventListener('mouseleave', handleMouseLeave);
+		item.addEventListener('click', () => setActiveItem(item));
+	});
+
+	nav.addEventListener('mouseleave', handleMouseLeave);
+	
+	if (items.length > 0) {
+		setTimeout(() => {
+			setActiveItem(items[0]);
+		}, 100);
+	}
+});
     </script>
 </body>
 

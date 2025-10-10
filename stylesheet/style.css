@@ -638,6 +638,7 @@ footer {
   color: #cccccc;
 	border-radius: 8px;
 
+  box-shadow: #0000003a 0px 0px 20px;
   background-image: linear-gradient(220deg, #ffaae435 0%,     rgba(92, 92, 92, 0) 80%);
   z-index: -1;
 
@@ -660,7 +661,7 @@ footer {
   border-color: hsla(330, 97%, 31%, 0.095);
 
 	background: rgba(130, 130, 130, 0.370);
-  background-image: linear-gradient(220deg, #ff28bb5c 0%,     rgba(92, 92, 92, 0) 80%);
+  background-image: linear-gradient(220deg, #fd35be3f 0%,     rgba(92, 92, 92, 0) 80%);
 }
 
 .cards:hover>.card-link:not(:hover) .card {
@@ -696,6 +697,7 @@ footer {
   text-align: center;
   font-family: 'DepartureMono Nerd Font Propo', monospace;
 
+  box-shadow: #0000003a 0px 0px 20px;
   background-image: linear-gradient(220deg, #ffffff12 0%,     rgba(92, 92, 92, 0) 80%);
 }
 #description:hover {
@@ -936,7 +938,7 @@ footer {
     padding: 0%;
 
 	background: rgba(130, 130, 130, 0.370);
-  background-image: linear-gradient(220deg, #ff28bb5c 0%,     rgba(92, 92, 92, 0) 80%);
+  background-image: linear-gradient(220deg, #ff28bb2a 0%,     rgba(92, 92, 92, 0) 80%);
   }
   #proyects {
     padding: 20px;
@@ -950,9 +952,9 @@ footer {
   
   .cards .card:hover {
 	border: solid rgba(120, 120, 120, 0.2);
-  background-image: linear-gradient(220deg, #ff28bb5c 0%,     rgba(92, 92, 92, 0) 80%);
     transform: none;
     backdrop-filter: none;
+  background-image: linear-gradient(220deg, #ff28bb2a 0%,     rgba(92, 92, 92, 0) 80%);
 
   }
   .cards:hover>.card-link:not(:hover) .card {

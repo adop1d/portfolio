@@ -968,6 +968,14 @@ footer {
     font-size: 9;
   }
 
+  .dropdown-menu {
+    width: 80px;
+    top: 35px;
+    left: -5%;
+    padding: 6px 0;
+    transform: translateX(-2%);
+    transform: translateY(-10%);
+  }
   .dropdown-menu li a {
     padding: 10px 15px;
   }

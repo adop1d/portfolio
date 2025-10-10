@@ -493,7 +493,7 @@ footer {
 
   z-index: 1001;
   padding: 12px 20px;
-  color: #222;
+  color: hsl(330, 100%, 42%);
 }
 
 /* Estilos para la flechita ▼ */

@@ -788,6 +788,9 @@ footer {
 /* PARA TELEFONOS :D */
 
 @media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
   nav{
 
   backdrop-filter: none;
@@ -986,7 +989,8 @@ footer {
 
 .logos{
   width: 100%;
-  margin-top: 8px ;
+  margin-top: 8px auto 0;
+  padding: 4px 0;
 }
 .logos-slide img{
   height: 18px;

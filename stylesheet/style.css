@@ -985,10 +985,8 @@ footer {
   }
 
 .logos{
-  width: 122%;
+  width: 100%;
   margin-top: 8px ;
-  margin-left: -12%;
-  padding: 4px 0;
 }
 .logos-slide img{
   height: 18px;

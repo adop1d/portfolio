@@ -829,15 +829,15 @@ footer {
   padding: 4px 0;
 }
 .logos-slide img{
-  height: 16px;
-  margin-right: 8px;
+  height: 18px;
+  margin-right: 4px;
 }
 .logos:before{
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0) , rgba(255,255,255,0));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(16, 16, 16));
 }
 .logos:after{
   right: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0) , rgba(255, 255, 255, 0));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(16, 16, 16));
 }
 }

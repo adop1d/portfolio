@@ -14,9 +14,9 @@
   
 }
 .logos{
-  width: 120%;
+  width: 104.9%;
   margin-top: 16px ;
-  margin-left: -10%;
+  margin-left: -2.5%;
   overflow: hidden;
   padding: 12px 0;
   white-space: nowrap;
@@ -33,7 +33,7 @@
 }
 .logos:before{
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(16, 16, 16, 0.610));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(16, 16, 16));
 }
 .logos:after{
   right: 0;

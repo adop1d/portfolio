@@ -274,7 +274,7 @@ footer {
 
 #about {
   backdrop-filter: blur(10px);
-  background-color: rgba(18, 18, 18, 0.590);
+  background-color: rgba(18, 18, 18, 0.620);
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   font-size: 1.2em;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.136);
@@ -297,7 +297,7 @@ footer {
 
 #services {
   backdrop-filter: blur(10px);
-  background-color: rgba(18, 18, 18, 0.590);
+  background-color: rgba(18, 18, 18, 0.620);
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   font-size: 1.2em;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.305);

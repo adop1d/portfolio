@@ -470,6 +470,8 @@ footer {
   transform: translateX(-50%);
 
   transform: translateY(6%);
+
+  background-image: linear-gradient(220deg, #ffffff77 0%,     rgba(92, 92, 92, 0) 80%);
 }
 
 .dropdown.active .dropdown-menu {
@@ -484,7 +486,7 @@ footer {
   z-index: 1001;
   display: block;
   padding: 12px 20px;
-  color: #dcdcdc; /* Match color of main nav links */
+  color: #000000; /* Match color of main nav links */
   text-decoration: none;
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   font-size: 14px;

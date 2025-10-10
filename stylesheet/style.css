@@ -21,7 +21,6 @@
   padding: 12px 0;
   white-space: nowrap;
   position: relative;
-  background-color: #91919134;
 }
 .logos:before,
 .logos:after{
@@ -34,11 +33,11 @@
 }
 .logos:before{
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #000000);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(16, 16, 16, 0.610));
 }
 .logos:after{
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #000000);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(16, 16, 16));
 }
 .logos-slide{
   display: inline-block;
@@ -46,10 +45,9 @@
 
 }
 .logos-slide img{
+  text-shadow: #ffffff;
   height: 28px;
-  margin-right: 60px;
-  filter:saturate (100%);
-  opacity: 0.7;
+  margin-right: 30px;
 }
 
 

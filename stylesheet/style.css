@@ -950,7 +950,6 @@ footer {
   
   .cards .card:hover {
 	border: solid rgba(120, 120, 120, 0.2);
-	background: rgba(120, 120, 120, 0.5);
   background-image: linear-gradient(220deg, #ff28bb5c 0%,     rgba(92, 92, 92, 0) 80%);
     transform: none;
     backdrop-filter: none;

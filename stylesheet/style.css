@@ -623,13 +623,24 @@ footer {
 }
 
 #title-aptitude-purple {
-  color: rgb(255, 56, 156);
+  color: rgb(195, 56, 255);
 }
 
 #title-aptitude-title {
   color: hsl(330, 67%, 47%);
 }
 
+#title-aptitude-gray {
+  color: hsl(206, 22%, 75%);
+}
+
+#title-aptitude-red {
+  color: hsl(0, 82%, 48%);
+}
+
+#title-aptitude-yellow {
+  color: hsl(55, 100%, 52%);
+}
 #title-aptitude-title-div {
   color: hsl(0, 0%, 83%);
   text-align: center;

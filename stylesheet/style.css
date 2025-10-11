@@ -192,7 +192,7 @@ body {
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   color: #f0f0f0;
   background-image: url(/img/bg3.jpg);
-  background-color: #000000ef;
+  background-color: #000000e2;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -358,7 +358,7 @@ footer {
 }
 
 #about {
-  background-color: rgba(21, 21, 21, 0.9);
+  background-color: rgb(21, 21, 21);
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   font-size: 1.2em;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.136);
@@ -380,11 +380,10 @@ footer {
 }
 
 #services {
-  background-color: rgba(21, 21, 21, 0.9);
+  background-color: rgb(21, 21, 21);
   box-shadow: #222;
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   font-size: 1.2em;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.305);
   padding: 40px;
   text-align: center;
 }
@@ -577,7 +576,7 @@ footer {
 .cards {
   padding-top: 16px;
   border-radius: 40px;
-  background-color: #1c1c1c7f;
+  background-color: #1c1c1cba;
 	border: 2px solid rgba(120, 120, 120, 0.2);
   box-shadow: #0000003a 0px 0px 20px;
   background-image: linear-gradient(220deg, #57575735 0%,     rgba(92, 92, 92, 0) 80%);
@@ -648,10 +647,10 @@ footer {
   color: #cccccc;
 	border-radius: 10px;
 
-  backdrop-filter: url(#wave-distort);
+  backdrop-filter: blur(10px);
 	background: rgba(120, 120, 120, 0.300);
 	border: 2px solid rgba(120, 120, 120, 0.2);
-  box-shadow: #0000003a 0px 0px 20px;
+  box-shadow: #0000003a 0px 0px 10px;
   background-image: linear-gradient(220deg, #ffaae435 0%,     rgba(92, 92, 92, 0) 80%);
   z-index: -1;
 

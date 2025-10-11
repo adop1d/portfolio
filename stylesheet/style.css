@@ -940,8 +940,8 @@ footer {
     font-size: 0.75em;
     padding: 0%;
 
-	background: rgba(130, 130, 130, 0.370);
-  background-image: linear-gradient(220deg, #ff28bb2a 0%,     rgba(92, 92, 92, 0) 80%);
+	background: rgba(130, 130, 130, 0.320);
+  background-image: linear-gradient(220deg, #fd35be3f 0%,     rgba(92, 92, 92, 0) 80%);
   }
   #proyects {
     padding: 20px;
@@ -957,7 +957,8 @@ footer {
 	border: solid rgba(120, 120, 120, 0.2);
     transform: none;
     backdrop-filter: none;
-  background-image: linear-gradient(220deg, #ff28bb2a 0%,     rgba(92, 92, 92, 0) 80%);
+	background: rgba(130, 130, 130, 0.320);
+  background-image: linear-gradient(220deg, #fd35be3f 0%,     rgba(92, 92, 92, 0) 80%);
 
   }
   .cards:hover>.card-link:not(:hover) .card {
@@ -983,8 +984,7 @@ footer {
     margin-top: 20px;
   }
   .nav-list li a:hover {
-    transform: translateY(0px);
-    color: #cccccc;
+    transform: none;
 }
   .nav-list li a {
     font-size: 9;

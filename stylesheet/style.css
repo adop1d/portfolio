@@ -12,9 +12,9 @@ nav {
 	margin: auto;
   margin-top: 10px;
 	padding: 0 16px;
-	border-radius: 10px;
+	border-radius: 12px;
 	background: rgba(120, 120, 120, 0.5);
-	border: 1px solid rgba(120, 120, 120, 0.2);
+	border: 2px solid rgba(120, 120, 120, 0.2);
 	box-shadow: 
 		0 8px 32px rgba(0, 0, 0, 0.1),
 		0 4px 16px rgba(0, 0, 0, 0.05);
@@ -27,8 +27,7 @@ nav {
 		height: 100%;
 		backdrop-filter: url(#wave-distort);
   background-image: linear-gradient(220deg, #ffffff77 0%,     rgba(92, 92, 92, 0) 80%);
-
-	border-radius: 10px;
+	border-radius: 12px;
 	}
 }
 
@@ -473,8 +472,8 @@ footer {
 
   background-image: linear-gradient(220deg, #ffffff77 0%,     rgba(92, 92, 92, 0) 80%);
 
-  border-radius: 10px;
-	border: 1px solid rgba(120, 120, 120, 0.2);
+  border-radius: 12px;
+	border: 1.5px solid rgba(120, 120, 120, 0.2);
 }
 
 .dropdown.active .dropdown-menu {
@@ -630,8 +629,6 @@ footer {
   padding: 16px;
   min-height: 320px;
   /* en lugar de height fija */
-	background: rgba(120, 120, 120, 0.300);
-	border: 2px solid rgba(120, 120, 120, 0.2);
 	box-shadow: 
 		0 8px 32px rgba(0, 0, 0, 0.1),
 		0 4px 16px rgba(0, 0, 0, 0.05);
@@ -641,6 +638,8 @@ footer {
   color: #cccccc;
 	border-radius: 10px;
 
+	background: rgba(120, 120, 120, 0.300);
+	border: 2px solid rgba(120, 120, 120, 0.2);
   box-shadow: #0000003a 0px 0px 20px;
   background-image: linear-gradient(220deg, #ffaae435 0%,     rgba(92, 92, 92, 0) 80%);
   z-index: -1;
@@ -939,9 +938,6 @@ footer {
     min-width: 40px;
     font-size: 0.75em;
     padding: 0%;
-
-	background: rgba(130, 130, 130, 0.320);
-  background-image: linear-gradient(220deg, #fd35be3f 0%,     rgba(92, 92, 92, 0) 80%);
   }
   #proyects {
     padding: 20px;
@@ -954,11 +950,11 @@ footer {
   }
   
   .cards .card:hover {
-	border: solid rgba(120, 120, 120, 0.2);
     transform: none;
     backdrop-filter: none;
-	background: rgba(130, 130, 130, 0.320);
-  background-image: linear-gradient(220deg, #fd35be3f 0%,     rgba(92, 92, 92, 0) 80%);
+	background: rgba(120, 120, 120, 0.300);
+	border: 2px solid rgba(120, 120, 120, 0.2);
+  background-image: linear-gradient(220deg, #ffaae435 0%,     rgba(92, 92, 92, 0) 80%);
 
   }
   .cards:hover>.card-link:not(:hover) .card {

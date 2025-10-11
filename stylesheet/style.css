@@ -582,7 +582,6 @@ footer {
   box-shadow: #0000003a 0px 0px 20px;
   background-image: linear-gradient(220deg, #57575735 0%,     rgba(92, 92, 92, 0) 80%);
 
-  backdrop-filter: url(#wave-distort);
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -649,6 +648,7 @@ footer {
   color: #cccccc;
 	border-radius: 10px;
 
+  backdrop-filter: url(#wave-distort);
 	background: rgba(120, 120, 120, 0.300);
 	border: 2px solid rgba(120, 120, 120, 0.2);
   box-shadow: #0000003a 0px 0px 20px;

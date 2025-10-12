@@ -4,6 +4,14 @@
   font-weight: normal;
   font-style: normal;
 }
+.amp{
+  position: absolute;
+  top: 50%;
+}
+.amp2{
+  position: absolute;
+  top: 73%;
+}
 nav {
   z-index: 1000;
 	position: fixed;
@@ -201,7 +209,6 @@ body {
   line-height: 1.6;
   font-size: 16px;
   min-height: 100vh;
-  height: 200vh;
   /* Para hacer scroll y probar */
 }
 
@@ -331,9 +338,11 @@ footer {
 }
 
 #inicio {
+  top: -80px;
   font-size: 1.8em;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.192);
   padding: 40px;
+  height: 95vh;
 }
 
 .email {
@@ -407,23 +416,27 @@ footer {
   justify-content: flex-end;
   align-items: center;
 }
-
 .portrait {
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  flex-direction: column;
-  margin: auto;
-  max-width: 220px;
-  border-radius: 5px;
-  box-sizing: border-box;
-  letter-spacing: 1px;
-  position: static;
-  margin-right: 180px;
-  margin-top: -27%;
-  margin-bottom: 16px;
+  /* Propiedades del CONTENEDOR */
+  position: absolute;
+  top: 145px; /* Usa 'top' en lugar de 'margin-top' para un elemento absoluto */
+  left: 100;   /* Mueve el contenedor a la derecha */
+  max-width: 300px;
+  border-radius: 12px;
+  overflow: hidden; /* Importante para que el*/
+  z-index: -2;
+  
 
 }
+.portrait img {
+  /* Propiedades de la IMAGEN DENTRO */
+  display: block;
+  width: 100%; /* La imagen siempre llena el contenedor */
+  height: auto;
+}
+
+  
+
 
 .dropdown {
   position: relative;
@@ -700,16 +713,16 @@ footer {
 #description {
   font-size: 0.7em;
   padding: 20px 2px;
-  border: 2px solid rgba(46, 46, 46, 0.5);
-  background-color: rgba(46, 46, 46, 0.2);
+  border: 2px solid rgba(30, 30, 30, 0.5);
+  background-color: rgba(30, 30, 30, 0.2);
+  box-shadow: #0000003a 0px 0px 20px;
+  background-image: linear-gradient(220deg, #ffffff12 0%,     rgba(92, 92, 92, 0) 80%);
   border-radius: 10px;
   color: #f1f1f1a5;
   margin-top: 5px;
   text-align: center;
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   backdrop-filter: blur(10px);
-  box-shadow: #0000003a 0px 0px 20px;
-  background-image: linear-gradient(220deg, #ffffff12 0%,     rgba(92, 92, 92, 0) 80%);
 }
 #description:hover {
   color: #f0f0f0e9;
@@ -811,7 +824,21 @@ footer {
 }
 /* PARA TELEFONOS :D */
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {    
+  #inicio{
+    padding: 0px;
+  }
+  
+    .amp{
+      position: absolute;
+      text-shadow:#000000;
+      top: 70%;
+
+    }
+.amp2{
+  position: absolute;
+  top: 73%;
+}
   body{
     overflow-x: hidden;
   }
@@ -841,15 +868,6 @@ footer {
     font-size: 12px;
   }
 
-  .portrait {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    margin: 0 auto;
-    margin-top: -16%;
-    margin-bottom: 4%;
-  }
 
   #footer-paragraph {
     flex-direction: column;
@@ -967,8 +985,9 @@ footer {
   .cards .card:hover {
     transform: none;
     backdrop-filter: none;
-	background: rgba(120, 120, 120, 0.300);
+	background: rgba(120, 120, 120, 0.12);
 	border: 2px solid rgba(120, 120, 120, 0.2);
+  box-shadow: #0000003a 0px 0px 10px;
   background-image: linear-gradient(220deg, #ffaae435 0%,     rgba(92, 92, 92, 0) 80%);
 
   }
@@ -986,10 +1005,17 @@ footer {
 
   backdrop-filter: none;
   color: #f0f0f0e9;
-  background-color: rgba(46, 46, 46, 0.491);
+  border: 2px solid rgba(30, 30, 30, 0.5);
+  background-color: rgba(30, 30, 30, 0.2);
+  box-shadow: #0000003a 0px 0px 20px;
+  background-image: linear-gradient(220deg, #ffffff12 0%,     rgba(92, 92, 92, 0) 80%);
   }
   #description:hover {
     transform: scale(1.0);
+  border: 2px solid rgba(30, 30, 30, 0.5);
+  background-color: rgba(30, 30, 30, 0.2);
+  box-shadow: #0000003a 0px 0px 20px;
+  background-image: linear-gradient(220deg, #ffffff12 0%,     rgba(92, 92, 92, 0) 80%);
   }
   #gratefull {
     font-size: 0.9em;
@@ -1036,3 +1062,37 @@ footer {
   background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(21, 21, 21));
 }
 }
+
+@media (max-width: 468px) {
+.portrait {
+    padding: 80px;
+        /* Aseguramos la posición y la capa */
+        position: absolute;
+        z-index: -2;
+        max-width: 100%; /* Mantener el tamaño para un centrado predecible */
+        left: auto;
+        padding-left: -40px;
+        top: 10%;
+
+        /* 1. CENTRADO HORIZONTAL */
+        
+        /* 2. POSICIÓN VERTICAL (Ajusta este valor) */
+        /* Top: Controla la distancia desde la parte superior de la página. */
+        
+        /* 3. TRASLACIÓN COMBINADA (Horizontal y Vertical) */
+        /* translateX(-50%) para centrar; translateY para ajustar la altura final */
+        /* Si ajustaste 'top' a un buen valor, puedes no necesitar el translateY. */
+        
+        /* Elimina todos los márgenes y propiedades de Flexbox innecesarias */
+        margin: 0;
+        
+        /* Elimina overflow: hidden si lo tenías en el segundo bloque (aunque no es lo común) */
+    }
+    
+    /* El gradiente y la imagen interna quedan bien definidos arriba, solo asegúrate de que img tenga 100% de ancho */
+    .portrait img {
+        border-radius: 12px;
+        width: 100%; 
+        height: 30%;
+    }
+  }

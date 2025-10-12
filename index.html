@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body id="home">
   <header>
     <nav>
       <ul class="nav-list">
@@ -46,60 +46,37 @@
       </ul>
     </nav>
     <svg style="display: none">
-	<defs>
-		<filter id="wave-distort" x="0%" y="0%" width="100%" height="100%">
-			<feTurbulence
-										type="fractalNoise"
-										baseFrequency="0.0038 0.0038"
-										numOctaves="1"
-										seed="2"
-										result="roughNoise"
-										/>
-			<feGaussianBlur in="roughNoise" stdDeviation="8.5" result="softNoise" />
-			<feComposite
-									operator="arithmetic"
-									k1="0"
-									k2="1"
-									k3="2"
-									k4="0"
-									in="softNoise"
-									result="mergedMap"
-									/>
-			<feDisplacementMap
-												in="SourceGraphic"
-												in2="mergedMap"
-												scale="-42"
-												xChannelSelector="G"
-												yChannelSelector="G"
-												/>
-		</filter>
-	</defs>
-</svg>
-    <br id="home"><br><br><br><br>
+      <defs>
+        <filter id="wave-distort" x="0%" y="0%" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.0038 0.0038" numOctaves="1" seed="2" result="roughNoise" />
+          <feGaussianBlur in="roughNoise" stdDeviation="8.5" result="softNoise" />
+          <feComposite operator="arithmetic" k1="0" k2="1" k3="2" k4="0" in="softNoise" result="mergedMap" />
+          <feDisplacementMap in="SourceGraphic" in2="mergedMap" scale="-42" xChannelSelector="G" yChannelSelector="G" />
+        </filter>
+      </defs>
+    </svg>
   </header>
   <main>
     <section id="inicio">
-      <h1 class="scramble" id="scramble"></h1>
-      <p id="titles">junior programmer</p>
+      <div class="port-t">
+      <div class="portrait">
+        <img src="/img/portrait.jpeg" alt="">
+      </div>
+      <div class="amp">
+        <h1 class="scramble" id="scramble"></h1>
+      </div>
+      <div class="amp2">
+        <p id="titles">junior programmer</p>
+        <p class="email">email : kelpucha@gmail.com</p></div>
+      </div>
+    </section>
 
-      <p class="email">email : kelpucha@gmail.com</p>
-    </section><br><br><br><br>
-    <img src="/img/portrait.jpeg" alt="" class="portrait">
-    <div class="info-container">
-      <p>edad / 21</p>
-      <p>estatura / 187cm</p>
-      <p>ocupación / estudiante autodidacta</p><br>
-      <!-- 
-      <a href="downloads/Curriculum vitae.pdf" class="linkk" download="Curriculum">Descargar Curriculum Vitae</a> -->
-    </div>
-
-    <br><br>
     <section id="about">
       <h2 class="about">acerca de mí</h2>
       <h4>Breve presentación:</h4><br><br>
       <div id="generic-small" class="fade-in-on-scroll">
         <p>Apasionado por el software, el hardware, los videojuegos, la historia y el arte. La creatividad es un pilar
-          esencial en mi forma de ser. Me considero una persona resiliente, comprometida y siempre dispuesto a dar lo
+          esencial en mi forma de ser. Me considero una persona comprometida, resiliente y siempre dispuesto a dar lo
           mejor de mí.
         </p>
       </div>
@@ -107,17 +84,16 @@
       <h4>Mi crecimiento academico:</h4><br>
 
       <div id="generic-small" class="fade-in-on-scroll">
-      <p id="title-aptitude-title"> [Click card: para abrir el enlace con el acceso público a mi certificado]</p></div><br>
+        <p id="title-aptitude-title"> [Click card: para abrir el enlace con el acceso público a mi certificado]</p>
+      </div><br>
       <div class="cards">
         <a href="https://apps.cognitiveclass.ai/profile/u/adop1d" target="_blank" class="card-link">
           <div class="card red">
             <p class="tip">Cognitiveclass.ai: SQL and Relational Databases</p>
             <span class="background-kleur"><img src="ico/sql.png" alt="" class="icon-example"></span>
-            <p class="tut">Certificado en SQL y Bases de datos relacionales</p>
+            <p class="tut">Certificado en SQL y bases de datos relacionales</p>
           </div>
-          <p id="description">Decidí hacer este curso ya que sentía que debía profundizar más
-            en bases de datos
-            relacionales, ahora lo manejo con mayor fluidez y entiendo mejor su función.</p>
+          <p id="description">Para manipular bases de datos relacionales y Query SQL.</p>
         </a><br>
 
 
@@ -127,25 +103,23 @@
             <span class="background-kleur"><img src="ico/java.png" alt="" class="icon-example"></span>
             <p class="tut">Certificado en Java desde Cero en la academia EDTeam</p>
           </div>
-          <p id="description">Fué el primer curso en que decidí mojarme en la programación,
-            aprendí cosas
-            fundamentales, me abrió una nueva forma de pensar
-            respecto a la programación y me llenó de ganas para seguir creciendo.</p>
+          <p id="description">Mi primer lenguaje de programación. Muy completo y útil para todo tipo de tareas.</p>
         </a><br>
 
-        <a href="https://www.credly.com/badges/e6d7ca8e-623e-4207-8add-73e18554ec48/public_url" target="_blank" class="card-link">
+        <a href="https://www.credly.com/badges/e6d7ca8e-623e-4207-8add-73e18554ec48/public_url" target="_blank"
+          class="card-link">
           <div class="card red">
-            <p class="tip">CISCO:Networking Academy</p>
+            <p class="tip">CISCO:Python Essentials</p>
             <span class="background-kleur"><img src="ico/python-icon-sm.png" alt="" class="icon-example"></span>
-            <p class="tut">Python Essentials</p>
             <div class="credly-badge">
-            <div data-iframe-width="128" data-iframe-height="230"
-              data-share-badge-id="e6d7ca8e-623e-4207-8add-73e18554ec48" data-share-badge-host="https://www.credly.com">
+              <div data-iframe-width="128" data-iframe-height="230"
+                data-share-badge-id="e6d7ca8e-623e-4207-8add-73e18554ec48"
+                data-share-badge-host="https://www.credly.com">
+              </div>
+              <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
             </div>
-            <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
           </div>
-          </div>
-          <p id="description">Siempre tuve curiosidad, considerado un lenguaje muy distinto a Java, creo que opinaré lo mismo que los demás respecto a eso.</p>
+          <p id="description">Opino que es un lenguaje muy completo y estoy orgulloso de haberlo aprendido.</p>
         </a>
       </div>
 
@@ -159,9 +133,8 @@
     </section>
     <section id="proyects">
       <h2 class="proyects">Proyectos</h2>
-      <h4>Mis repositorios</h4><br><br>
       <div id="generic-small" class="fade-in-on-scroll">
-        <p>Los siguientes proyectos son ejemplos experimentales, he señalado cada tecnologia usada, 
+        <p>Puedes encontrar más en mi perfil de GitHub.
         </p>
         <p id="title-aptitude-title">
           [Click card: para abrir el repositorio Github con el código fuente]
@@ -171,21 +144,19 @@
       <div class="cards">
         <a href="https://github.com/adop1d/crud-apirest-java" target="_blank" class="card-link">
           <div class="card red">
-            <p class="tip">API-REST</p>
+            <p class="tip">Java API-REST</p>
             <span class="background-kleur"><img src="ico/java.png" alt="" class="icon-example"><img src="ico/maven.png"
                 alt="" class="icon-example"><img src="ico/docker.png" alt="" class="icon-example"><img
                 src="ico/hibernate.png" alt="" class="icon-example"><img src="ico/sql.png" alt=""
                 class="icon-example"><img src="ico/spring.png" alt="" class="icon-example"><img
                 src="ico/spring-data.png" alt="" class="icon-example"><img src="ico/spring-boot.png" alt=""
                 class="icon-example"></span>
-            <p class="tut">Implementación de API REST utilizando Java y Spring Boot, con Hibernate/JPA para
+            <p class="tut">Implementación de API REST en Java y Spring Boot, con Hibernate/JPA para
               la persistencia de datos. La base de datos se ejecuta en un contenedor Docker, permitiendo
               operaciones CRUD.</p>
           </div>
-          <p id="description">Mi primer proyecto en Java en conjunto del framework Spring y
-            herramientas como
-            postgresql, postman y entre otros. Me sentí todo un hacker cuando consumí por primera
-            vez mi API-REST.</p>
+          <p id="description">Mi primer proyecto en Java en conjunto del framework Spring Boot, postgresql, postman y
+            entre otros.</p>
         </a><br>
 
         <a href="https://github.com/adop1d/local-area-network-chat" target="_blank" class="card-link">
@@ -194,43 +165,24 @@
             <span class="background-kleur">
               <img src="ico/java.png" alt="" class="icon-example">
             </span>
-            <p class="tut">aplicación de mensajería basada en Java SE, utilizando hilos para la gestión de
-              múltiples usuarios. Incluye una interfaz gráfica con pantalla de inicio de sesión, desarrollada con
+            <p class="tut">Aplicación de mensajería en Java, utilizando hilos para la gestión de
+              múltiples usuarios. Incluye una interfaz gráfica con pantalla de inicio de sesión con
               JSwing.</p>
           </div>
-          <p id="description">A este le puse mucho empeño, por no
-            tener varias PCs no pude hacer bien el proceso de testing y bueno, lo dejo a futuro, pero orgulloso estoy,
+          <p id="description">No pude hacer bien el proceso de testing y bueno, lo dejo a futuro,
             mi primer proyecto "complejo" mientras aprendía.</p>
-        </a>    <svg style="display: none">
-	<defs>
-		<filter id="wave-distort" x="0%" y="0%" width="100%" height="100%">
-			<feTurbulence
-										type="fractalNoise"
-										baseFrequency="0.0038 0.0038"
-										numOctaves="1"
-										seed="2"
-										result="roughNoise"
-										/>
-			<feGaussianBlur in="roughNoise" stdDeviation="8.5" result="softNoise" />
-			<feComposite
-									operator="arithmetic"
-									k1="0"
-									k2="1"
-									k3="2"
-									k4="0"
-									in="softNoise"
-									result="mergedMap"
-									/>
-			<feDisplacementMap
-												in="SourceGraphic"
-												in2="mergedMap"
-												scale="-42"
-												xChannelSelector="G"
-												yChannelSelector="G"
-												/>
-		</filter>
-	</defs>
-</svg><br>
+        </a> <svg style="display: none">
+          <defs>
+            <filter id="wave-distort" x="0%" y="0%" width="100%" height="100%">
+              <feTurbulence type="fractalNoise" baseFrequency="0.0038 0.0038" numOctaves="1" seed="2"
+                result="roughNoise" />
+              <feGaussianBlur in="roughNoise" stdDeviation="8.5" result="softNoise" />
+              <feComposite operator="arithmetic" k1="0" k2="1" k3="2" k4="0" in="softNoise" result="mergedMap" />
+              <feDisplacementMap in="SourceGraphic" in2="mergedMap" scale="-42" xChannelSelector="G"
+                yChannelSelector="G" />
+            </filter>
+          </defs>
+        </svg><br>
 
         <a href="https://github.com/adop1d/text-editor" target="_blank" class="card-link">
           <div class="card red">
@@ -238,10 +190,10 @@
             <span class="background-kleur">
               <img src="ico/java.png" alt="" class="icon-example">
             </span>
-            <p class="tut">aplicación de escritorio con interfaz gráfica creada en Java mediante la biblioteca
+            <p class="tut">Aplicación de escritorio creada en Java con la biblioteca
               JSwing.</p>
           </div>
-          <p id="description">Qué más puedo decir, es un editor de texto básico en el que
+          <p id="description">Un editor de texto en el que
             estuve jugando un poco con
             la biblioteca JSwing.</p>
         </a><br>
@@ -255,9 +207,8 @@
             <p class="tut">desarrollo de una página web de ejemplo utilizando HTML y CSS, en la que se presenta
               contenido histórico y cultural sobre la ciudad de Maracaibo.</p>
           </div>
-          <p id="description">Mi primera página web, quise hacer algo respecto al lugar dónde
-            vivo y sus origenes,
-            que poco se habla del gran pasado de mi gente.</p>
+          <p id="description">Mi primera página web, respecto al lugar dónde
+            vivo y sus origenes.</p>
         </a><br>
 
         <a href="https://github.com/adop1d/java-ahorcado" target="_blank" class="card-link">
@@ -266,10 +217,9 @@
             <span class="background-kleur">
               <img src="ico/java.png" alt="" class="icon-example">
             </span>
-            <p class="tut">un programa sencillo y divertido en consola para jugar con tus amigos.</p>
+            <p class="tut">Un programa sencillo y divertido en consola para jugar con tus amigos.</p>
           </div>
-          <p id="description">No hay mucho qué decir, me reí mucho jugando a esto con mi
-            sobrino.</p>
+          <p id="description">Muy divertido, me moria de risa mientras lo jugaba.</p>
         </a>
       </div>
     </section>
@@ -347,13 +297,15 @@
           <span class="background-kleur"><img src="ico/java.png" alt="" class="icon-example"></span>Java Standard
           Edition:
         </p>
-        <p class="espacio">Algoritmos, estructuras de datos, programación orientada
+        <p class="espacio">Algoritmos, estructuras de datos, manejo de excepciones y funciones, programación orientada
           a objetos y programación funcional. </p>
 
         <p class="title-aptitude" id="title-aptitude-docker">
-          <span class="background-kleur"><img src="ico/python-icon-sm.png" alt="" class="icon-example"></span>Pyt</span><span id="title-aptitude-yellow">hon:</span>
+          <span class="background-kleur"><img src="ico/python-icon-sm.png" alt=""
+              class="icon-example"></span>Pyt</span><span id="title-aptitude-yellow">hon:</span>
         </p>
-        <p class="espacio">Algoritmos, pensamiento analítico, manejo de excepciones y funciones, programación orientada a objetos. </p>
+        <p class="espacio">Algoritmos, pensamiento analítico, manejo de excepciones y funciones, programación orientada
+          a objetos. </p>
 
         <p class="title-aptitude" id="title-aptitude-orange">
           <span class="background-kleur"><img src="ico/maven.png" alt="" class="icon-example"></span>Maven:
@@ -397,17 +349,20 @@
         <p class="title-aptitude" id="title-aptitude-orange">
           <span class="background-kleur"><img src="ico/Jupyter.png" alt="" class="icon-example"></span>Jupyter:
         </p>
-        <p class="espacio">Desarrollo de software en entorno controlado e interactivo. Preciso para el analisis de dato</p>
+        <p class="espacio">Desarrollo de software en entorno controlado e interactivo. Preciso para el analisis de dato
+        </p>
 
 
         <p class="title-aptitude" id="title-aptitude-gray">
           <span class="background-kleur"><img src="ico/Deep Learning.png" alt="" class="icon-example"></span>Oracle AI:
         </p>
-        <p class="espacio">Conocimientos fundamentales en Large Language Models, Machine Learning y Deep Learning en Oracle AI </p>
+        <p class="espacio">Conocimientos fundamentales en Large Language Models, Machine Learning y Deep Learning en
+          Oracle AI </p>
 
 
         <p class="title-aptitude" id="title-aptitude-red">
-          <span class="background-kleur"><img src="ico/Oracle Data Science.png" alt="" class="icon-example"></span>Oracle Data Science:
+          <span class="background-kleur"><img src="ico/Oracle Data Science.png" alt=""
+              class="icon-example"></span>Oracle Data Science:
         </p>
         <p class="espacio">Desarrollo en Ciencia de Datos, conexión con datasets, Feature Engineering, etc. </p>
 
@@ -424,7 +379,7 @@
         <p class="espacio">
           Programación básica en PHP. </p>
         -->
-<!-- 
+        <!-- 
         <p class="title-aptitude" id="title-aptitude-docker">
           <span class="background-kleur"><img src="ico/Wordpress.png" alt="" class="icon-example"></span>Wordpress:
         </p>
@@ -459,7 +414,7 @@
         </p> -->
         <br><br>
       </div>
- 
+
     </section>
     <footer>
       <hr class="footer-hr">
@@ -596,76 +551,76 @@
         });
       });
       document.addEventListener('DOMContentLoaded', () => {
-	const nav = document.querySelector('nav > ul');
-	const items = document.querySelectorAll('nav > ul li a');
-	let anim = null;
-	let currentActiveItem = null;
+        const nav = document.querySelector('nav > ul');
+        const items = document.querySelectorAll('nav > ul li a');
+        let anim = null;
+        let currentActiveItem = null;
 
-	const animate = (from, to) => {
-		if (anim) clearInterval(anim);
+        const animate = (from, to) => {
+          if (anim) clearInterval(anim);
 
-		const start = Date.now();
-		anim = setInterval(() => {
-			const p = Math.min((Date.now() - start) / 500, 1);
-			const e = 1 - Math.pow(1 - p, 3);
+          const start = Date.now();
+          anim = setInterval(() => {
+            const p = Math.min((Date.now() - start) / 500, 1);
+            const e = 1 - Math.pow(1 - p, 3);
 
-			const x = from + (to - from) * e;
-			const y = -40 * (4 * e * (1 - e));
-			const r = 200 * Math.sin(p * Math.PI);
+            const x = from + (to - from) * e;
+            const y = -40 * (4 * e * (1 - e));
+            const r = 200 * Math.sin(p * Math.PI);
 
-			nav.style.setProperty('--translate-x', `${x}px`);
-			nav.style.setProperty('--translate-y', `${y}px`);
-			nav.style.setProperty('--rotate-x', `${r}deg`);
+            nav.style.setProperty('--translate-x', `${x}px`);
+            nav.style.setProperty('--translate-y', `${y}px`);
+            nav.style.setProperty('--rotate-x', `${r}deg`);
 
-			if (p >= 1) {
-				clearInterval(anim);
-				anim = null;
-				nav.style.setProperty('--translate-y', '0px');
-				nav.style.setProperty('--rotate-x', '0deg');
-			}
-		}, 16);
-	};
+            if (p >= 1) {
+              clearInterval(anim);
+              anim = null;
+              nav.style.setProperty('--translate-y', '0px');
+              nav.style.setProperty('--rotate-x', '0deg');
+            }
+          }, 16);
+        };
 
-	const getCurrentPosition = () => parseFloat(nav.style.getPropertyValue('--translate-x')) || 0;
+        const getCurrentPosition = () => parseFloat(nav.style.getPropertyValue('--translate-x')) || 0;
 
-	const getItemCenter = (item) => {
-		return item.getBoundingClientRect().left + item.offsetWidth / 2 - nav.getBoundingClientRect().left - 5;
-	};
+        const getItemCenter = (item) => {
+          return item.getBoundingClientRect().left + item.offsetWidth / 2 - nav.getBoundingClientRect().left - 5;
+        };
 
 
-	const setActiveItem = (item) => {
-		if (currentActiveItem) {
-			currentActiveItem.classList.remove('active');
-		}
+        const setActiveItem = (item) => {
+          if (currentActiveItem) {
+            currentActiveItem.classList.remove('active');
+          }
 
-		currentActiveItem = item;
-		item.classList.add('active');
-		moveToItem(item);
-	};
+          currentActiveItem = item;
+          item.classList.add('active');
+          moveToItem(item);
+        };
 
-	const handleMouseLeave = () => {
-		if (currentActiveItem) {
-			moveToItem(currentActiveItem);
-		} else {
-			nav.classList.remove('show-indicator');
-			if (anim) clearInterval(anim);
-		}
-	};
+        const handleMouseLeave = () => {
+          if (currentActiveItem) {
+            moveToItem(currentActiveItem);
+          } else {
+            nav.classList.remove('show-indicator');
+            if (anim) clearInterval(anim);
+          }
+        };
 
-	items.forEach(item => {
-		item.addEventListener('mouseenter', () => moveToItem(item));
-		item.addEventListener('mouseleave', handleMouseLeave);
-		item.addEventListener('click', () => setActiveItem(item));
-	});
+        items.forEach(item => {
+          item.addEventListener('mouseenter', () => moveToItem(item));
+          item.addEventListener('mouseleave', handleMouseLeave);
+          item.addEventListener('click', () => setActiveItem(item));
+        });
 
-	nav.addEventListener('mouseleave', handleMouseLeave);
-	
-	if (items.length > 0) {
-		setTimeout(() => {
-			setActiveItem(items[0]);
-		}, 100);
-	}
-});
+        nav.addEventListener('mouseleave', handleMouseLeave);
+
+        if (items.length > 0) {
+          setTimeout(() => {
+            setActiveItem(items[0]);
+          }, 100);
+        }
+      });
     </script>
 </body>
 

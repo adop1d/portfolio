@@ -34,13 +34,14 @@ nav {
 		inset: 0;
 		width: 100%;
 		height: 100%;
-		backdrop-filter: url(#wave-distort);
-  background-image: linear-gradient(220deg, #d0d0d057 0%,     rgba(100, 100, 100, 0.041) 80%);
+		backdrop-filter:blur(3px) url(#wave-distort) ;
+
+  background-image: linear-gradient(180deg, #d0d0d023 0%,     rgba(100, 100, 100, 0.107) 20%);
 	border-radius: 12px;
 	}
 }
 
-nav > ul {   
+nav > ul {
 	position: relative;
 	list-style: none;
 	display: flex;
@@ -463,7 +464,7 @@ footer {
      (Note: You can remove the backdrop-filter: url(#wave-distort) from nav::before
       and apply a simple `backdrop-filter: blur(10px);` to the `nav` and `nav::before` 
       if you want the exact same visual effect.) */
-  backdrop-filter: url(#wave-distort);
+  backdrop-filter: blur(3px) url(#wave-distort);
   /* ---------------------------- */
   
   box-sizing: border-box;
@@ -480,7 +481,7 @@ footer {
 
   transform: translateY(6%);
 
-  background-image: linear-gradient(220deg, #ffffff44 0%,     rgba(100, 100, 100, 0) 80%);
+  background-image: linear-gradient(180deg, #d0d0d023 0%,     rgba(100, 100, 100, 0.107) 20%);
 
   border-radius: 12px;
 }

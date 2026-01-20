@@ -507,6 +507,10 @@ footer {
   font-size: 1.2em;
   padding: 20px;
   text-align: center;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Skills Grid Styles */
@@ -516,8 +520,10 @@ footer {
   grid-template-columns: 1fr;
   gap: var(--gap);
   margin: 0;
-  max-width: 320px;
+  max-width: 100%;
   width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /* Two-column wrapper for skills section: left = grid, right = description */
@@ -529,17 +535,22 @@ footer {
   gap: 18px;
   align-items: start;
   padding: 0 6px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .skills-left {
   width: 100%;
-  max-width: 380px;
+  max-width: 400px;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .skills-left > #skills-grid {
   margin: 0;
-  max-width: 380px;
+  max-width: 100%;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .skills-right {
@@ -566,18 +577,38 @@ footer {
 @media (max-width: 900px) {
   .skills-section-wrapper {
     grid-template-columns: 1fr;
-    padding: 0 6px;
+    padding: 0 12px;
     max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
   }
   .skills-right {
     order: 2;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
   .skills-left {
     order: 1;
     max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
   }
   .skills-left > #skills-grid {
     max-width: 100%;
+    width: 100%;
+  }
+  #skills-grid {
+    max-width: 100%;
+    padding: 0;
+  }
+  .skill-category {
+    max-width: 100%;
+    width: 100%;
+  }
+  .skill-items-grid {
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -597,9 +628,12 @@ footer {
   border: 1px solid rgba(120, 120, 120, 0.2);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   position: relative;
-  overflow: visible;
+  overflow-x: hidden;
+  overflow-y: visible;
   min-height: auto;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .skill-category::before {
@@ -652,9 +686,13 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   gap: 6px;
   width: 100%;
+  max-width: 100%;
   justify-items: center;
   align-content: start;
   margin-top: 4px;
+  box-sizing: border-box;
+  min-width: 0;
+  overflow-x: hidden;
 }
 
 /* Adjust grid columns based on number of items */
@@ -1329,45 +1367,55 @@ footer {
 
   #skills-grid {
     grid-template-columns: 1fr;
-    padding: 24px;
-    gap: 16px;
+    padding: 12px;
+    gap: 10px;
     max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   #skills-grid .skill-category {
     grid-column: 1 !important;
     grid-row: auto !important;
-    min-height: 260px;
+    padding: 10px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    min-height: auto;
   }
 
   .skill-items-grid {
-    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .skill-category:hover {
-    transform: scale(1.0, 1.0);
-    background: rgba(120, 120, 120, 0.12);
+    transform: translateY(-2px);
     background-image: linear-gradient(220deg, #fd35be3f 0%,     rgba(92, 92, 92, 0) 80%);
     border-color: rgba(120, 120, 120, 0.2);
   }
 
   #skills-grid:hover > .skill-category:not(:hover) {
-    transform: none;
-  }
-
-  .skill-items-grid {
-    grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
-    gap: 10px;
+    opacity: 0.85;
   }
 
   .skill-item {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .skill-icon {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
+    max-width: 100%;
+    box-sizing: border-box;
   }
   
   .cards .card:hover {

@@ -42,11 +42,11 @@ const skillsData = {
     ]
   },
   dataScience: {
-    name: "Data Science & AI",
+    name: "AI and Data",
     skills: [
       { name: "Jupyter", icon: "ico/Jupyter.png" },
-      { name: "Oracle Data Science", icon: "ico/Oracle Data Science.png" },
-      { name: "Deep Learning", icon: "ico/Deep Learning.png" }
+      //{ name: "Oracle Data Science", icon: "ico/Oracle Data Science.png" },
+      { name: "Oracle AI Foundations", icon: "ico/Deep Learning.png" }
     ]
   }
 };

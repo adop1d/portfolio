@@ -8,6 +8,7 @@ const skillsData = {
       { name: "Tailwind", icon: "ico/tailwind.png" },
       {name: "JavaScript", icon: "ico/js.png" },
       { name: "React", icon: "ico/react.png" },
+      { name: "TypeScript", icon: "ico/typescript.png" },
     ]
   },
   backend: {
@@ -23,22 +24,23 @@ const skillsData = {
       { name: "Supabase", icon: "ico/supabase.png" }
     ]
   },
+  deployment: {
+    name: "Deployment/Tools",
+    skills: [
+      { name: "Vercel", icon: "ico/vercel.png" },
+      { name: "Docker", icon: "ico/docker.png" },
+      { name: "Bash", icon: "ico/bash.png" },
+      { name: "Git", icon: "ico/git.png" },
+      { name: "GitHub", icon: "ico/github.png" },
+      { name: "Maven", icon: "ico/maven.png" },
+    ]
+  },
   databases: {
     name: "Bases de Datos",
     skills: [
       { name: "PostgreSQL", icon: "ico/Postgresql.png" },
       { name: "SQL", icon: "ico/sql.png" },
       { name: "DBeaver", icon: "ico/DBeaver.png" },
-    ]
-  },
-  tools: {
-    name: "Herramientas",
-    skills: [
-      { name: "Git", icon: "ico/git.png" },
-      { name: "GitHub", icon: "ico/github.png" },
-      { name: "Docker", icon: "ico/docker.png" },
-      { name: "Maven", icon: "ico/maven.png" },
-      { name: "Bash", icon: "ico/bash.png" }
     ]
   },
   dataScience: {

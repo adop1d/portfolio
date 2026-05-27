@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" translate="no">
+<html lang="es" translate="no">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/ico/ico1.png">
-    <title>Portfolio</title>
-  <link rel="stylesheet" href="stylesheet/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <title>Kelvin Puche — Desarrollador Web</title>
+  <meta name="description" content="Portfolio de Kelvin Puche, desarrollador web. Java, Spring Boot, React, JavaScript, Python y más.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kelvin Puche — Desarrollador Web">
+  <meta property="og:description" content="Portfolio de Kelvin Puche, desarrollador web. Java, Spring Boot, React, JavaScript, Python y más.">
+  <meta property="og:url" content="https://github.com/adop1d/portfolio">
+  <meta property="og:image" content="/img/portrait.jpeg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Kelvin Puche — Desarrollador Web">
+  <meta name="twitter:description" content="Portfolio de Kelvin Puche, desarrollador web. Java, Spring Boot, React, JavaScript, Python y más.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet/style.css">
 </head>
 
 <body id="home">
@@ -21,7 +32,7 @@
       <ul class="nav-list">
         <li><a href="#home">Inicio</a></li>
         <li><a href="#about">Acerca</a></li>
-        <li><a href="#proyects">Proyectos</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#services">Habilidades</a></li>
         <li class="dropdown" id="contact-link">
           <a href="#">Contacto<span class="arrow">▼</span></a>
@@ -59,29 +70,32 @@
   <main>
 
     <section id="inicio">
-      <div class="portrait">
-        <img src="/img/portrait.jpeg" alt="">
-      </div>
-      <div class="amp2">
-        <p id="titles">junior web developer</p>
-        <p class="email">email : kelpucha@gmail.com</p>
-      </div>
       <div class="amp">
         <h1 class="scramble" id="scramble"></h1>
+      </div>
+      <div class="amp2">
+        <p id="titles">web developer</p>
+        <p class="email">email : kelpucha@gmail.com</p>
+      </div>
+      <div class="portrait">
+        <img src="/img/portrait.jpeg" alt="Retrato de Kelvin Puche">
+      </div>
+      <div class="scroll-indicator">
+        <span>↓</span>
       </div>
     </section>
 
     <section id="about">
       <h2 class="about">acerca de mí</h2>
       <h4>Breve presentación:</h4><br><br>
-      <div id="generic-small" class="fade-in-on-scroll">
+      <div class="generic-small fade-in-on-scroll">
         <p>Soy una persona creativa que ve en el desarrollo de software un arte. Además de la programación, tengo un fuerte interés por la historia y los videojuegos, lo que me permite aportar una visión innovadora y multidisciplinaria a cada equipo de trabajo.
         </p>
       </div>
       <h3 class="about">certificación</h3>
       <h4>Mi crecimiento academico:</h4><br>
 
-      <div id="generic-small" class="fade-in-on-scroll">
+      <div class="generic-small fade-in-on-scroll">
         <p id="title-aptitude-title"> [Click card: para abrir el enlace con el acceso público a mi certificado]</p>
       </div><br>
       <div class="cards">
@@ -92,7 +106,7 @@
             <span class="background-kleur"><img src="ico/java.png" alt="" class="icon-example"></span>
             <p class="tut">Certificado en Java desde Cero en la academia EDTeam</p>
           </div>
-          <p id="description">Mi primer lenguaje de programación. Muy completo y útil para todo tipo de tareas.</p>
+          <p class="card-description">Mi primer lenguaje de programación. Muy completo y útil para todo tipo de tareas.</p>
         </a><br>
 
         <a href="https://www.credly.com/badges/e6d7ca8e-623e-4207-8add-73e18554ec48/public_url" target="_blank"
@@ -108,7 +122,7 @@
               <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
             </div>
           </div>
-          <p id="description">Opino que es un lenguaje muy completo y estoy orgulloso de haberlo aprendido.</p>
+          <p class="card-description">Opino que es un lenguaje muy completo y estoy orgulloso de haberlo aprendido.</p>
         </a><br>
 
         <a href="https://www.credly.com/badges/281f1d4e-e551-442d-af37-bcb327992e5f/public_url" target="_blank"
@@ -120,7 +134,7 @@
               <div data-iframe-width="130" data-iframe-height="230" data-share-badge-id="281f1d4e-e551-442d-af37-bcb327992e5f" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
             </div>
           </div>
-          <p id="description">Opino que es un lenguaje muy completo y estoy orgulloso de haberlo aprendido.</p>
+          <p class="card-description">Opino que es un lenguaje muy completo y estoy orgulloso de haberlo aprendido.</p>
         </a><br>
 
         <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=D8F1B01344B6C43C91FD234A3E2638182FA1E64EB6EA570F3021B0A478E067A3"
@@ -128,9 +142,9 @@
           <div class="card red">
             <p class="tip">Oracle Cloud Infrastructure: AI Foundations Associate</p>
             <span class="background-kleur"><img src="ico/Deep Learning.png" alt="" class="icon-example"></span>
-            <img src="/badge/Learning-Path_badge_default.png" class="badge" alt="">
+            <img src="/badge/Learning-Path_badge_default.png" class="badge" alt="Insignia Oracle Cloud Infrastructure AI Foundations Associate">
           </div>
-          <p id="description">Gracias a Oracle, ahora poseo un profundo conocimiento teórico de los fundamentos de la IA
+          <p class="card-description">Gracias a Oracle, ahora poseo un profundo conocimiento teórico de los fundamentos de la IA
             moderna (ML, DL, LLMs) y experiencia práctica con las herramientas de IA de Oracle Cloud Infrastructure
             (OCI).</p>
         </a><br>
@@ -148,13 +162,13 @@
               <div data-iframe-width="130" data-iframe-height="230" data-share-badge-id="65fe1d22-0299-4aea-b487-f18bee7c48bc" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
             </div>
           </div>
-          <p id="description">Certificado en Data Analytics, con herramientas como SQL, Excel y Tableau.</p>
+          <p class="card-description">Certificado en Data Analytics, con herramientas como SQL, Excel y Tableau.</p>
         </a><br>
       </div>
 
 
 
-      <div id="generic-small">
+      <div class="generic-small">
         <p class="fade-in-on-scroll" id="gratefull">
           También quisiera destacar y agradecer los cursos de Pildorasinformaticas,
           SergieCode, MitoCode, Fazt, Jey Code y entre otros por
@@ -162,9 +176,9 @@
         </p>
       </div>
     </section>
-    <section id="proyects">
+    <section id="proyectos">
       <h2 class="proyects">Proyectos</h2>
-      <div id="generic-small" class="fade-in-on-scroll">
+      <div class="generic-small" class="fade-in-on-scroll">
         <p>Puedes encontrar más en mi perfil de GitHub.
         </p>
         <p id="title-aptitude-title">
@@ -174,8 +188,8 @@
       <br>
       <div class="cards">
 
-        <a href="https://vitre-azure.vercel.app/" target="_blank" class="card-link">
-          <div class="card red">
+        <a href="https://vitre-azure.vercel.app/" target="_blank" class="card-link project-link">
+          <div class="card red project-card">
             <img src="ico/vitre.png" alt="" class="icon-example" style="width: 100px; height: 100px;">
             <p class="tip">Vitre</p>
             <span class="background-kleur">
@@ -187,10 +201,10 @@
             </span>
             <p class="tut">Red Social al estilo Reddit con chat, notificaciones, perfiles, publicaciones, comentarios y más.</p>
           </div>
-          <p id="description">Proyecto de red social al estilo Reddit, tornando más a mi estilo.</p>
+          <p class="card-description">Proyecto de red social al estilo Reddit, tornando más a mi estilo.</p>
         </a>
-        <a href="https://augescode.site/" target="_blank" class="card-link">
-          <div class="card red">
+        <a href="https://augescode.site/" target="_blank" class="card-link project-link">
+          <div class="card red project-card">
             <img src="ico/AugesCode.png" alt="" class="icon-example" style="width: 100px; height: 100px;">
             <p class="tip">AugesCode</p>
             <span class="background-kleur">
@@ -207,11 +221,11 @@
             </span>
             <p class="tut">Mi POS administrativo en la nube (AugesCloud), Página de presentación de la marca (personal) y co-desarrollador de AugeSGIntern (Programa Local).</p>
           </div>
-            <p id="description">Sistemas POS administrativos.</p>
+            <p class="card-description">Sistemas POS administrativos.</p>
         </a>
         
-        <a href="https://github.com/adop1d/personal-tasks-manager" target="_blank" class="card-link">
-          <div class="card red">
+        <a href="https://github.com/adop1d/personal-tasks-manager" target="_blank" class="card-link project-link">
+          <div class="card red project-card">
             <img src="ico/ktm-task-manager.png" alt="" class="icon-example" style="width: 100px; height: 100px;">
             <p class="tip">KTM Task Manager</p>
             <span class="background-kleur">
@@ -225,23 +239,10 @@
             </span>
             <p class="tut">Gestor de tareas full-stack con diseño Neo-Tokyo. Autenticación JWT, CRUD completo, tema oscuro/claro, atajos de teclado y soporte PWA.</p>
           </div>
-          <p id="description">Primer proyecto combinando Spring Boot y React.</p>
+          <p class="card-description">Primer proyecto combinando Spring Boot y React.</p>
         </a>
-        <svg style="display: none">
-          <defs>
-            <filter id="wave-distort" x="0%" y="0%" width="100%" height="100%">
-              <feTurbulence type="fractalNoise" baseFrequency="0.0038 0.0038" numOctaves="1" seed="2"
-                result="roughNoise" />
-              <feGaussianBlur in="roughNoise" stdDeviation="8.5" result="softNoise" />
-              <feComposite operator="arithmetic" k1="0" k2="1" k3="2" k4="0" in="softNoise" result="mergedMap" />
-              <feDisplacementMap in="SourceGraphic" in2="mergedMap" scale="-42" xChannelSelector="G"
-                yChannelSelector="G" />
-            </filter>
-          </defs>
-        </svg>
-
-        <a href="https://github.com/adop1d/text-editor" target="_blank" class="card-link">
-          <div class="card red">
+        <a href="https://github.com/adop1d/text-editor" target="_blank" class="card-link project-link">
+          <div class="card red project-card">
             <p class="tip">Text Editor</p>
             <span class="background-kleur">
               <img src="ico/java.png" alt="" class="icon-example">
@@ -249,20 +250,20 @@
             <p class="tut">Aplicación de escritorio creada en Java con la biblioteca
               JSwing.</p>
           </div>
-          <p id="description">Un editor de texto en el que
+          <p class="card-description">Un editor de texto en el que
             estuve jugando un poco con
             la biblioteca JSwing.</p>
         </a>
 
-        <a href="https://github.com/adop1d/java-ahorcado" target="_blank" class="card-link">
-          <div class="card red">
+        <a href="https://github.com/adop1d/java-ahorcado" target="_blank" class="card-link project-link">
+          <div class="card red project-card">
             <p class="tip">El Ahorcado</p>
             <span class="background-kleur">
               <img src="ico/java.png" alt="" class="icon-example">
             </span>
             <p class="tut">Un minijuego divertido en consola :).</p>
           </div>
-          <p id="description">Muy divertido, me moria de risa mientras lo jugaba.</p>
+          <p class="card-description">Muy divertido, me moria de risa mientras lo jugaba.</p>
         </a>
       </div>
     </section>

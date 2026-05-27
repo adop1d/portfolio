@@ -844,6 +844,7 @@ footer {
 .portrait {
   margin-top: 20px;
   max-width: 200px;
+  width: 100%;
   border-radius: 12px;
   overflow: hidden;
   z-index: -2;
@@ -1197,32 +1198,50 @@ button:focus-visible,
     margin-bottom: -20px;
   }
 
-  #titles {
-    font-size: 0.4em;
+  #inicio {
+    font-size: 1.8em;
+    padding: 20px;
+    gap: 6px;
   }
 
   #scramble {
-    font-size: 2.1em;
+    font-size: 3em;
+  }
+
+  #titles {
+    font-size: 0.55em;
+    letter-spacing: 3px;
   }
 
   .email {
     font-size: 0.4em;
   }
 
+  .portrait {
+    max-width: 160px;
+    margin-top: 6px;
+  }
+
+  .scroll-indicator {
+    margin-top: 12px;
+    font-size: 0.8em;
+  }
+
   .background-kleur {
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    margin: 6px auto;
   }
 
   .icon-example {
-    width: 12px;
-    width: 18px;
-    padding: -6px;
+    width: 22px;
+    padding: 0;
   }
 
   .cards {
-    flex-direction:row;
+    flex-direction:column;
     align-items:center;
     margin: auto;
     backdrop-filter: none;
@@ -1245,8 +1264,8 @@ button:focus-visible,
     backdrop-filter: none;
     min-height: 100px;
     min-width: 40px;
-    font-size: 0.75em;
-    padding: 0%;
+    font-size: 0.85em;
+    padding: 16px 12px;
   }
 #proyectos {
     padding: 20px;
@@ -1321,27 +1340,37 @@ button:focus-visible,
     transform: none;
   }
   .cards .card-link {
-    width: 172px;
+    width: 100%;
+    max-width: 340px;
   }
   .card-description {
-    font-size: 0.5em;
-    padding: 10px 2px;
-    margin-top: 3px;
-    margin-bottom: 20px;
-
-  backdrop-filter: none;
-  color: #f0f0f0e9;
-  border: 2px solid rgba(30, 30, 30, 0.5);
-  background-color: rgba(30, 30, 30, 0.2);
-  box-shadow: #0000003a 0px 0px 20px;
-  background-image: var(--gradient-card-white);
+    font-size: 0.7em;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    backdrop-filter: none;
+    color: #f0f0f0e9;
+    border: 2px solid rgba(30, 30, 30, 0.5);
+    background-color: rgba(30, 30, 30, 0.2);
+    box-shadow: #0000003a 0px 0px 20px;
+    background-image: var(--gradient-card-white);
   }
   .card-description:hover {
     transform: scale(1.0);
-  border: 2px solid rgba(30, 30, 30, 0.5);
-  background-color: rgba(30, 30, 30, 0.2);
-  box-shadow: #0000003a 0px 0px 20px;
-  background-image: var(--gradient-card-white);
+    border: 2px solid rgba(30, 30, 30, 0.5);
+    background-color: rgba(30, 30, 30, 0.2);
+    box-shadow: #0000003a 0px 0px 20px;
+    background-image: var(--gradient-card-white);
+  }
+
+  .project-link .icon-example {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .badge {
+    width: 55%;
   }
 
 .amp{
@@ -1392,10 +1421,6 @@ button:focus-visible,
   right: 0;
   background: var(--gradient-fade-right);
 }
-.portrait {
-  margin-top: 10px;
-  width: 200px;
-}
 
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -1417,14 +1442,29 @@ button:focus-visible,
 
 @media (max-width: 468px) {
   #inicio{
-    padding-top: 60px;
+    font-size: 1.7em;
+    padding-top: 50px;
     height: 90vh;
-    gap: 6px;
+    gap: 8px;
+    padding: 50px 12px;
+  }
+
+  #scramble {
+    font-size: 2.8em;
+  }
+
+  #titles {
+    font-size: 0.55em;
+    letter-spacing: 2px;
+  }
+
+  .email {
+    font-size: 0.35em;
   }
 
   .portrait {
-    max-width: 150px;
-    margin: 10px auto;
+    max-width: 130px;
+    margin: 6px auto;
   }
 
   .portrait img {
@@ -1433,8 +1473,13 @@ button:focus-visible,
     height: auto;
   }
 
+  .project-link .icon-example {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
   .amp{
-    padding-top: 40px;
+    padding-top: 0;
   }
   .amp2{
     font-size: 0.8em;

@@ -1,5 +1,5 @@
 // Scramble text animation
-const targetText = "Kelvin Puch";
+const targetText = "Kelvin Puche";
 const chars = "!¡?¿=<>@%$#&][/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
 let spans = [];
@@ -113,5 +113,17 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el);
   });
 });
+
+// Fallback para imágenes rotas
+document.addEventListener('error', function(e) {
+  const img = e.target;
+  if (img.tagName === 'IMG') {
+    img.style.display = 'none';
+    const fallback = document.createElement('span');
+    fallback.className = 'img-fallback';
+    fallback.textContent = '🖼 imagen no disponible';
+    img.parentNode?.insertBefore(fallback, img.nextSibling);
+  }
+}, true);
 
 

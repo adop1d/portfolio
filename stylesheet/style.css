@@ -174,11 +174,20 @@ nav {
 		inset: 0;
 		width: 100%;
 		height: 100%;
-		backdrop-filter:blur(3px) url(#wave-distort) ;
+		backdrop-filter: blur(3px);
 
   background-image: var(--gradient-hero);
 	border-radius: 12px;
 	}
+}
+
+@media (min-width: 769px) {
+  nav::before {
+    backdrop-filter: blur(3px) url(#wave-distort);
+  }
+  .dropdown-menu {
+    backdrop-filter: blur(3px) url(#wave-distort);
+  }
 }
 
 nav > ul {
@@ -186,16 +195,18 @@ nav > ul {
 	list-style: none;
 	display: flex;
 	justify-content: center;
-	height: 16px;
 	isolation: isolate;
 	padding: 0 6px;
+  margin: 0;
 }
-nav > ul li,
-nav > ul li a {
+nav > ul li {
 	position: relative;
-	width: 100%;
-	height: 100%;
-  margin: 0 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  margin: 0;
+}
+nav > ul li a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -203,6 +214,8 @@ nav > ul li a {
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 0.80rem;
+	white-space: nowrap;
+  padding: 12px 16px;
 }
 nav > ul li a {
 	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -514,6 +527,161 @@ footer {
   color: rgb(180, 178, 178);
   text-align: center;
   margin: 0;
+}
+
+/* Availability below name */
+.hero-availability {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin: 10px auto 4px;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: heroAboutFadeIn 0.8s ease forwards;
+  animation-delay: 0.6s;
+}
+
+/* Hero About Section */
+.hero-about {
+  text-align: center;
+  max-width: 620px;
+  margin: 18px auto 8px;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: heroAboutFadeIn 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes heroAboutFadeIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-about-heading {
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  font-size: 0.45em;
+  letter-spacing: 3px;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.hero-about-text {
+  font-size: 0.35em;
+  line-height: 1.8;
+  color: rgb(160, 158, 158);
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0 16px;
+}
+
+/* Hero Portrait — Enhanced with CRT glow */
+.hero-portrait {
+  position: relative;
+  animation: heroAboutFadeIn 0.8s ease forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.hero-portrait::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: radial-gradient(ellipse at center, rgba(253, 53, 190, 0.25) 0%, transparent 70%);
+  border-radius: 20px;
+  z-index: -1;
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.08); }
+}
+
+/* Hero Meta (availability + email) */
+.hero-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 8px auto 4px;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: heroAboutFadeIn 0.8s ease forwards;
+  animation-delay: 1.2s;
+}
+
+.hero-meta .email {
+  margin-top: 0;
+  letter-spacing: normal;
+}
+
+.availability-dot {
+  width: 7px;
+  height: 7px;
+  background: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+  animation: dotPulse 2s ease-in-out infinite;
+}
+
+@keyframes dotPulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 4px rgba(34, 197, 94, 0.4); }
+  50% { opacity: 0.6; box-shadow: 0 0 10px rgba(34, 197, 94, 0.8); }
+}
+
+.availability-text {
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  font-size: 0.35em;
+  color: #6bcc7b;
+}
+
+.hero-meta-sep {
+  color: rgba(120, 120, 120, 0.4);
+  font-size: 0.4em;
+}
+
+/* Hero Social Links */
+.hero-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin: 14px auto 10px;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: heroAboutFadeIn 0.8s ease forwards;
+  animation-delay: 1.6s;
+}
+
+.hero-social a {
+  color: rgba(160, 158, 158, 0.6);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.hero-social a:hover {
+  color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+/* Section numbers (01., 02., 03.) */
+.section-number {
+  display: block;
+  font-family: 'DepartureMono Nerd Font Propo', monospace;
+  font-size: 0.65em;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: var(--color-accent);
+  margin-bottom: 6px;
+  opacity: 0.7;
+  text-transform: uppercase;
 }
 
 #about {
@@ -845,17 +1013,15 @@ footer {
   margin-top: 20px;
   max-width: 200px;
   width: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-  z-index: -2;
   margin-left: auto;
   margin-right: auto;
+  line-height: 0;
 }
 .portrait img {
-  /* Propiedades de la IMAGEN DENTRO */
   display: block;
-  width: 100%; /* La imagen siempre llena el contenedor */
+  width: 100%;
   height: auto;
+  border-radius: 12px;
 }
 
 .dropdown {
@@ -884,7 +1050,7 @@ footer {
      (Note: You can remove the backdrop-filter: url(#wave-distort) from nav::before
       and apply a simple `backdrop-filter: blur(10px);` to the `nav` and `nav::before` 
       if you want the exact same visual effect.) */
-  backdrop-filter: blur(3px) url(#wave-distort);
+  backdrop-filter: blur(3px);
   /* ---------------------------- */
   
   box-sizing: border-box;
@@ -915,18 +1081,17 @@ footer {
 .dropdown-menu li a {
   z-index: 1001;
   display: block;
-  padding: 12px 20px;
 	color: #e4e4e4;
   text-decoration: none;
   font-family: 'DepartureMono Nerd Font Propo', monospace;
   font-size: 14px;
+  padding: 12px 20px;
 }
 
 .dropdown-menu li a:hover {
-
   z-index: 1001;
-  padding: 12px 20px;
   color: hsl(330, 100%, 42%);
+  padding: 12px 20px;
 }
 
 /* Estilos para la flechita ▼ */
@@ -1122,6 +1287,15 @@ button:focus-visible,
   padding: -6px;
 }
 
+.img-fallback {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 0.75em;
+  color: rgba(160, 158, 158, 0.6);
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
 .background-kleur {
   border-radius: 8px;
   padding-bottom: 1px;
@@ -1215,6 +1389,51 @@ button:focus-visible,
 
   .email {
     font-size: 0.4em;
+  }
+
+  .hero-about {
+    max-width: 90%;
+    margin: 14px auto 6px;
+  }
+
+  .hero-about-heading {
+    font-size: 0.4em;
+    letter-spacing: 2px;
+  }
+
+  .hero-about-text {
+    font-size: 0.3em;
+    padding: 0 8px;
+    line-height: 1.6;
+  }
+
+  .hero-buttons {
+    gap: 12px;
+    margin: 16px auto 14px;
+  }
+
+  .hero-btn {
+    font-size: 0.35em;
+    padding: 8px 18px;
+  }
+
+  .hero-availability {
+    margin: 8px auto 2px;
+  }
+
+  .hero-meta {
+    gap: 6px;
+    flex-wrap: wrap;
+    margin: 6px auto 2px;
+  }
+
+  .availability-text {
+    font-size: 0.3em;
+  }
+
+  .hero-social {
+    gap: 18px;
+    margin: 10px auto 8px;
   }
 
   .portrait {
@@ -1460,6 +1679,44 @@ button:focus-visible,
 
   .email {
     font-size: 0.35em;
+  }
+
+  .hero-about {
+    margin: 10px auto 4px;
+  }
+
+  .hero-about-heading {
+    font-size: 0.35em;
+  }
+
+  .hero-about-text {
+    font-size: 0.28em;
+    padding: 0 4px;
+  }
+
+  .hero-buttons {
+    gap: 8px;
+    margin: 12px auto 10px;
+    flex-wrap: wrap;
+  }
+
+  .hero-btn {
+    font-size: 0.32em;
+    padding: 6px 14px;
+  }
+
+  .hero-availability {
+    margin: 6px auto 1px;
+  }
+
+  .hero-meta {
+    gap: 4px;
+    margin: 4px auto 2px;
+  }
+
+  .hero-social {
+    gap: 14px;
+    margin: 8px auto 6px;
   }
 
   .portrait {

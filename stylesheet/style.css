@@ -154,6 +154,16 @@
   width: 45%;
   margin: 0 auto;
 }
+
+.cert-badge-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 8px;
+  border-radius: 8px;
+  object-fit: contain;
+}
 nav {
   z-index: 1000;
 	position: fixed;
@@ -1167,6 +1177,14 @@ footer {
   width: 250px;
 }
 
+#about .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  gap: 8px;
+  justify-content: center;
+  align-items: start;
+}
+
 .cards .red {
   background-color: hsla(330, 62%, 29%, 0.542);
 }
@@ -1466,6 +1484,19 @@ button:focus-visible,
     backdrop-filter: none;
     border-radius: 20px;
     padding-top: 3%
+  }
+
+  #about .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    width: 100%;
+  }
+
+  #about .cards .card-link {
+    width: 100%;
+    max-width: 340px;
+    justify-self: center;
   }
   .glass-paragraph{
     padding: 10px;

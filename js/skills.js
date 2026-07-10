@@ -36,7 +36,7 @@ const skillsData = {
     ]
   },
   databases: {
-    name: "Bases de Datos",
+    nameKey: "skills.category.databases",
     skills: [
       { name: "PostgreSQL", icon: "ico/Postgresql.png" },
       { name: "SQL", icon: "ico/sql.png" },
@@ -71,7 +71,9 @@ function renderSkills() {
     const categoryTitle = document.createElement('h4');
     categoryTitle.className = 'skill-category-title';
     categoryTitle.style.fontStyle = 'italic';
-    categoryTitle.textContent = category.name;
+    categoryTitle.textContent = category.nameKey && typeof I18N !== 'undefined'
+      ? I18N.t(category.nameKey)
+      : category.name;
     categoryDiv.appendChild(categoryTitle);
     
     // Skills grid

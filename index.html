@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es" translate="no">
+<html lang="en" translate="no">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/ico/ico1.png">
-  <title>Kelvin Puche — Desarrollador Web</title>
-  <meta name="description" content="Portfolio de Kelvin Puche, desarrollador web. Java, Spring Boot, React, JavaScript, Python y más.">
+  <title>Kelvin Puche — Web Developer</title>
+  <meta name="description" content="Kelvin Puche's portfolio — web developer. Java, Spring Boot, React, JavaScript, Python, and more.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Kelvin Puche — Desarrollador Web">
   <meta property="og:description" content="Portfolio de Kelvin Puche, desarrollador web. Java, Spring Boot, React, JavaScript, Python y más.">
@@ -30,12 +30,12 @@
   <header>
     <nav>
       <ul class="nav-list">
-        <li><a href="#home">inicio</a></li>
-        <li><a href="#about">certificados</a></li>
-        <li><a href="#proyectos">proyectos</a></li>
-        <li><a href="#services">habilidades</a></li>
+        <li><a href="#home" data-i18n="nav.home">home</a></li>
+        <li><a href="#about" data-i18n="nav.certificates">certificates</a></li>
+        <li><a href="#proyectos" data-i18n="nav.projects">projects</a></li>
+        <li><a href="#services" data-i18n="nav.skills">skills</a></li>
         <li class="dropdown" id="contact-link">
-          <a href="#">contacto<span class="arrow">▼</span></a>
+          <a href="#"><span data-i18n="nav.contact">contact</span><span class="arrow">▼</span></a>
           <ul class="dropdown-menu">
             <li>
               <a href="https://github.com/adop1d" target="_blank">
@@ -53,6 +53,11 @@
               </a>
             </li>
           </ul>
+        </li>
+        <li class="lang-switcher" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+          <span class="lang-divider" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
         </li>
       </ul>
     </nav>
@@ -78,11 +83,11 @@
       </div>
       <div class="hero-availability">
         <span class="availability-dot"></span>
-        <span class="availability-text">disponible</span>
+        <span class="availability-text" data-i18n="hero.availability">disponible</span>
       </div>
       <div class="hero-about" id="hero-about">
-        <p class="hero-about-heading">— Acerca de Kelvin Puche —</p>
-        <p class="hero-about-text">Kelvin es un desarrollador jr que siempre aporta una actitud positiva y multidisciplinaria a cada equipo de trabajo.</p>
+        <p class="hero-about-heading" data-i18n="hero.aboutHeading">— Acerca de Kelvin Puche —</p>
+        <p class="hero-about-text" data-i18n="hero.aboutText">Kelvin es un desarrollador jr que siempre aporta una actitud positiva y multidisciplinaria a cada equipo de trabajo.</p>
       </div>
       <div class="hero-meta">
         <p class="email">email : kelpucha@gmail.com</p>
@@ -102,11 +107,11 @@
 
     <section id="about" aria-labelledby="about-heading">
       <span class="section-number">01.</span>
-      <h2 id="about-heading" class="about">certificación</h2>
-      <h4>Mi crecimiento academico:</h4><br>
+      <h2 id="about-heading" class="about" data-i18n="about.title">certificación</h2>
+      <h4 data-i18n="about.subtitle">Mi crecimiento academico:</h4><br>
 
       <div class="generic-small fade-in-on-scroll">
-        <p id="title-aptitude-title"> [Click card: para abrir el enlace con el acceso público a mi certificado]</p>
+        <p data-i18n="about.clickHint"> [Click card: para abrir el enlace con el acceso público a mi certificado]</p>
       </div><br>
       <div class="cards">
 
@@ -114,9 +119,9 @@
           <div class="card red">
             <p class="tip">Academia EDTeam: Java</p>
             <span class="background-kleur"><img src="ico/java.png" alt="" class="icon-example"></span>
-            <p class="tut">Certificado en Java desde Cero en la academia EDTeam</p>
+            <p class="tut" data-i18n="cert.java.tut">Certificado en Java desde Cero en la academia EDTeam</p>
           </div>
-          <p class="card-description">Mi primer lenguaje de programación. Muy completo y útil para todo tipo de tareas.</p>
+          <p class="card-description" data-i18n="cert.java.desc">Mi primer lenguaje de programación. Muy completo y útil para todo tipo de tareas.</p>
         </a>
 
         <a href="https://www.credly.com/badges/e6d7ca8e-623e-4207-8add-73e18554ec48/public_url" target="_blank"
@@ -132,7 +137,7 @@
               <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
             </div>
           </div>
-          <p class="card-description">Opino que es un lenguaje muy completo y estoy orgulloso de haberlo aprendido.</p>
+          <p class="card-description" data-i18n="cert.python.desc">Opino que es un lenguaje muy completo y estoy orgulloso de haberlo aprendido.</p>
         </a>
 
         <a href="https://www.credly.com/badges/281f1d4e-e551-442d-af37-bcb327992e5f/public_url" target="_blank"
@@ -144,7 +149,7 @@
               <div data-iframe-width="130" data-iframe-height="230" data-share-badge-id="281f1d4e-e551-442d-af37-bcb327992e5f" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
             </div>
           </div>
-          <p class="card-description">Opino que es un lenguaje muy completo y estoy orgulloso de haberlo aprendido.</p>
+          <p class="card-description" data-i18n="cert.python.desc">Opino que es un lenguaje muy completo y estoy orgulloso de haberlo aprendido.</p>
         </a>
 
         <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=D8F1B01344B6C43C91FD234A3E2638182FA1E64EB6EA570F3021B0A478E067A3"
@@ -154,7 +159,7 @@
             <span class="background-kleur"><img src="ico/Deep Learning.png" alt="" class="icon-example"></span>
             <img src="/badge/Learning-Path_badge_default.png" class="badge" alt="Insignia Oracle Cloud Infrastructure AI Foundations Associate">
           </div>
-          <p class="card-description">Gracias a Oracle, ahora poseo un profundo conocimiento teórico de los fundamentos de la IA
+          <p class="card-description" data-i18n="cert.oracle.desc">Gracias a Oracle, ahora poseo un profundo conocimiento teórico de los fundamentos de la IA
             moderna (ML, DL, LLMs) y experiencia práctica con las herramientas de IA de Oracle Cloud Infrastructure
             (OCI).</p>
         </a>
@@ -171,22 +176,22 @@
               <div data-iframe-width="130" data-iframe-height="230" data-share-badge-id="65fe1d22-0299-4aea-b487-f18bee7c48bc" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
             </div>
           </div>
-          <p class="card-description">Certificado en Data Analytics, con herramientas como SQL, Excel y Tableau.</p>
+          <p class="card-description" data-i18n="cert.analytics.desc">Certificado en Data Analytics, con herramientas como SQL, Excel y Tableau.</p>
         </a>
 
         <a href="https://cert.efset.org/Tib84T" target="_blank" rel="noopener noreferrer" class="card-link">
           <div class="card red">
-            <p class="tip">EF SET: Inglés B2</p>
+            <p class="tip" data-i18n="cert.english.tip">EF SET: Inglés B2</p>
             <img src="badge/b2-english.webp" class="cert-badge-img" alt="Certificado EF SET Inglés B2 Upper Intermediate — 54/100">
           </div>
-          <p class="card-description">Certificación de inglés nivel B2 (Upper Intermediate) verificada por EF SET.</p>
+          <p class="card-description" data-i18n="cert.english.desc">Certificación de inglés nivel B2 (Upper Intermediate) verificada por EF SET.</p>
         </a>
       </div>
 
 
 
       <div class="generic-small">
-        <p class="fade-in-on-scroll" id="gratefull">
+        <p class="fade-in-on-scroll" id="gratefull" data-i18n="about.grateful">
           También quisiera destacar y agradecer los cursos de Pildorasinformaticas,
           SergieCode, MitoCode, Fazt, Jey Code y entre otros por
           ofrecer sus servicios y brindar aprendizaje de manera gratuita.
@@ -195,11 +200,11 @@
     </section>
     <section id="proyectos" aria-labelledby="proyectos-heading">
       <span class="section-number">02.</span>
-      <h2 id="proyectos-heading" class="proyects">Proyectos</h2>
+      <h2 id="proyectos-heading" class="proyects" data-i18n="projects.title">Proyectos</h2>
       <div class="generic-small" class="fade-in-on-scroll">
-        <p>Puedes encontrar más en mi perfil de GitHub.
+        <p data-i18n="projects.githubHint">Puedes encontrar más en mi perfil de GitHub.
         </p>
-        <p id="title-aptitude-title">
+        <p data-i18n="projects.clickHint">
           [Click card: para abrir el repositorio Github con el código fuente]
         </p>
       </div>
@@ -217,9 +222,9 @@
               <img src="ico/js.png" alt="" class="icon-example">
               <img src="ico/css.png" alt="" class="icon-example">
             </span>
-            <p class="tut">Red Social al estilo Reddit con chat, notificaciones, perfiles, publicaciones, comentarios y más.</p>
+            <p class="tut" data-i18n="project.vitre.tut">Red Social al estilo Reddit con chat, notificaciones, perfiles, publicaciones, comentarios y más.</p>
           </div>
-          <p class="card-description">Proyecto de red social al estilo Reddit, tornando más a mi estilo.</p>
+          <p class="card-description" data-i18n="project.vitre.desc">Proyecto de red social al estilo Reddit, tornando más a mi estilo.</p>
         </a>
         <a href="https://augescode.site/" target="_blank" class="card-link project-link">
           <div class="card red project-card">
@@ -237,9 +242,9 @@
               <img src="ico/css.png" alt="" class="icon-example">
               <img src="ico/5968267.png" alt="" class="icon-example">
             </span>
-            <p class="tut">Mi POS administrativo en la nube (AugesCloud), Página de presentación de la marca (personal) y co-desarrollador de AugeSGIntern (Programa Local).</p>
+            <p class="tut" data-i18n="project.auges.tut">Mi POS administrativo en la nube (AugesCloud), Página de presentación de la marca (personal) y co-desarrollador de AugeSGIntern (Programa Local).</p>
           </div>
-            <p class="card-description">Sistemas POS administrativos.</p>
+            <p class="card-description" data-i18n="project.auges.desc">Sistemas POS administrativos.</p>
         </a>
         
         <a href="https://github.com/adop1d/personal-tasks-manager" target="_blank" class="card-link project-link">
@@ -255,9 +260,9 @@
               <img src="ico/Postgresql.png" alt="" class="icon-example">
               <img src="ico/docker.png" alt="" class="icon-example">
             </span>
-            <p class="tut">Gestor de tareas full-stack con diseño Neo-Tokyo. Autenticación JWT, CRUD completo, tema oscuro/claro, atajos de teclado y soporte PWA.</p>
+            <p class="tut" data-i18n="project.ktm.tut">Gestor de tareas full-stack con diseño Neo-Tokyo. Autenticación JWT, CRUD completo, tema oscuro/claro, atajos de teclado y soporte PWA.</p>
           </div>
-          <p class="card-description">Primer proyecto combinando Spring Boot y React.</p>
+          <p class="card-description" data-i18n="project.ktm.desc">Primer proyecto combinando Spring Boot y React.</p>
         </a>
         <a href="https://github.com/adop1d/text-editor" target="_blank" class="card-link project-link">
           <div class="card red project-card">
@@ -265,10 +270,10 @@
             <span class="background-kleur">
               <img src="ico/java.png" alt="" class="icon-example">
             </span>
-            <p class="tut">Aplicación de escritorio creada en Java con la biblioteca
+            <p class="tut" data-i18n="project.editor.tut">Aplicación de escritorio creada en Java con la biblioteca
               JSwing.</p>
           </div>
-          <p class="card-description">Un editor de texto en el que
+          <p class="card-description" data-i18n="project.editor.desc">Un editor de texto en el que
             estuve jugando un poco con
             la biblioteca JSwing.</p>
         </a>
@@ -279,16 +284,16 @@
             <span class="background-kleur">
               <img src="ico/java.png" alt="" class="icon-example">
             </span>
-            <p class="tut">Un minijuego divertido en consola :).</p>
+            <p class="tut" data-i18n="project.hangman.tut">Un minijuego divertido en consola :).</p>
           </div>
-          <p class="card-description">Muy divertido, me moria de risa mientras lo jugaba.</p>
+          <p class="card-description" data-i18n="project.hangman.desc">Muy divertido, me moria de risa mientras lo jugaba.</p>
         </a>
       </div>
     </section>
     <section id="services" aria-labelledby="services-heading">
       <span class="section-number">03.</span>
-      <h2 id="services-heading" class="services">Habilidades</h2>
-      <h4>Tecnologías que manejo</h4><br><br>
+      <h2 id="services-heading" class="services" data-i18n="skills.title">Habilidades</h2>
+      <h4 data-i18n="skills.subtitle">Tecnologías que manejo</h4><br><br>
       <div class="logos">
         <div class="logos-slide">
           <img src="ico/java.png" alt="">
@@ -358,9 +363,9 @@
           <div id="skills-grid" class="fade-in-on-scroll"></div>
         </div>
         <aside class="skills-right glass-paragraph fade-in-on-scroll">
-          <h4 class="skill-desc-title">Sobre las herramientas</h4>
+          <h4 class="skill-desc-title" data-i18n="skills.aboutTitle">Sobre las herramientas</h4>
           <hr class="skill-desc-hr">
-          <p>
+          <p data-i18n="skills.aboutText">
             He trabajado en: lenguajes como Java, JavaScript y Python; frameworks backend como Spring y Django; tecnologías
             frontend como HTML, CSS, Tailwind y React; bases de datos como PostgreSQL junto a
             herramientas de gestión como DBeaver, supabase y pgadmin; y utilidades para control de versiones y despliegue como Git,
@@ -405,6 +410,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/i18n.js"></script>
     <script src="js/skills.js"></script>
     <script src="js/script.js"></script>
 </body>

@@ -6,9 +6,10 @@ const skillsData = {
       { name: "HTML", icon: "ico/5968267.png" },
       { name: "CSS", icon: "ico/css.png" },
       { name: "Tailwind", icon: "ico/tailwind.png" },
-      {name: "JavaScript", icon: "ico/js.png" },
+      { name: "JavaScript", icon: "ico/js.png" },
       { name: "React", icon: "ico/react.png" },
-      { name: "TypeScript", icon: "ico/typescript.png" },
+      { name: "Next.js", icon: "ico/nextjs.png"},
+      { name: "Wordpress", icon: "ico/Wordpress.png"},
     ]
   },
   backend: {
@@ -17,11 +18,7 @@ const skillsData = {
       { name: "Java", icon: "ico/java.png" },
       { name: "Python", icon: "ico/python-icon-sm.png" },
       { name: "Django", icon: "ico/django.webp" },
-      { name: "Spring", icon: "ico/spring.png" },
       { name: "Spring Boot", icon: "ico/spring-boot.png" },
-      { name: "Spring Data", icon: "ico/spring-data.png" },
-      { name: "Hibernate", icon: "ico/hibernate.png" },
-      { name: "Supabase", icon: "ico/supabase.png" }
     ]
   },
   deployment: {
@@ -29,6 +26,7 @@ const skillsData = {
     skills: [
       { name: "Vercel", icon: "ico/vercel.png" },
       { name: "Docker", icon: "ico/docker.png" },
+      { name: "Kubernetes", icon: "ico/k8s.png" },
       { name: "Bash", icon: "ico/bash.png" },
       { name: "Git", icon: "ico/git.png" },
       { name: "GitHub", icon: "ico/github.png" },
@@ -39,8 +37,7 @@ const skillsData = {
     nameKey: "skills.category.databases",
     skills: [
       { name: "PostgreSQL", icon: "ico/Postgresql.png" },
-      { name: "SQL", icon: "ico/sql.png" },
-      { name: "DBeaver", icon: "ico/DBeaver.png" },
+      { name: "Supabase", icon: "ico/supabase.png" }
     ]
   },
   dataScience: {

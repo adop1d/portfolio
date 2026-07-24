@@ -9,7 +9,6 @@ const skillsData = {
       { name: "JavaScript", icon: "ico/js.png" },
       { name: "React", icon: "ico/react.png" },
       { name: "Next.js", icon: "ico/nextjs.png"},
-      { name: "Wordpress", icon: "ico/Wordpress.png"},
     ]
   },
   backend: {

@@ -1218,10 +1218,15 @@ footer {
 
 #about .cards {
   display: grid;
-  grid-template-columns: repeat(3, 250px);
+  grid-template-columns: repeat(5, minmax(200px, 250px));
   gap: 8px;
   justify-content: center;
   align-items: start;
+}
+
+#about .cards .card-link {
+  width: 100%;
+  max-width: 250px;
 }
 
 .cards .red {

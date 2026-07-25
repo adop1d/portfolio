@@ -1701,14 +1701,17 @@ button:focus-visible,
     left: 0;
     right: 0;
     transform: none;
-    padding: var(--space-sm) var(--space-sm) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-xs);
+    padding: var(--space-sm);
     box-sizing: border-box;
   }
 
   .lang-switcher {
-    position: absolute;
-    top: var(--space-sm);
-    right: var(--space-sm);
+    position: static;
+    align-self: flex-end;
     z-index: 1001;
     gap: 2px;
     padding: 2px 4px;
@@ -1743,7 +1746,7 @@ button:focus-visible,
 
   nav {
     width: 100%;
-    margin-top: calc(40px + var(--space-xs));
+    margin-top: 0;
     padding: 0 var(--space-xs);
     border-radius: var(--radius-md);
   }
@@ -1858,7 +1861,7 @@ button:focus-visible,
   }
 
   #inicio {
-    padding: calc(104px + var(--space-sm)) var(--space-md) var(--space-xl);
+    padding: calc(92px + var(--space-sm)) var(--space-md) var(--space-xl);
     min-height: auto;
   }
 

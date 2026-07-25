@@ -13,6 +13,16 @@ const I18N = {
       'nav.skills': 'habilidades',
       'nav.contact': 'contacto',
       'hero.availability': 'disponible',
+      'hero.role': 'desarrollador web',
+      'hero.masthead.issue': 'VOL. 01 · 2026 · PORTFOLIO DEV',
+      'hero.masthead.tag': 'KELVIN PUCHE · DESARROLLO WEB',
+      'hero.features': 'FEATURES',
+      'hero.featuresText': 'Spring Boot · React · Next.js · Supabase · Docker',
+      'hero.spec.stack': 'stack',
+      'hero.spec.stackVal': 'APIs REST · SPA · cloud',
+      'hero.spec.status': 'estado',
+      'hero.spec.contact': 'contacto',
+      'hero.description': 'DESCRIPTION',
       'hero.aboutHeading': '— Acerca de Kelvin Puche —',
       'hero.aboutText': 'Kelvin es un desarrollador jr que siempre aporta una actitud positiva y multidisciplinaria a cada equipo de trabajo.',
       'about.title': 'certificación',
@@ -47,7 +57,9 @@ const I18N = {
       'skills.aboutText': 'He trabajado en: lenguajes como Java, JavaScript y Python; frameworks backend como SpringBoot, Vert.x, Next.js y Django; tecnologías frontend como HTML, CSS, Tailwind, React y Next.js; bases de datos como PostgreSQL junto a herramientas de gestión como supabase y pgadmin; y utilidades para control de versiones y despliegue como Git, GitHub, Docker y Kubernetes. También incluyo herramientas y entornos para ciencia de datos que empleo en proyectos de análisis y modelos de IA. Estos iconos representan el ecosistema con el que construyo, pruebo y despliego aplicaciones. También tengo conocimientos en herramientas de análisis de datos como SQL, Excel y Tableau.',
       'skills.category.databases': 'Bases de Datos',
       'img.fallback': 'imagen no disponible',
-      'lang.switch': 'Idioma'
+      'lang.switch': 'Idioma',
+      'footer.statement': 'Sigo construyendo — un commit a la vez.',
+      'footer.copyright': '© 2026 Kelvin Puche'
     },
     en: {
       'meta.title': 'Kelvin Puche — Web Developer',
@@ -58,6 +70,16 @@ const I18N = {
       'nav.skills': 'skills',
       'nav.contact': 'contact',
       'hero.availability': 'available',
+      'hero.role': 'web developer',
+      'hero.masthead.issue': 'VOL. 01 · 2026 · DEV PORTFOLIO',
+      'hero.masthead.tag': 'KELVIN PUCHE · WEB DEV',
+      'hero.features': 'FEATURES',
+      'hero.featuresText': 'Spring Boot · React · Next.js · Supabase · Docker',
+      'hero.spec.stack': 'stack',
+      'hero.spec.stackVal': 'REST APIs · SPA · cloud',
+      'hero.spec.status': 'status',
+      'hero.spec.contact': 'contact',
+      'hero.description': 'DESCRIPTION',
       'hero.aboutHeading': '— About Kelvin Puche —',
       'hero.aboutText': 'Kelvin is a junior developer who always brings a positive, multidisciplinary attitude to every team.',
       'about.title': 'certification',
@@ -92,7 +114,9 @@ const I18N = {
       'skills.aboutText': 'I\'ve worked with languages such as Java, JavaScript, and Python; backend frameworks like SpringBoot, Next.Js and Django; frontend technologies including HTML, CSS, Tailwind, React and Next.Js; relational databases like PostgreSQL along with management tools such as DBeaver, Supabase, and pgAdmin; and version control and deployment utilities like Docker, Kubernetes, Git, GitHub. I also use data science tools and environments for analysis and AI model projects. These icons represent the ecosystem I use to build, test, and deploy applications. I also have experience with data analysis tools such as SQL, Excel, and Tableau.',
       'skills.category.databases': 'Databases',
       'img.fallback': 'image unavailable',
-      'lang.switch': 'Language'
+      'lang.switch': 'Language',
+      'footer.statement': 'Still building — one commit at a time.',
+      'footer.copyright': '© 2026 Kelvin Puche'
     }
   },
 

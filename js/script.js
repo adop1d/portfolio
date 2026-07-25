@@ -48,6 +48,9 @@ function revealNext(index, container) {
 // Initialize scramble text animation when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById("scramble");
+  const sizer = document.querySelector(".hero-mag__name-sizer");
+
+  if (sizer) sizer.textContent = targetText;
   
   if (container) {
     let hasScrambled = false;

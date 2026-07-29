@@ -1,2 +1,6 @@
 [build]
   publish = "."
+
+[build.environment]
+  # Static site — no install step (avoids npm/pnpm if package.json is re-added)
+  NETLIFY_SKIP_INSTALL = "true"

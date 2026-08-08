@@ -6,7 +6,7 @@ const I18N = {
   strings: {
     es: {
       'meta.title': 'Kelvin Puche — Desarrollador Web',
-      'meta.description': 'Portfolio de Kelvin Puche, desarrollador web. Java, Spring Boot, React, JavaScript, Python y más.',
+      'meta.description': 'Portfolio de Kelvin Puche, desarrollador web. Java, Spring Boot, React, Django y más.',
       'nav.home': 'inicio',
       'nav.certificates': 'certificados',
       'nav.certificatesShort': 'certif.',
@@ -59,7 +59,7 @@ const I18N = {
       'skills.title': 'Habilidades',
       'skills.subtitle': 'Tecnologías que manejo',
       'skills.aboutTitle': 'Sobre las herramientas',
-      'skills.aboutText': 'He trabajado en: lenguajes como Java, JavaScript y Python; frameworks backend como SpringBoot, Vert.x, Next.js y Django; tecnologías frontend como HTML, CSS, Tailwind, React y Next.js; bases de datos como PostgreSQL junto a herramientas de gestión como supabase y pgadmin; y utilidades para control de versiones y despliegue como Git, GitHub, Docker y Kubernetes. También incluyo herramientas y entornos para ciencia de datos que empleo en proyectos de análisis y modelos de IA. Estos iconos representan el ecosistema con el que construyo, pruebo y despliego aplicaciones. También tengo conocimientos en herramientas de análisis de datos como SQL, Excel y Tableau.',
+      'skills.aboutText': 'He trabajado en: lenguajes como Java, JavaScript y Python; frameworks backend como SpringBoot, Vert.x y Django; tecnologías frontend como HTML, CSS, Tailwind y React.js; bases de datos como PostgreSQL junto a herramientas de gestión como supabase y pgadmin; y utilidades para control de versiones y despliegue como Git, GitHub, Docker y Kubernetes. También tengo conocimientos en herramientas de análisis de datos como SQL, Excel y Tableau.',
       'skills.category.databases': 'Bases de Datos',
       'img.fallback': 'imagen no disponible',
       'lang.switch': 'Idioma',
@@ -68,7 +68,7 @@ const I18N = {
     },
     en: {
       'meta.title': 'Kelvin Puche — Web Developer',
-      'meta.description': 'Kelvin Puche\'s portfolio — web developer. Java, Spring Boot, React, JavaScript, Python, and more.',
+      'meta.description': 'Kelvin Puche\'s portfolio — web developer. Java, Spring Boot, Vert.x, React, Django, and more.',
       'nav.home': 'home',
       'nav.certificates': 'certificates',
       'nav.certificatesShort': 'certs',
@@ -121,7 +121,7 @@ const I18N = {
       'skills.title': 'Skills',
       'skills.subtitle': 'Technologies I work with',
       'skills.aboutTitle': 'About the tools',
-      'skills.aboutText': 'I\'ve worked with languages such as Java, JavaScript, and Python; backend frameworks like SpringBoot, Next.Js and Django; frontend technologies including HTML, CSS, Tailwind, React and Next.Js; relational databases like PostgreSQL along with management tools such as DBeaver, Supabase, and pgAdmin; and version control and deployment utilities like Docker, Kubernetes, Git, GitHub. I also use data science tools and environments for analysis and AI model projects. These icons represent the ecosystem I use to build, test, and deploy applications. I also have experience with data analysis tools such as SQL, Excel, and Tableau.',
+      'skills.aboutText': 'I\'ve worked with languages such as Java and Python; backend frameworks like SpringBoot, Vert.x, Temporal and Django; frontend technologies including HTML, CSS, Tailwind and React.js ; relational databases like PostgreSQL, MySQL along with management tools such as DBeaver, Supabase, and pgAdmin; and version control and deployment utilities like Docker, Kubernetes, Git, GitHub. I also have experience with data analysis tools such as SQL, Excel, and Tableau.',
       'skills.category.databases': 'Databases',
       'img.fallback': 'image unavailable',
       'lang.switch': 'Language',

@@ -8,20 +8,22 @@ const skillsData = {
       { name: "Tailwind", icon: "ico/tailwind.png" },
       { name: "JavaScript", icon: "ico/js.png" },
       { name: "React", icon: "ico/react.png" },
-      { name: "Next.js", icon: "ico/nextjs.png"},
     ]
   },
   backend: {
     name: "Backend",
     skills: [
+      { name: "Maven", icon: "ico/maven.png" },
       { name: "Java", icon: "ico/java.png" },
       { name: "Python", icon: "ico/python-icon-sm.png" },
       { name: "Django", icon: "ico/django.webp" },
       { name: "Spring Boot", icon: "ico/spring-boot.png" },
+      { name: "Temporal.io", icon: "ico/temporal-io.png" },
+      
     ]
   },
   deployment: {
-    name: "Deployment/Tools",
+    name: "DevOps",
     skills: [
       { name: "Vercel", icon: "ico/vercel.png" },
       { name: "Docker", icon: "ico/docker.png" },
@@ -29,7 +31,6 @@ const skillsData = {
       { name: "Bash", icon: "ico/bash.png" },
       { name: "Git", icon: "ico/git.png" },
       { name: "GitHub", icon: "ico/github.png" },
-      { name: "Maven", icon: "ico/maven.png" },
     ]
   },
   databases: {
@@ -42,9 +43,11 @@ const skillsData = {
   dataScience: {
     name: "AI and Data",
     skills: [
-      { name: "Jupyter", icon: "ico/Jupyter.png" },
       //{ name: "Oracle Data Science", icon: "ico/Oracle Data Science.png" },
       { name: "Oracle AI Foundations", icon: "ico/Deep Learning.png" }
+      { name: "Excel", icon: "ico/Microsoft_Office_Excel_(2025–present).svg.png" },
+      { name: "SQL", icon: "ico/sql.png" },
+
     ]
   }
 };

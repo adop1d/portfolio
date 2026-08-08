@@ -44,7 +44,7 @@ const skillsData = {
     name: "AI and Data",
     skills: [
       //{ name: "Oracle Data Science", icon: "ico/Oracle Data Science.png" },
-      { name: "Oracle AI Foundations", icon: "ico/Deep Learning.png" }
+      { name: "Oracle AI Foundations", icon: "ico/Deep Learning.png" },
       { name: "Excel", icon: "ico/Microsoft_Office_Excel_(2025–present).svg.png" },
       { name: "SQL", icon: "ico/sql.png" },
 

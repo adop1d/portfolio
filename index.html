@@ -76,6 +76,9 @@
   <main>
 
     <section id="inicio" aria-labelledby="scramble">
+      <div class="ascii-scene ascii-scene--hero" data-ascii-hero aria-hidden="true">
+        <canvas class="ascii-canvas ascii-canvas--over" data-ascii-scene="hero-over"></canvas>
+      </div>
       <article class="hero-mag">
         <header class="hero-mag__mast">
           <p class="hero-mag__issue" data-i18n="hero.masthead.issue">VOL. 01 · 2026 · DEV PORTFOLIO</p>
@@ -152,6 +155,7 @@
     </section>
 
     <section id="about" aria-labelledby="about-heading">
+      <div class="section-content section-content--about">
       <header class="section-head">
         <h2 id="about-heading" class="about section-head__title" data-i18n="about.title">certificación</h2>
         <p class="section-head__lede" data-i18n="about.subtitle">Mi crecimiento academico:</p>
@@ -262,6 +266,7 @@
           ofrecer sus servicios y brindar aprendizaje de manera gratuita.
         </p>
       </div>
+      </div>
     </section>
     <section id="proyectos" aria-labelledby="proyectos-heading">
       <header class="section-head">
@@ -356,6 +361,7 @@
       </div>
     </section>
     <section id="services" aria-labelledby="services-heading">
+      <div class="section-content section-content--services">
       <header class="section-head">
         <h2 id="services-heading" class="services section-head__title" data-i18n="skills.title">Habilidades</h2>
         <p class="section-head__lede" data-i18n="skills.subtitle">Tecnologías que manejo</p>
@@ -430,7 +436,11 @@
         </div>
       </div>
 
-      <div class="skills-section-wrapper fade-in-on-scroll">
+      <div class="skills-block fade-in-on-scroll">
+        <div class="ascii-scene ascii-scene--skills-lateral" aria-hidden="true">
+          <canvas class="ascii-canvas ascii-canvas--flower" data-ascii-scene="skills-flower-desk"></canvas>
+        </div>
+        <div class="skills-section-wrapper">
         <div class="skills-left">
           <div id="skills-grid" class="fade-in-on-scroll"></div>
         </div>
@@ -446,9 +456,15 @@
             También tengo conocimientos en herramientas de análisis de datos como SQL, Excel y Tableau.
           </p>
         </aside>
+        <div class="ascii-scene ascii-scene--skills-flower-mobile" aria-hidden="true">
+          <canvas class="ascii-canvas ascii-canvas--flower" data-ascii-scene="skills-flower-mobile"></canvas>
+        </div>
+        </div>
+      </div>
       </div>
     </section>
     <footer class="foot-stmt">
+      <div class="foot-stmt__content">
       <p class="foot-stmt__line" data-i18n="footer.statement">Still building — one commit at a time.</p>
       <div class="foot-stmt__meta">
         <span class="foot-stmt__name">Kelvin Puche</span>
@@ -466,9 +482,11 @@
         </div>
         <span class="foot-stmt__copy" data-i18n="footer.copyright">© 2026 Kelvin Puche</span>
       </div>
+      </div>
     </footer>
     <script src="js/i18n.js"></script>
     <script src="js/skills.js"></script>
+    <script src="js/ascii-scene.js"></script>
     <script src="js/script.js"></script>
 </body>
 

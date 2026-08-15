@@ -124,7 +124,7 @@ document.addEventListener('error', function(e) {
     img.style.display = 'none';
     const fallback = document.createElement('span');
     fallback.className = 'img-fallback';
-    fallback.textContent = '🖼 ' + (typeof I18N !== 'undefined' ? I18N.t('img.fallback') : 'imagen no disponible');
+    fallback.textContent = typeof I18N !== 'undefined' ? I18N.t('img.fallback') : 'imagen no disponible';
     img.parentNode?.insertBefore(fallback, img.nextSibling);
   }
 }, true);

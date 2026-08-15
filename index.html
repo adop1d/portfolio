@@ -5,16 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/ico/ico1.png">
-  <title>Kelvin Puche — Web Developer</title>
-  <meta name="description" content="Kelvin Puche's portfolio — developer. Java, Spring Boot, React, JavaScript, Python, and more.">
+  <link rel="canonical" href="https://pchportfolio.netlify.app/">
+  <title>Kelvin Puche - Web Developer</title>
+  <meta name="description" content="Kelvin Puche portfolio - full-stack developer. Java, Spring Boot, React, Kubernetes, and more.">
+  <meta name="author" content="Kelvin Puche">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Kelvin Puche — Dev">
-  <meta property="og:description" content="Portfolio de Kelvin Puche, desarrollador web. Java, Spring Boot, React, JavaScript, Python y más.">
-  <meta property="og:url" content="https://github.com/adop1d/portfolio">
-  <meta property="og:image" content="/img/portrait.jpeg">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Kelvin Puche — Dev">
-  <meta name="twitter:description" content="Portfolio de Kelvin Puche, desarrollador web. Java, Spring Boot, React, JavaScript, Python y más.">
+  <meta property="og:site_name" content="Kelvin Puche">
+  <meta property="og:title" content="Kelvin Puche - Web Developer">
+  <meta property="og:description" content="Kelvin Puche portfolio - full-stack developer. Java, Spring Boot, React, Kubernetes, and more.">
+  <meta property="og:url" content="https://pchportfolio.netlify.app/">
+  <meta property="og:image" content="https://pchportfolio.netlify.app/img/og-cover.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kelvin Puche - Web Developer">
+  <meta name="twitter:description" content="Kelvin Puche portfolio - full-stack developer. Java, Spring Boot, React, Kubernetes, and more.">
+  <meta name="twitter:image" content="https://pchportfolio.netlify.app/img/og-cover.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
@@ -75,7 +83,7 @@
   </header>
   <main>
 
-    <section id="inicio" aria-labelledby="scramble">
+    <section id="inicio" aria-labelledby="hero-name">
       <div class="ascii-scene ascii-scene--hero" data-ascii-hero aria-hidden="true">
         <canvas class="ascii-canvas ascii-canvas--over" data-ascii-scene="hero-over"></canvas>
       </div>
@@ -87,7 +95,7 @@
 
         <div class="hero-mag__grid">
           <aside class="hero-mag__col hero-mag__col--specs">
-            <h2 class="hero-mag__label" data-i18n="hero.features">FEATURES</h2>
+            <h2 class="hero-mag__label" data-i18n="hero.features">Stack</h2>
             <ul class="hero-mag__tools">
               <li>vert.x</li>
               <li>spring boot</li>
@@ -123,14 +131,21 @@
             </div>
             <div class="hero-mag__name-shell">
               <span class="hero-mag__name-sizer" aria-hidden="true">Kelvin Puche</span>
-              <h1 class="scramble hero-mag__name" id="scramble"></h1>
+              <h1 class="hero-mag__name" id="hero-name">
+                <span class="sr-only">Kelvin Puche</span>
+                <span class="scramble" id="scramble" aria-hidden="true"></span>
+              </h1>
             </div>
-            <p class="hero-mag__trim" id="titles" data-i18n="hero.role">developer</p>
+            <p class="hero-mag__trim" id="titles" data-i18n="hero.role">full-stack developer</p>
+            <div class="hero-mag__actions">
+              <a href="#proyectos" class="hero-mag__cta hero-mag__cta--primary" data-i18n="hero.cta.projects">View projects</a>
+              <a href="mailto:kelpucha@gmail.com" class="hero-mag__cta hero-mag__cta--secondary" data-i18n="hero.cta.contact">Contact</a>
+            </div>
           </div>
 
           <aside class="hero-mag__col hero-mag__col--desc">
-            <h2 class="hero-mag__label" data-i18n="hero.description">DESCRIPTION</h2>
-            <p class="hero-mag__copy" data-i18n="hero.aboutText">Kelvin es un desarrollador jr que siempre aporta una actitud positiva y multidisciplinaria a cada equipo de trabajo.</p>
+            <h2 class="hero-mag__label" data-i18n="hero.description">Profile</h2>
+            <p class="hero-mag__copy" data-i18n="hero.aboutText">Full-stack developer building REST APIs, microservices, and SPAs with Java, Spring Boot, React, and cloud.</p>
             <div class="hero-mag__deco" aria-hidden="true">
               <span class="hero-mag__barcode"></span>
               <span class="hero-mag__serial">KPU·2026·01</span>
@@ -147,9 +162,6 @@
               <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.026-3.037-1.849-3.037-1.852 0-2.136 1.447-2.136 2.941v5.665H9.354V9h3.414v1.561h.049c.476-.9 1.637-1.849 3.37-1.849 3.602 0 4.267 2.368 4.267 5.455v6.285zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.93 20.452H3.744V9h3.186v11.452zM22.225 0H1.771C.792 0 0 .771 0 1.723v20.549C0 23.228.792 24 1.771 24h20.451C23.2 24 24 23.228 24 22.272V1.723C24 .771 23.2 0 22.222 0z"/></svg>
             </a>
           </div>
-          <div class="scroll-indicator">
-            <span>↓</span>
-          </div>
         </div>
       </article>
     </section>
@@ -157,107 +169,53 @@
     <section id="about" aria-labelledby="about-heading">
       <div class="section-content section-content--about">
       <header class="section-head">
-        <h2 id="about-heading" class="about section-head__title" data-i18n="about.title">certificación</h2>
-        <p class="section-head__lede" data-i18n="about.subtitle">Mi crecimiento academico:</p>
+        <h2 id="about-heading" class="about section-head__title" data-i18n="about.title">Certificación</h2>
+        <p class="section-head__lede" data-i18n="about.subtitle">Formación destacada</p>
       </header>
 
-      <div class="generic-small fade-in-on-scroll">
-        <p data-i18n="about.clickHint"> [Click card: para abrir el enlace con el acceso público a mi certificado]</p>
-      </div><br>
-      <div class="cards">
-
-        <a href="https://ed.team/u/kelvinpuch/curso/java" target="_blank" class="card-link">
-          <div class="card red">
-            <p class="tip">Academia EDTeam: Java</p>
-            <span class="background-kleur"><img src="ico/java.png" alt="" class="icon-example"></span>
-            <p class="tut" data-i18n="cert.java.tut">Certificado en Java desde Cero en la academia EDTeam</p>
-          </div>
-          <p class="card-description" data-i18n="cert.java.desc">Mi primer lenguaje de programación. Muy completo y útil para todo tipo de tareas.</p>
-        </a>
-
-        <a href="https://www.credly.com/badges/e6d7ca8e-623e-4207-8add-73e18554ec48/public_url" target="_blank"
-          class="card-link">
-          <div class="card red">
-            <p class="tip">CISCO:Python Essentials I</p>
-            <span class="background-kleur"><img src="ico/python-icon-sm.png" alt="" class="icon-example"></span>
-            <div class="credly-badge">
-              <div data-iframe-width="130" data-iframe-height="230"
-                data-share-badge-id="e6d7ca8e-623e-4207-8add-73e18554ec48"
-                data-share-badge-host="https://www.credly.com">
-              </div>
-              <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-            </div>
-          </div>
-          <p class="card-description" data-i18n="cert.python.desc">Opino que es un lenguaje muy completo y estoy orgulloso de haberlo aprendido.</p>
-        </a>
-
-        <a href="https://www.credly.com/badges/281f1d4e-e551-442d-af37-bcb327992e5f/public_url" target="_blank"
-          class="card-link">
-          <div class="card red">
-            <p class="tip">CISCO:Python Essentials II</p>
-            <span class="background-kleur"><img src="ico/python-icon-sm.png" alt="" class="icon-example"></span>
-            <div class="credly-badge">
-              <div data-iframe-width="130" data-iframe-height="230" data-share-badge-id="281f1d4e-e551-442d-af37-bcb327992e5f" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-            </div>
-          </div>
-          <p class="card-description" data-i18n="cert.python.desc">Opino que es un lenguaje muy completo y estoy orgulloso de haberlo aprendido.</p>
-        </a>
-
+      <div class="cert-featured fade-in-on-scroll">
         <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=D8F1B01344B6C43C91FD234A3E2638182FA1E64EB6EA570F3021B0A478E067A3"
-          target="_blank" class="card-link">
-          <div class="card red">
-            <p class="tip">Oracle Cloud Infrastructure: AI Foundations Associate</p>
-            <span class="background-kleur"><img src="ico/Deep Learning.png" alt="" class="icon-example"></span>
-            <img src="/badge/Learning-Path_badge_default.png" class="badge" alt="Insignia Oracle Cloud Infrastructure AI Foundations Associate">
+          target="_blank" rel="noopener noreferrer" class="cert-card">
+          <img src="badge/Learning-Path_badge_default.png" class="cert-card__badge" alt="Oracle Cloud Infrastructure AI Foundations Associate">
+          <div class="cert-card__body">
+            <span class="cert-card__issuer">Oracle</span>
+            <h3 class="cert-card__title" data-i18n="cert.oracle.title">OCI AI Foundations</h3>
+            <p class="cert-card__summary" data-i18n="cert.oracle.summary">Fundamentos de IA moderna (ML, DL, LLMs) y herramientas OCI.</p>
           </div>
-          <p class="card-description" data-i18n="cert.oracle.desc">Gracias a Oracle, ahora poseo un profundo conocimiento teórico de los fundamentos de la IA
-            moderna (ML, DL, LLMs) y experiencia práctica con las herramientas de IA de Oracle Cloud Infrastructure
-            (OCI).</p>
         </a>
 
-        <a href="https://www.credly.com/badges/65fe1d22-0299-4aea-b487-f18bee7c48bc/public_url" target="_blank"
-          class="card-link">
-          <div class="card red">
-            <p class="tip">CISCO: Data Analytics</p>
-            <span class="background-kleur">
-              <img src="ico/SQL.png" alt="" class="icon-example">
-              <img src="ico/Microsoft_Office_Excel_(2025–present).svg.png" alt="" class="icon-example">
-              <img src="ico/free-tableau-icon-svg-download-png-4489897.webp" alt="" class="icon-example"></span>
-            <div class="credly-badge">
-              <div data-iframe-width="130" data-iframe-height="230" data-share-badge-id="65fe1d22-0299-4aea-b487-f18bee7c48bc" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-            </div>
+        <a href="https://www.udemy.com/certificate/UC-649c8e08-10f8-41b4-81ac-a2a771b7f65b/" target="_blank" rel="noopener noreferrer" class="cert-card">
+          <img src="badge/udemy-kubernetes.png" class="cert-card__badge" alt="Udemy Kubernetes">
+          <div class="cert-card__body">
+            <span class="cert-card__issuer">Udemy</span>
+            <h3 class="cert-card__title" data-i18n="cert.kubernetes.title">Kubernetes</h3>
+            <p class="cert-card__summary" data-i18n="cert.kubernetes.summary">Orquestación de contenedores, deployments, services e ingress.</p>
           </div>
-          <p class="card-description" data-i18n="cert.analytics.desc">Certificado en Data Analytics, con herramientas como SQL, Excel y Tableau.</p>
         </a>
 
-        <a href="https://cert.efset.org/Tib84T" target="_blank" rel="noopener noreferrer" class="card-link">
-          <div class="card red">
-            <p class="tip" data-i18n="cert.english.tip">EF SET: Inglés B2</p>
-            <img src="badge/b2-english.webp" class="cert-badge-img" alt="Certificado EF SET Inglés B2 Upper Intermediate — 54/100">
+        <a href="https://www.udemy.com/certificate/UC-98eae487-56bc-48d6-a402-378b92f8b9bb/" target="_blank" rel="noopener noreferrer" class="cert-card">
+          <img src="badge/udemy-temporal.png" class="cert-card__badge" alt="Udemy Temporal">
+          <div class="cert-card__body">
+            <span class="cert-card__issuer">Udemy</span>
+            <h3 class="cert-card__title" data-i18n="cert.temporal.title">Temporal + Spring</h3>
+            <p class="cert-card__summary" data-i18n="cert.temporal.summary">Workflows durables con Temporal y Spring Boot.</p>
           </div>
-          <p class="card-description" data-i18n="cert.english.desc">Certificación de inglés nivel B2 (Upper Intermediate) verificada por EF SET.</p>
         </a>
 
-        <a href="https://www.udemy.com/certificate/UC-649c8e08-10f8-41b4-81ac-a2a771b7f65b/" target="_blank" rel="noopener noreferrer" class="card-link">
-          <div class="card red">
-            <p class="tip" data-i18n="cert.kubernetes.tip">Udemy: Kubernetes</p>
-            <span class="background-kleur"><img src="ico/k8s.png" alt="" class="icon-example"></span>
-            <img src="badge/udemy-kubernetes.png" class="cert-badge-img" alt="Certificado Udemy Kubernetes" style="max-width: 200px; margin-top: 8px;">
+        <a href="https://cert.efset.org/Tib84T" target="_blank" rel="noopener noreferrer" class="cert-card">
+          <img src="badge/b2-english.webp" class="cert-card__badge" alt="EF SET English B2">
+          <div class="cert-card__body">
+            <span class="cert-card__issuer">EF SET</span>
+            <h3 class="cert-card__title" data-i18n="cert.english.title">Inglés B2</h3>
+            <p class="cert-card__summary" data-i18n="cert.english.summary">Upper Intermediate verificado por EF SET.</p>
           </div>
-          <p class="card-description" data-i18n="cert.kubernetes.desc">Certificación de Kubernetes en Udemy. Orquestación de contenedores, deployments, services, ingress y más.</p>
-        </a>
-
-        <a href="https://www.udemy.com/certificate/UC-98eae487-56bc-48d6-a402-378b92f8b9bb/" target="_blank" rel="noopener noreferrer" class="card-link">
-          <div class="card red">
-            <p class="tip" data-i18n="cert.temporal.tip">Udemy: Temporal</p>
-            <span class="background-kleur"><img src="ico/temporal-io.png" alt="" class="icon-example"></span>
-            <img src="badge/udemy-temporal.png" class="cert-badge-img" alt="Certificado Udemy Temporal" style="max-width: 200px; margin-top: 8px;">
-          </div>
-          <p class="card-description" data-i18n="cert.temporal.desc">Certificación de arquitectura de microservicios con Temporal y Spring en Udemy. Orquestación de workflows durables, workers, activities y más.</p>
         </a>
       </div>
 
-
+      <p class="certs-more fade-in-on-scroll">
+        <span data-i18n="about.moreCerts">También tengo certificados en Java, Python, Data Analytics y más.</span>
+        <a href="https://www.linkedin.com/in/kelvin-puch/details/certifications/" target="_blank" rel="noopener noreferrer" data-i18n="about.viewAll">Ver todas</a>
+      </p>
 
       <div class="generic-small">
         <p class="fade-in-on-scroll" id="gratefull" data-i18n="about.grateful">
@@ -271,93 +229,88 @@
     <section id="proyectos" aria-labelledby="proyectos-heading">
       <header class="section-head">
         <h2 id="proyectos-heading" class="proyects section-head__title" data-i18n="projects.title">Proyectos</h2>
+        <p class="section-head__lede" data-i18n="projects.subtitle">Selección reciente</p>
       </header>
-      <div class="generic-small" class="fade-in-on-scroll">
-        <p data-i18n="projects.githubHint">Puedes encontrar más en mi perfil de GitHub.
-        </p>
-        <p data-i18n="projects.clickHint">
-          [Click card: para abrir el repositorio Github con el código fuente]
-        </p>
+      <p class="projects-intro fade-in-on-scroll">
+        <span data-i18n="projects.githubHint">Hay más en mi perfil de GitHub.</span>
+        <a href="https://github.com/adop1d" target="_blank" rel="noopener noreferrer" data-i18n="projects.githubLink">Ver perfil</a>
+      </p>
+
+      <div class="project-showcase fade-in-on-scroll">
+        <a href="https://vitre-azure.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-row project-row--featured">
+          <img src="ico/vitre.png" alt="Vitre" class="project-row__icon">
+          <div class="project-row__content">
+            <div class="project-row__head">
+              <h3 class="project-row__title">Vitre</h3>
+              <span class="project-row__badge" data-i18n="projects.badge.live">En vivo</span>
+            </div>
+            <p class="project-row__summary" data-i18n="project.vitre.summary">Red social con posts, comentarios, chat en tiempo real y perfiles. React, Supabase y Vercel.</p>
+            <ul class="project-row__stack">
+              <li>React</li>
+              <li>Tailwind</li>
+              <li>Supabase</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </a>
+
+        <a href="https://augescode.site/" target="_blank" rel="noopener noreferrer" class="project-row project-row--featured">
+          <img src="ico/AugesCode.png" alt="AugesCode" class="project-row__icon">
+          <div class="project-row__content">
+            <div class="project-row__head">
+              <h3 class="project-row__title">AugesCode</h3>
+              <span class="project-row__badge" data-i18n="projects.badge.live">En vivo</span>
+            </div>
+            <p class="project-row__summary" data-i18n="project.auges.summary">Suite POS en la nube con panel admin, landing de marca y módulo para programa local.</p>
+            <ul class="project-row__stack">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Supabase</li>
+              <li>Vercel</li>
+            </ul>
+          </div>
+        </a>
+
+        <a href="https://github.com/adop1d/personal-tasks-manager" target="_blank" rel="noopener noreferrer" class="project-row project-row--featured">
+          <img src="ico/ktm-task-manager.png" alt="KTM Task Manager" class="project-row__icon">
+          <div class="project-row__content">
+            <div class="project-row__head">
+              <h3 class="project-row__title">KTM Task Manager</h3>
+              <span class="project-row__badge project-row__badge--repo" data-i18n="projects.badge.repo">Repo</span>
+            </div>
+            <p class="project-row__summary" data-i18n="project.ktm.summary">Task manager full-stack con JWT, CRUD, temas claro/oscuro, atajos de teclado y PWA.</p>
+            <ul class="project-row__stack">
+              <li>React</li>
+              <li>Spring Boot</li>
+              <li>PostgreSQL</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+        </a>
       </div>
-      <br>
-      <div class="cards">
 
-        <a href="https://vitre-azure.vercel.app/" target="_blank" class="card-link project-link">
-          <div class="card red project-card">
-            <img src="ico/vitre.png" alt="" class="icon-example" style="width: 100px; height: 100px;">
-            <p class="tip">Vitre</p>
-            <span class="background-kleur">
-              <img src="ico/react.png" alt="" class="icon-example">
-              <img src="ico/tailwind.png" alt="" class="icon-example">
-              <img src="ico/supabase.png" alt="" class="icon-example">
-              <img src="ico/js.png" alt="" class="icon-example">
-              <img src="ico/css.png" alt="" class="icon-example">
-            </span>
-            <p class="tut" data-i18n="project.vitre.tut">Red Social al estilo Reddit con chat, notificaciones, perfiles, publicaciones, comentarios y más.</p>
-          </div>
-          <p class="card-description" data-i18n="project.vitre.desc">Proyecto de red social al estilo Reddit, tornando más a mi estilo.</p>
-        </a>
-        <a href="https://augescode.site/" target="_blank" class="card-link project-link">
-          <div class="card red project-card">
-            <img src="ico/AugesCode.png" alt="" class="icon-example" style="width: 100px; height: 100px;">
-            <p class="tip">AugesCode</p>
-            <span class="background-kleur">
-              <img src="ico/react.png" alt="" class="icon-example">
-              <img src="ico/supabase.png" alt="" class="icon-example">
-              <img src="ico/vercel.png" alt="" class="icon-example">
-              <img src="ico/js.png" alt="" class="icon-example">
-              <img src="ico/typescript.png" alt="" class="icon-example">
-              <img src="ico/sql.png" alt="" class="icon-example">
-              <img src="ico/tailwind.png" alt="" class="icon-example">
-              <img src="ico/css.png" alt="" class="icon-example">
-              <img src="ico/5968267.png" alt="" class="icon-example">
-            </span>
-            <p class="tut" data-i18n="project.auges.tut">Mi POS administrativo en la nube (AugesCloud), Página de presentación de la marca (personal) y co-desarrollador de AugeSGIntern (Programa Local).</p>
-          </div>
-            <p class="card-description" data-i18n="project.auges.desc">Sistemas POS administrativos.</p>
-        </a>
-        
-        <a href="https://github.com/adop1d/personal-tasks-manager" target="_blank" class="card-link project-link">
-          <div class="card red project-card">
-            <img src="ico/ktm-task-manager.png" alt="" class="icon-example" style="width: 100px; height: 100px;">
-            <p class="tip">KTM Task Manager</p>
-            <span class="background-kleur">
-              <img src="ico/react.png" alt="" class="icon-example">
-              <img src="ico/typescript.png" alt="" class="icon-example">
-              <img src="ico/tailwind.png" alt="" class="icon-example">
-              <img src="ico/java.png" alt="" class="icon-example">
-              <img src="ico/spring-boot.png" alt="" class="icon-example">
-              <img src="ico/Postgresql.png" alt="" class="icon-example">
-              <img src="ico/docker.png" alt="" class="icon-example">
-            </span>
-            <p class="tut" data-i18n="project.ktm.tut">Gestor de tareas full-stack con diseño Neo-Tokyo. Autenticación JWT, CRUD completo, tema oscuro/claro, atajos de teclado y soporte PWA.</p>
-          </div>
-          <p class="card-description" data-i18n="project.ktm.desc">Primer proyecto combinando Spring Boot y React.</p>
-        </a>
-        <a href="https://github.com/adop1d/text-editor" target="_blank" class="card-link project-link">
-          <div class="card red project-card">
-            <p class="tip">Text Editor</p>
-            <span class="background-kleur">
-              <img src="ico/java.png" alt="" class="icon-example">
-            </span>
-            <p class="tut" data-i18n="project.editor.tut">Aplicación de escritorio creada en Java con la biblioteca
-              JSwing.</p>
-          </div>
-          <p class="card-description" data-i18n="project.editor.desc">Un editor de texto en el que
-            estuve jugando un poco con
-            la biblioteca JSwing.</p>
-        </a>
-
-        <a href="https://github.com/adop1d/java-ahorcado" target="_blank" class="card-link project-link">
-          <div class="card red project-card">
-            <p class="tip">El Ahorcado</p>
-            <span class="background-kleur">
-              <img src="ico/java.png" alt="" class="icon-example">
-            </span>
-            <p class="tut" data-i18n="project.hangman.tut">Un minijuego divertido en consola :).</p>
-          </div>
-          <p class="card-description" data-i18n="project.hangman.desc">Muy divertido, me moria de risa mientras lo jugaba.</p>
-        </a>
+      <div class="project-more fade-in-on-scroll">
+        <h3 class="project-more__title" data-i18n="projects.moreTitle">Otros proyectos</h3>
+        <div class="project-more__list">
+          <a href="https://github.com/adop1d/text-editor" target="_blank" rel="noopener noreferrer" class="project-row project-row--compact">
+            <div class="project-row__content">
+              <div class="project-row__head">
+                <h3 class="project-row__title">Text Editor</h3>
+                <span class="project-row__badge project-row__badge--repo" data-i18n="projects.badge.repo">Repo</span>
+              </div>
+              <p class="project-row__summary" data-i18n="project.editor.summary">Editor de texto de escritorio en Java con JSwing.</p>
+            </div>
+          </a>
+          <a href="https://github.com/adop1d/java-ahorcado" target="_blank" rel="noopener noreferrer" class="project-row project-row--compact">
+            <div class="project-row__content">
+              <div class="project-row__head">
+                <h3 class="project-row__title">El Ahorcado</h3>
+                <span class="project-row__badge project-row__badge--repo" data-i18n="projects.badge.repo">Repo</span>
+              </div>
+              <p class="project-row__summary" data-i18n="project.hangman.summary">Juego del ahorcado en consola. Práctica de Java orientada a objetos.</p>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
     <section id="services" aria-labelledby="services-heading">
@@ -366,75 +319,6 @@
         <h2 id="services-heading" class="services section-head__title" data-i18n="skills.title">Habilidades</h2>
         <p class="section-head__lede" data-i18n="skills.subtitle">Tecnologías que manejo</p>
       </header>
-      <div class="logos">
-        <div class="logos-slide">
-          <img src="ico/java.png" alt="">
-          <img src="ico/Microsoft_Office_Excel_(2025–present).svg.png" alt="">
-          <img src="ico/free-tableau-icon-svg-download-png-4489897.webp" alt="">
-          <img src="ico/python-icon-sm.png" alt="">
-          <img src="ico/django.webp" alt="">
-          <img src="ico/spring.png" alt="">
-          <img src="ico/spring-boot.png" alt="">
-          <img src="ico/spring-data.png" alt="">
-          <img src="ico/hibernate.png" alt="">
-          <img src="ico/supabase.png" alt="">
-          <img src="ico/sql.png" alt="">
-          <img src="ico/mysql.png" alt="">
-          <img src="ico/Postgresql.png" alt="">
-          <img src="ico/dbeaver.png" alt="">
-          <img src="ico/git.png" alt="">
-          <img src="ico/github.png" alt="">
-          <img src="ico/docker.png" alt="">
-          <img src="ico/maven.png" alt="">
-          <img src="ico/bash.png" alt="">
-          <img src="ico/jupyter.png" alt="">
-          <img src="ico/Oracle Data Science.png" alt="">
-          <img src="ico/Deep Learning.png" alt="">
-          <img src="ico/React.png" alt="">
-          <img src="ico/tailwind.png" alt="">
-          <img src="ico/5968267.png" alt="">
-          <img src="ico/css.png" alt="">
-          <img src="ico/js.png" alt="">
-          <img src="ico/typescript.png" alt="">
-          <img src="ico/vercel.png" alt="">
-          <img src="ico/k8s.png" alt="">
-          <img src="ico/nextjs.png" alt="">
-          <img src="ico/temporal-io.png" alt="">
-        </div>
-        <div class="logos-slide">
-          <img src="ico/Microsoft_Office_Excel_(2025–present).svg.png" alt="">
-          <img src="ico/free-tableau-icon-svg-download-png-4489897.webp" alt="">
-          <img src="ico/java.png" alt="">
-          <img src="ico/python-icon-sm.png" alt="">
-          <img src="ico/django.webp" alt="">
-          <img src="ico/spring.png" alt="">
-          <img src="ico/spring-boot.png" alt="">
-          <img src="ico/spring-data.png" alt="">
-          <img src="ico/hibernate.png" alt="">
-          <img src="ico/supabase.png" alt="">
-          <img src="ico/sql.png" alt="">
-          <img src="ico/Postgresql.png" alt="">
-          <img src="ico/dbeaver.png" alt="">
-          <img src="ico/git.png" alt="">
-          <img src="ico/github.png" alt="">
-          <img src="ico/docker.png" alt="">
-          <img src="ico/maven.png" alt="">
-          <img src="ico/bash.png" alt="">
-          <img src="ico/jupyter.png" alt="">
-          <img src="ico/Oracle Data Science.png" alt="">
-          <img src="ico/Deep Learning.png" alt="">
-          <img src="ico/React.png" alt="">
-          <img src="ico/tailwind.png" alt="">
-          <img src="ico/5968267.png" alt="">
-          <img src="ico/css.png" alt="">
-          <img src="ico/js.png" alt="">
-          <img src="ico/typescript.png" alt="">
-          <img src="ico/vercel.png" alt="">
-          <img src="ico/k8s.png" alt="">
-          <img src="ico/nextjs.png" alt="">
-          <img src="ico/temporal-io.png" alt="">
-        </div>
-      </div>
 
       <div class="skills-block fade-in-on-scroll">
         <div class="ascii-scene ascii-scene--skills-lateral" aria-hidden="true">
@@ -447,14 +331,7 @@
         <aside class="skills-right glass-paragraph fade-in-on-scroll">
           <h4 class="skill-desc-title" data-i18n="skills.aboutTitle">Sobre las herramientas</h4>
           <hr class="skill-desc-hr">
-          <p data-i18n="skills.aboutText">
-            He trabajado en: lenguajes como Java y Python; frameworks backend como SpringBoot, Vert.x y Django; tecnologías
-            frontend como HTML, CSS, Tailwind y React.js; bases de datos como PostgreSQL junto a
-            herramientas de gestión como DBeaver, supabase y pgadmin; y utilidades para control de versiones y despliegue como Git,
-            GitHub, Docker, Kubernetes y Maven. Estos
-            iconos representan el ecosistema con el que construyo, pruebo y despliego aplicaciones.
-            También tengo conocimientos en herramientas de análisis de datos como SQL, Excel y Tableau.
-          </p>
+          <p data-i18n="skills.aboutText">Construyo y despliego apps full-stack con Java, Spring Boot, React, PostgreSQL, Docker y Kubernetes. También trabajo con Python, Temporal y herramientas de datos.</p>
         </aside>
         <div class="ascii-scene ascii-scene--skills-flower-mobile" aria-hidden="true">
           <canvas class="ascii-canvas ascii-canvas--flower" data-ascii-scene="skills-flower-mobile"></canvas>

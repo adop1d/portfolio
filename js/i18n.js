@@ -31,7 +31,7 @@ const I18N = {
       'hero.spec.status': 'estado',
       'hero.description': 'Perfil',
       'hero.aboutHeading': '— Acerca de Kelvin Puche —',
-      'hero.aboutText': 'Desarrollador full-stack. Construyo APIs, microservicios y SPAs con, Spring Boot, React SQL y cloud.',
+      'hero.aboutText': 'Desarrollador full-stack. Construyo APIs, microservicios y SPAs con, Spring Boot, React, SQL y cloud.',
       'about.title': 'Certificación',
       'about.subtitle': 'Formación destacada',
       'about.moreCerts': 'También tengo certificados en Cisco Python Essentials I + II y más.',

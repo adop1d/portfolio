@@ -34,7 +34,7 @@ const I18N = {
       'hero.aboutText': 'Desarrollador full-stack. Construyo APIs, microservicios y SPAs con Java, Spring Boot, React y cloud.',
       'about.title': 'Certificación',
       'about.subtitle': 'Formación destacada',
-      'about.moreCerts': 'También tengo certificados en Python y más.',
+      'about.moreCerts': 'También tengo certificados en Cisco Python Essentials I + II y más.',
       'about.viewAll': 'Ver todas',
       'cert.oracle.title': 'OCI AI Foundations',
       'cert.oracle.summary': 'Fundamentos de IA moderna (ML, DL, LLMs) y herramientas OCI.',

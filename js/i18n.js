@@ -10,8 +10,8 @@ const I18N = {
 
   strings: {
     es: {
-      'meta.title': 'Kelvin Puche - Desarrollador Web',
-      'meta.description': 'Portfolio de Kelvin Puche, desarrollador full-stack. Spring Boot, React.js, Kubernetes, SQL, y más.',
+      'meta.title': 'Kelvin Puche - Desarrollador web',
+      'meta.description': 'Portfolio de Kelvin Puche, desarrollador web. Spring Boot, React.js, Kubernetes, SQL, y más.',
       'nav.home': 'inicio',
       'nav.certificates': 'certificados',
       'nav.certificatesShort': 'certif.',
@@ -21,7 +21,7 @@ const I18N = {
       'nav.skillsShort': 'stack',
       'nav.contact': 'contacto',
       'hero.availability': 'disponible',
-      'hero.role': 'desarrollador full-stack',
+      'hero.role': 'desarrollador web',
       'hero.cta.projects': 'Ver proyectos',
       'hero.cta.contact': 'Contacto',
       'hero.masthead.issue': 'VOL. 01 · 2026 · PORTFOLIO DEV',
@@ -31,7 +31,7 @@ const I18N = {
       'hero.spec.status': 'estado',
       'hero.description': 'Perfil',
       'hero.aboutHeading': '— Acerca de Kelvin Puche —',
-      'hero.aboutText': 'Desarrollador full-stack. Construyo APIs, microservicios y SPAs con, Spring Boot, React, SQL y cloud.',
+      'hero.aboutText': 'Desarrollador web. Construyo APIs, microservicios y SPAs con, Spring Boot, React, SQL y cloud.',
       'about.title': 'Certificación',
       'about.subtitle': 'Formación destacada',
       'about.moreCerts': 'También tengo certificados en Cisco Python Essentials I + II y más.',
@@ -64,16 +64,16 @@ const I18N = {
       'skills.title': 'Habilidades',
       'skills.subtitle': 'Tecnologías que manejo',
       'skills.aboutTitle': 'Sobre las herramientas',
-      'skills.aboutText': 'Construyo y despliego apps full-stack con Spring Boot, React, Docker y Kubernetes. También trabajo con Python, Temporal, Supabase, Vercel y más.',
+      'skills.aboutText': 'Construyo y despliego apps web con Spring Boot, React, Docker y Kubernetes. También trabajo con Python, Temporal, Supabase, Vercel y más.',
       'skills.category.databases': 'Bases de Datos',
       'img.fallback': 'imagen no disponible',
       'lang.switch': 'Idioma',
       'footer.statement': 'Sigo construyendo — un commit a la vez.',
-      'footer.copyright': '© 2026 Kelvin Puche'
+      'footer.copyright': '© 2026'
     },
     en: {
       'meta.title': 'Kelvin Puche - Web Developer',
-      'meta.description': 'Kelvin Puche portfolio - full-stack developer. Spring Boot, React.js, SQL, Cloud and more.',
+      'meta.description': 'Kelvin Puche portfolio - web developer. Spring Boot, React.js, SQL, Cloud and more.',
       'nav.home': 'home',
       'nav.certificates': 'certificates',
       'nav.certificatesShort': 'certs',
@@ -83,7 +83,7 @@ const I18N = {
       'nav.skillsShort': 'stack',
       'nav.contact': 'contact',
       'hero.availability': 'available',
-      'hero.role': 'full-stack developer',
+      'hero.role': 'web developer',
       'hero.cta.projects': 'View projects',
       'hero.cta.contact': 'Contact',
       'hero.masthead.issue': 'VOL. 01 · 2026 · DEV PORTFOLIO',
@@ -93,7 +93,7 @@ const I18N = {
       'hero.spec.status': 'status',
       'hero.description': 'Profile',
       'hero.aboutHeading': '— About Kelvin Puche —',
-      'hero.aboutText': 'Full-stack developer building REST APIs, microservices, and SPAs with, Spring Boot, React, SQL and cloud.',
+      'hero.aboutText': 'web developer building REST APIs, microservices, and SPAs with, Spring Boot, React, SQL and cloud.',
       'about.title': 'Certification',
       'about.subtitle': 'Featured credentials',
       'about.moreCerts': 'I also hold credentials in Cisco: Python Essentials I + II and more.',
@@ -120,18 +120,18 @@ const I18N = {
       'projects.badge.repo': 'Repo',
       'project.vitre.summary': 'Social platform with posts, comments, realtime chat, and profiles. React, Supabase, and Vercel.',
       'project.auges.summary': 'Cloud POS suite with admin panel, brand landing page, and local program module.',
-      'project.ktm.summary': 'Full-stack task manager with JWT auth, CRUD, light/dark themes, keyboard shortcuts, and PWA.',
+      'project.ktm.summary': 'full-stack task manager with JWT auth, CRUD, light/dark themes, keyboard shortcuts, and PWA.',
       'project.editor.summary': 'Desktop text editor in Java with JSwing.',
       'project.hangman.summary': 'Console hangman game. Java OOP practice project.',
       'skills.title': 'Skills',
       'skills.subtitle': 'Technologies I work with',
       'skills.aboutTitle': 'About the tools',
-      'skills.aboutText': 'I build and deploy full-stack apps with Spring Boot, React.js, Docker, and Kubernetes. I also work with Python, Temporal, Supabase, Vercel and more.',
+      'skills.aboutText': 'I build and deploy web apps with Spring Boot, React.js, Docker, and Kubernetes. I also work with Python, Temporal, Supabase, Vercel and more.',
       'skills.category.databases': 'Databases',
       'img.fallback': 'image unavailable',
       'lang.switch': 'Language',
       'footer.statement': 'Still building — one commit at a time.',
-      'footer.copyright': '© 2026 Kelvin Puche'
+      'footer.copyright': '© 2026'
     }
   },
 

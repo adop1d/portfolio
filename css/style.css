@@ -332,7 +332,7 @@ body {
   padding: 0;
   font-family: var(--font-body);
   color: var(--color-ink);
-  background-image: url(/img/bg3.jpg);
+  background-image: url(/assets/images/bg3.jpg);
   background-color: var(--color-paper);
   background-size: cover;
   background-position: center;

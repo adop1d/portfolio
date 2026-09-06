@@ -3,50 +3,50 @@ const skillsData = {
   frontend: {
     name: "Frontend",
     skills: [
-      { name: "HTML", icon: "ico/5968267.png" },
-      { name: "CSS", icon: "ico/css.png" },
-      { name: "Tailwind", icon: "ico/tailwind.png" },
-      { name: "JavaScript", icon: "ico/js.png" },
-      { name: "React", icon: "ico/react.png" },
+      { name: "HTML", icon: "assets/icons/html.png" },
+      { name: "CSS", icon: "assets/icons/css.png" },
+      { name: "Tailwind", icon: "assets/icons/tailwind.png" },
+      { name: "JavaScript", icon: "assets/icons/js.png" },
+      { name: "React", icon: "assets/icons/react.png" },
     ]
   },
   backend: {
     name: "Backend",
     skills: [
-      { name: "Maven", icon: "ico/maven.png" },
-      { name: "Java", icon: "ico/java.png" },
-      { name: "Python", icon: "ico/python-icon-sm.png" },
-      { name: "Django", icon: "ico/django.webp" },
-      { name: "Spring Boot", icon: "ico/spring-boot.png" },
-      { name: "Temporal.io", icon: "ico/temporal-io.png" },
+      { name: "Maven", icon: "assets/icons/maven.png" },
+      { name: "Java", icon: "assets/icons/java.png" },
+      { name: "Python", icon: "assets/icons/python.png" },
+      { name: "Django", icon: "assets/icons/django.webp" },
+      { name: "Spring Boot", icon: "assets/icons/spring-boot.png" },
+      { name: "Temporal.io", icon: "assets/icons/temporal-io.png" },
       
     ]
   },
   deployment: {
     name: "DevOps",
     skills: [
-      { name: "Vercel", icon: "ico/vercel.png" },
-      { name: "Docker", icon: "ico/docker.png" },
-      { name: "Kubernetes", icon: "ico/k8s.png" },
-      { name: "Bash", icon: "ico/bash.png" },
-      { name: "Git", icon: "ico/git.png" },
-      { name: "GitHub", icon: "ico/github.png" },
+      { name: "Vercel", icon: "assets/icons/vercel.png" },
+      { name: "Docker", icon: "assets/icons/docker.png" },
+      { name: "Kubernetes", icon: "assets/icons/k8s.png" },
+      { name: "Bash", icon: "assets/icons/bash.png" },
+      { name: "Git", icon: "assets/icons/git.png" },
+      { name: "GitHub", icon: "assets/icons/github.png" },
     ]
   },
   databases: {
     nameKey: "skills.category.databases",
     skills: [
-      { name: "PostgreSQL", icon: "ico/Postgresql.png" },
-      { name: "Supabase", icon: "ico/supabase.png" }
+      { name: "PostgreSQL", icon: "assets/icons/postgresql.png" },
+      { name: "Supabase", icon: "assets/icons/supabase.png" }
     ]
   },
   dataScience: {
     name: "AI and Data",
     skills: [
-      //{ name: "Oracle Data Science", icon: "ico/Oracle Data Science.png" },
-      { name: "Oracle AI Foundations", icon: "ico/Deep Learning.png" },
-      { name: "Excel", icon: "ico/Microsoft_Office_Excel_(2025–present).svg.png" },
-      { name: "SQL", icon: "ico/sql.png" },
+      //{ name: "Oracle Data Science", icon: "assets/icons/oracle-data-science.png" },
+      { name: "Oracle AI Foundations", icon: "assets/icons/deep-learning.png" },
+      { name: "Excel", icon: "assets/icons/excel.png" },
+      { name: "SQL", icon: "assets/icons/sql.png" },
 
     ]
   }

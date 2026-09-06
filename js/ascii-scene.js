@@ -1,15 +1,15 @@
 /**
- * Sondaven-style WebGL grid dither scenes (local videos in assets/scenes/).
+ * Sondaven-style WebGL grid dither scenes (local videos in assets/media/).
  */
 (function () {
   const BP = 992;
   const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const isDesk = () => window.innerWidth >= BP;
-  const SCENE_BASE = 'assets/scenes/';
+  const SCENE_BASE = 'assets/media/';
 
   const ASSETS = {
-    clouds02: SCENE_BASE + 'claudes_02.mp4',
-    clouds03: SCENE_BASE + 'claudes_03.mp4',
+    clouds02: SCENE_BASE + 'claudes-02.mp4',
+    clouds03: SCENE_BASE + 'claudes-03.mp4',
     prologR: SCENE_BASE + 'prolog-r-c.mp4',
   };
 

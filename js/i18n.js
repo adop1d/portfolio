@@ -1,6 +1,6 @@
 const SITE = {
   url: 'https://pchportfolio.netlify.app/',
-  ogImage: 'https://pchportfolio.netlify.app/img/og-cover.svg',
+  ogImage: 'https://pchportfolio.netlify.app/assets/images/og-cover.svg',
 };
 
 const I18N = {

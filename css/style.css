@@ -620,13 +620,16 @@ footer.foot-stmt {
   margin: 20px auto;
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: var(--space-xl);
 }
 
 .ascii-scene--flower-footer {
   position: relative;
+  inset: auto;
   width: min(260px, 24vw);
-  margin: 0 auto var(--space-md);
   height: auto;
+  aspect-ratio: 594 / 872;
+  margin: 0 auto var(--space-md);
   pointer-events: none;
   z-index: 0;
 }
@@ -1480,8 +1483,12 @@ footer.foot-stmt {
   max-width: 100%;
   box-sizing: border-box;
   border-top: 1px solid var(--color-border-subtle);
+  border-bottom: 1px solid var(--color-border-subtle);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Skills Grid Styles */
@@ -1512,7 +1519,7 @@ footer.foot-stmt {
 
 @media (min-width: 993px) {
   .section-content--services {
-    padding-inline-end: min(200px, 18vw);
+    padding-inline-end: 0;
   }
 }
 

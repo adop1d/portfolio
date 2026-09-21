@@ -451,7 +451,17 @@ footer.foot-stmt {
 
 .foot-stmt__content {
   display: grid;
-  gap: var(--space-lg);
+  gap: var(--space-md);
+  justify-items: center;
+}
+
+.foot-stmt__content > .ascii-scene--flower-footer {
+  width: min(260px, 24vw);
+  margin: 0;
+}
+
+.foot-stmt__content > .ascii-scene--flower-footer-mobile {
+  margin: var(--space-md) auto 0;
 }
 
 .foot-stmt__line {
@@ -612,26 +622,23 @@ footer.foot-stmt {
   box-sizing: border-box;
 }
 
-.ascii-scene--skills-lateral {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 100%;
+.ascii-scene--flower-footer {
+  position: relative;
   width: min(260px, 24vw);
-  margin-left: 12px;
+  margin: 0 auto var(--space-md);
   height: auto;
   pointer-events: none;
   z-index: 0;
 }
 
-.ascii-scene--skills-flower-mobile {
+.ascii-scene--flower-footer-mobile {
   display: none;
   position: relative;
   inset: auto;
   width: min(280px, 72vw);
   height: auto;
   aspect-ratio: 594 / 872;
-  margin: var(--space-md) auto 0;
+  margin: var(--space-md) auto;
   pointer-events: none;
   justify-self: center;
 }
@@ -1510,11 +1517,11 @@ footer.foot-stmt {
 }
 
 @media (max-width: 992px) {
-  .ascii-scene--skills-lateral {
+  .ascii-scene--flower-footer {
     display: none !important;
   }
 
-  .ascii-scene--skills-flower-mobile {
+  .ascii-scene--flower-footer-mobile {
     display: block;
     order: 3;
     grid-column: 1;

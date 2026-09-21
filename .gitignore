@@ -10,3 +10,4 @@ node_modules/
 
 # OpenSpec (planning artifacts, not site)
 openspec/
+docs

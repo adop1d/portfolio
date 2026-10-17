@@ -70,7 +70,7 @@ const I18N = {
       'skills.aboutText': 'Construyo y despliego apps web full-stack con Spring Boot, Vert.x, React, TypeScript, Docker y Kubernetes. También trabajo con Python, Temporal, Supabase, Vercel, PostgreSQL, Java y más.',
       'img.fallback': 'imagen no disponible',
       'lang.switch': 'Idioma',
-      'footer.statement': 'Sigo construyendo — un commit a la vez.',
+      'footer.statement': '<3',
       'footer.copyright': '© 2026'
     },
     en: {
@@ -134,7 +134,7 @@ const I18N = {
       'skills.aboutText': 'I build and deploy full-stack web apps with Spring Boot, Vert.x, React, TypeScript, Docker, and Kubernetes. I also work with Python, Temporal, Supabase, Vercel, PostgreSQL, Java and more.',
       'img.fallback': 'image unavailable',
       'lang.switch': 'Language',
-      'footer.statement': 'Still building — one commit at a time.',
+      'footer.statement': '<3',
       'footer.copyright': '© 2026'
     }
   },

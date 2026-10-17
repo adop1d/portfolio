@@ -1690,7 +1690,9 @@ footer.foot-stmt {
 /* Skill items grid */
 .skill-items-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* one row per category, columns sized to fit the item count */
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
   gap: 6px;
   width: 100%;
   max-width: 100%;
@@ -1701,26 +1703,6 @@ footer.foot-stmt {
   min-width: 0;
 }
 
-/* Adjust grid columns based on number of items */
-.skill-category.frontend .skill-items-grid {
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.skill-category.databases .skill-items-grid {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.skill-category.dataScience .skill-items-grid {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.skill-category.backend .skill-items-grid {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.skill-category.tools .skill-items-grid {
-  grid-template-columns: repeat(5, 1fr);
-}
 
 
 /* Remove category-specific sizing - use uniform sizing for compact grid */
@@ -1730,7 +1712,8 @@ footer.foot-stmt {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
+  width: 100%;
+  max-width: 44px;
   height: 44px;
   background: rgba(90, 90, 90, 0.562);
   border-radius: 6px;

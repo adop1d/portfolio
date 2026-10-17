@@ -19,7 +19,7 @@ const skillsData = {
       { name: "Django", icon: "assets/icons/django.webp" },
       { name: "Spring Boot", icon: "assets/icons/spring-boot.png" },
       { name: "Temporal.io", icon: "assets/icons/temporal-io.png" },
-      
+      { name: "Vert.x", icon: "assets/icons/vertx.png" }
     ]
   },
   deployment: {
@@ -31,13 +31,7 @@ const skillsData = {
       { name: "Bash", icon: "assets/icons/bash.png" },
       { name: "Git", icon: "assets/icons/git.png" },
       { name: "GitHub", icon: "assets/icons/github.png" },
-    ]
-  },
-  databases: {
-    nameKey: "skills.category.databases",
-    skills: [
-      { name: "PostgreSQL", icon: "assets/icons/postgresql.png" },
-      { name: "Supabase", icon: "assets/icons/supabase.png" }
+      { name: "Google Cloud", icon: "assets/icons/google-cloud.png" }
     ]
   },
   dataScience: {
@@ -47,7 +41,8 @@ const skillsData = {
       { name: "Oracle AI Foundations", icon: "assets/icons/deep-learning.png" },
       { name: "Excel", icon: "assets/icons/excel.png" },
       { name: "SQL", icon: "assets/icons/sql.png" },
-
+      { name: "PostgreSQL", icon: "assets/icons/postgresql.png" },
+      { name: "Supabase", icon: "assets/icons/supabase.png" }
     ]
   }
 };

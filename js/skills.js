@@ -6,8 +6,8 @@ const skillsData = {
       { name: "HTML", icon: "assets/icons/html.png" },
       { name: "CSS", icon: "assets/icons/css.png" },
       { name: "Tailwind", icon: "assets/icons/tailwind.png" },
+      { name: "TypeScript", icon: "assets/icons/typescript.png" },
       { name: "JavaScript", icon: "assets/icons/js.png" },
-      { name: "React", icon: "assets/icons/react.png" },
     ]
   },
   backend: {
@@ -25,24 +25,31 @@ const skillsData = {
   deployment: {
     name: "DevOps",
     skills: [
-      { name: "Vercel", icon: "assets/icons/vercel.png" },
       { name: "Docker", icon: "assets/icons/docker.png" },
       { name: "Kubernetes", icon: "assets/icons/k8s.png" },
       { name: "Bash", icon: "assets/icons/bash.png" },
       { name: "Git", icon: "assets/icons/git.png" },
-      { name: "GitHub", icon: "assets/icons/github.png" },
-      { name: "Google Cloud", icon: "assets/icons/google-cloud.png" }
+      { name: "GitHub", icon: "assets/icons/github.png" }
+    ]
+  },
+  cloud: {
+    name: "Cloud",
+    skills: [
+      { name: "Google Cloud", icon: "assets/icons/google-cloud.png" },
+      { name: "Vercel", icon: "assets/icons/vercel.png" },
+      { name: "Cloudflare", icon: "assets/icons/cloudflare.png" },
+      { name: "Supabase", icon: "assets/icons/supabase.png" }
     ]
   },
   dataScience: {
     name: "AI and Data",
     skills: [
-      //{ name: "Oracle Data Science", icon: "assets/icons/oracle-data-science.png" },
       { name: "Oracle AI Foundations", icon: "assets/icons/deep-learning.png" },
       { name: "Excel", icon: "assets/icons/excel.png" },
       { name: "SQL", icon: "assets/icons/sql.png" },
       { name: "PostgreSQL", icon: "assets/icons/postgresql.png" },
-      { name: "Supabase", icon: "assets/icons/supabase.png" }
+      { name: "GitHub Spec Kit", icon: "assets/icons/github-specify.webp" },
+      { name: "OpenSpec", icon: "assets/icons/openspec.png" }
     ]
   }
 };
